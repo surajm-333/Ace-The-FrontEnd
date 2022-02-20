@@ -1,6 +1,6 @@
 # Contributing Guide
 
-If you want to contribute to this project then head over to <a href="https://github.com/surajm-333/Ace-The-FrontEnd/issues>issues</a> page and look out for existing issues or open your new issues and ask for assigning it to you.
+If you want to contribute to this project then head over to <a href="https://github.com/surajm-333/Ace-The-FrontEnd/issues">issues</a> page and look out for existing issues or open your new issues and ask for assigning it to you.
 
 ## Follow these steps for contribution :-
 
