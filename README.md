@@ -1,2 +1,2 @@
-# Front-End-Projects
-This repository contains all my front-end projects.
+# Ace-The-FrontEnd
+This repository contains frontend projects that can be practised to become an ace Frontend Developer.
