@@ -2,7 +2,11 @@
 
 ## Introduction
 This repository contains frontend projects that will help you to become an ace Frontend Developer.
-If you're a beginner or a frontend expert, you can practice creating these projects and contribute to this repository as a part of open-source programs.
+If you're a beginner or a frontend expert, you can practice creating these projects and contribute to this repository as a part of open-source programs. The best way to master something is by practical implementation! So what are you waiting for, get started with your contribution to this project 💫
+
+## Contributing to this project
+Star ⭐ and Fork 🍴 this repository and head over to :-
+<a href="https://github.com/surajm-333/Ace-The-FrontEnd/blob/main/CONTRIBUTING.md" target="_blank">Learn to contribute here!</a>
 
 ## Tech Stacks used :-
 HTML, CSS, JS, React
