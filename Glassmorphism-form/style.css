@@ -98,3 +98,6 @@ button {
   font-weight: 900;
   background-color: rgb(162, 248, 81);
 }
+button:hover{
+  background-color: rgb(96, 199, 0)
+}
