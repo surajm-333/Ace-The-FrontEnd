@@ -8,7 +8,8 @@ module.exports = {
         back: '#01204C',
       },
       fontFamily:{
-        Titillium: ["Titillium Web", "sans-serif"]
+        Titillium: ["Titillium Web", "sans-serif"],
+        Alethia: ["Alethia Next", "sans-serif"]
       }
     },
   },
