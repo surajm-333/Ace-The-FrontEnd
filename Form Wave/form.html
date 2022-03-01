@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wave Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please login</h1>
+      <form>
+        <div class="form-control">
+          <input type="email" required />
+          <label>Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" required />
+          <label>password</label>
+        </div>
+
+        <button class="btn">Login</button>
+        <p class="text">Don't have an account <a href="#">Register</a></p>
+      </form>
+    </div>
+
+    <script>
+      const labels = document.querySelectorAll(".form-control label");
+
+      labels.forEach((label) => {
+        label.innerHTML = label.innerText
+          .split("")
+          .map(
+            (letter, idx) =>
+              `<span style="transition-delay:${idx * 50}ms">${letter}</span>`
+          )
+          .join("");
+      });
+    </script>
+  </body>
+</html>
