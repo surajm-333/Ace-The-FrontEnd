@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism | UI Design | Vanila JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="ourteam" id="ourteam">
+        <h2>
+            <span>Glassmorphism UI Design With Vanilla JS</span>
+
+        </h2>
+        
+        <div class="ourteamcontainer">
+            <div class="card">
+                <div class="content">
+                    <div class="imgbox">
+                        <img src="myimg5.jpg" alt="">
+                    </div>
+                    <h1>Sahil</h1>
+                    <h3>Acoustic Guitarist</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=100013054624575" target="_blank"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></a></li>
+                             <br>
+                            <li><a href="https://www.instagram.com/_sahil_128/" target="_blank"><i class="fab fa-instagram" style="font-size: 15px;"></i></a></li>
+                             <br>
+                             <li><a href="https://www.linkedin.com/in/sahil-kumar-256241211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoRf6WjDJSKK4Hu1KllLQdg%3D%3D" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 15px;"></i></a></li>
+                             <br>
+                             <li><a href="#"><i class="fab fa-snapchat-ghost" style="font-size: 15px;"></i></a></li>
+                             <br>
+                           
+                           
+                        </ul>
+                        </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="content1">
+                    <div class="imgbox1">
+                        <img src="guitar2.jpeg" alt="">
+                    </div>
+                   
+                    <h3>Acoustic Guitar</h3>
+                    
+                    
+                    <a href="https://en.wikipedia.org/wiki/Acoustic_guitar" target="_blank">Read More</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="imgbox">
+                        <img src="blank.jpg" alt="">
+                    </div>
+                    <h1>Name</h1>
+                    <h3>Some Description </h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <div class="social-links">
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=100013054624575" target="_blank"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></a></li>
+                             <br>
+                            <li><a href="https://www.instagram.com/_sahil_128/" target="_blank"><i class="fab fa-instagram" style="font-size: 15px;"></i></a></li>
+                             <br>
+                             <li><a href="https://www.linkedin.com/in/sahil-kumar-256241211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoRf6WjDJSKK4Hu1KllLQdg%3D%3D" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 15px;"></i></a></li>
+                             <br>
+                             <li><a href="#"><i class="fab fa-snapchat-ghost" style="font-size: 15px;"></i></a></li>
+                             <br>
+                           
+                           
+                        </ul>
+                        </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky" , window.scrollY > 0);
+        });
+        </script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script >
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+                max: 25,
+                speed: 400,
+                galre: false,
+                "max-glare":1,
+    
+            });
+            
+            
+        
+    </script>
+
+</body>
+</html>
