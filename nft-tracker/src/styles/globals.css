@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@300&family=Noto+Sans+TC:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&family=Shizuru&family=Titillium+Web&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&family=Montez&family=Montserrat:wght@300&family=Noto+Sans+TC:wght@100&family=Poppins:wght@100&family=Roboto:wght@100&family=Shizuru&family=Titillium+Web&family=Zen+Dots&display=swap');
+
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -10,6 +12,7 @@ body,
     height: 100%;
     width: 100%;
     display: flex;
+    background-color: rgba(1, 32, 76, 1);
    
 
     
