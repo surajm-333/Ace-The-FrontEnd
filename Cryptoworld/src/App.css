@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700;800&family=JetBrains+Mono:wght@200&family=Montserrat:wght@500;600;700;800&family=Oswald:wght@300;400&family=Work+Sans:wght@600;700&display=swap');
+
+.logo__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo-image{
+    width: 50px;
+}
+.logo{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    margin: 0 .2em;
+    
+}
+.nav__container{
+    max-width: 100%;
+    display: flex;
+    padding: 1em 10em 0 10em;
+}
+.navbar__items{
+   display: flex;
+   margin-left: auto;
+   margin-right: 0;
+}
+.navbar__items ul{
+    display: flex;
+}
+.navbar__items li{
+    margin: .8em 2em;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: black;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.routes{
+    padding: 20px;
+}
+.heading{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.homepage__container .subheading{
+    font-family: 'BioRhyme', sans-serif;
+}
+
+.more-home-heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.more-heading{
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.4rem !important;
+}
+.show-more{
+    font-size: 1.3rem !important;
+}
+
+.crypto-card-container{
+    min-height: 65vh !important;
+}
+
+.crypto-image{
+    min-width: 45px;
+}
+.crypto-card .crypto-image{
+    width:35px;
+}
+.search-crypto{
+    margin: 20px auto 30px auto;
+    width: 250px;
+}
+
+.news-image-container{
+    display: flex;
+}
+
+.news-title{
+    font-family: 'Work Sans',sans-serif;
+    
+}
+
+.provider-name{
+    font-family: 'Work Sans',sans-serif;
+    margin: 0 .5em;
+}
+
+.provider-conatiner{
+    display: flex;
+}
+
+.news-date-time{
+    font-family: 'Work Sans',sans-serif;
+    font-size: 12px;
+    margin-left :auto;
+    margin-right: 0;
+
+}
+.footer{
+    margin: 1em;
+}
+.footer-text{
+    font-family: 'JetBrains Mono';
+    margin: 1em;
+}
+.copyright{
+    font-family: 'Oswald';
+}
+.copyright span{
+    font-size: 2.5em;
+}
+
+p{
+    font-family: 'JetBrains Mono', monospace;
+    color: #222;
+    font-size: 12px;
+}
+
+.coin-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald',sans-serif;
+    flex-direction: column;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 0 1em 0;
+}
+.coin-stats-detail-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald',sans-serif;
+}
+.coin-stats-heading p{
+    text-align: center;
+}
+.coin-details{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 1rem;
+    opacity: 0.9;
+    padding: 20px;
+}
+.coin-details-name{
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+}
+.stats-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    margin: 1em 0;
+}
+.stats{
+    font-weight: 800;
+    margin: 0em 1em;
+}
+.crypto-image{
+    width: 1%;
+}
+.coin-title{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
+}
+
+.specific-crypt-detail-heading{
+    margin: 2em 1em;
+    font-family: 'Oswald',sans-serif;
+}
+
+.specific-description p{
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 15px;
+    color: #444;
+}
+
+.chart-heading-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #0071bd;
+}
+.coin-name{
+    font-family: 'Oswald';
+}
+.history-detail{
+    display: flex !important;
+    gap: 20px !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    font-weight: bolder;
+}
+
+@media  screen and (max-width: 786px) {
+    .nav__container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navbar__items{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left:0 ;
+     }
+    
+    .navbar__items li{
+        margin: .2em .8em;
+        display: flex;
+       
+    }
+    .stats-container{
+        flex-direction: column;
+    }
+}
