@@ -1,30 +1,21 @@
----
-name: New Project template
-about: This issue template is used for adding a new project to the repository.
-title: ''
-labels: ''
-assignees: ''
-
----
-
-name: New Issue
-title: "[Create New Issue]: "
+name: New Project Issue
+description: Ace-The-FrontEnd
+title: "[New Issue]: "
 labels: ["GSSoC22"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to make an issue!
+        Make sure to add a screenshot or demo gif/video of the project you wish to add!
   - type: textarea
     id: description
     attributes:
       label: Description
       description: Enter a brief description about the project
-      placeholder: Describe the project that you want to add. Also include some screenshots or gif/video for better understanding
-      value: "Description"
+      placeholder: Please include a summary which contains techstack used
+      value: "Description of the project here"
     validations:
       required: true
-  
   - type: checkboxes
     id: terms
     attributes:
