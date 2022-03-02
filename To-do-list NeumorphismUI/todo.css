@@ -77,7 +77,6 @@ body{
 .container .todoList li{
     list-style: none;
     height:45px;
-    font-weight:bold;
     line-height:45px;
     font-size: 20px;
     position: relative;
