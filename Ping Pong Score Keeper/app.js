@@ -15,7 +15,7 @@ const scorelimit=document.querySelector('#scorecount')
 const playSelect=document.querySelector('select')
 const resetbtn=document.querySelector("#reset")
 let isGameOver=false;
-let wining;
+let wining=5;
 
 function updateScore(player,opponent) {
     if(!isGameOver){
