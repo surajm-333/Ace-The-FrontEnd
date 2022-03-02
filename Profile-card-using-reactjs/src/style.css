@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+body {
+    background-color:  #eec0c6;
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+.card {
+    margin-top:60px;
+    background: url("../src/images/face.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.315);
+    border-radius: 14px 14px 0 0;
+}
+
+
+
+.about{
+    background-color:#23252C;
+    height: 360px;
+    width: 350px;
+}
+
+.about .name1,.name2,.name3{
+    text-align: center;
+}
+.about .name1{
+    color:white;
+    font-size: 27px;
+    padding-top:10px
+}
+.about .name2{
+    color:#F3BF99;
+    font-weight:10;
+    font-size: 15px;
+    line-height: 1;
+}
+.about .name3{
+    color:white;
+    font-weight:1;
+    font-size:12px;
+    line-height: 3;
+}
+
+.about .links{
+    list-style:none;
+    display: flex;
+    justify-content:space-between;
+    padding-top:10px;
+    padding-right: 50px;
+    padding-left:50px;
+    
+}
+.about .links li .mail{
+    background-color: #D1D5DB;
+    padding:5px 30px ;
+    border-radius: 5px;
+    text-decoration: none;
+    color:black;
+}
+
+.about .links li .linkedin{
+    background-color: #5093E2;
+    padding:5px 30px ;
+    border-radius: 5px;
+    text-decoration: none;
+    color:#FFFF;
+}
+
+.about .desc h3{
+    padding:20px 55px;
+    color:#FFF;
+    padding-bottom: 0;
+
+}
+
+.about .desc p{
+    padding-left:55px;
+    padding-top: 0;
+    margin-top:0px;
+    color:#FFF;
+    font-size: 10px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.icons{
+    background-color:#161619;
+    height: 60px;
+    width: 350px;
+    display:flex;
+    justify-content:space-between;
+    padding-top:5px;
+    padding-right:75px;
+    padding-left:75px;
+    padding-bottom:3px;
+    align-items: center;
+}
