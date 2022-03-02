@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Landing = () => (
 	<div className="w-full z-10 ">
 		<div className="w-full  flex pt-10">
@@ -45,7 +44,7 @@ const Landing = () => (
 				<div className="ml-[30%] w-[60%]">
 					<img src="/images/head.svg" className="" />
 				</div>
-				<div className="flex flex-col ml-[43%]  rounded-lg w-[35%] font-Titillium  backdrop-blur-4xl  h-[8rem] bg-white/25 ">
+				<div className="flex flex-col ml-[43%]   rounded-lg w-[35%] font-Titillium  backdrop-blur-4xl  h-[8rem] bg-white/25 ">
 					<div className="text-white text-4xl font-bold pt-3 ml-8 z-50">
 						Peaker Head
 					</div>
