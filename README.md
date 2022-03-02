@@ -31,7 +31,7 @@ HTML, CSS, JS, React
 ### Neumorphic Form
 
 <p align="center">
-     <a href="https://github.com/AmolShelke2/50Days50Projects/tree/master/Form%20Wave"><video src="https://user-images.githubusercontent.com/73403577/155998904-6007299e-0de8-4e2a-bf88-b93e376a5e62.mp4">
+     <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/Neumorphic-design-form"><video src="https://user-images.githubusercontent.com/73403577/155998904-6007299e-0de8-4e2a-bf88-b93e376a5e62.mp4">
 
 
 ### Multi-colored text animation
