@@ -1,0 +1,398 @@
+/*** VARS ***/
+/*** GENERAL STYLES ***/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    font-family:sans-serif;
+    background: whitesmoke;
+    text-align: center;
+  }
+  .clear {
+    clear: both;
+  }
+  /*** CARD STLES ***/
+  .cards-container {
+      display: inline-block;
+    width: 793px;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+  /* .card:hover{
+      display: inline-block;
+      width: 310px;
+      transition: 1s;
+  } */
+  .card {
+    float: left;
+    margin: 3rem;
+  }
+  .card-one {
+    position: relative;
+    width: 300px;
+    color: #008dc8;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+  }
+  .card-one header {
+      border-top-left-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #008dc8;
+  }
+  .card-one header::before, .card-one header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+  }
+  .card-one header::before {
+    -webkit-transform: skewY(-8deg);
+    -moz-transform: skewY(-8deg);
+    -ms-transform: skewY(-8deg);
+    -o-transform: skewY(-8deg);
+    transform: skewY(-8deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  .card-one header::after {
+    -webkit-transform: skewY(8deg);
+    -moz-transform: skewY(8deg);
+    -ms-transform: skewY(8deg);
+    -o-transform: skewY(8deg);
+    transform: skewY(8deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .card-one header .avatar {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -50px;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ccc;
+    border: 3px solid #fff;
+  }
+  .card-one header .avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+  }
+  .card-one h3 {
+    position: relative;
+    margin: 80px 0 30px;
+    text-align: center;
+  }
+  .card-one h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+  }
+  .card-one .desc {
+    padding: 0 1rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #777;
+  }
+  .card-one .contacts {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto 3rem;
+  }
+  .card-one .contacts a {
+    display: block;
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    color: #000;
+  }
+  .card-one .contacts a:hover {
+    color: #333;
+  }
+  .card-one .contacts a:hover .fa::before {
+    color: #fff;
+  }
+  .card-one .contacts a:hover .fa::after {
+    width: 100%;
+    height: 100%;
+  }
+  .card-one .contacts a .fa {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 39px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .card-one .contacts a .fa:before {
+    position: relative;
+    z-index: 1;
+  }
+  .card-one .contacts a .fa::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #000;
+    -webkit-transition: width 0.3s, height 0.3s;
+    -moz-transition: width 0.3s, height 0.3s;
+    -ms-transition: width 0.3s, height 0.3s;
+    -o-transition: width 0.3s, height 0.3s;
+    transition: width 0.3s, height 0.3s;
+  }
+  .card-one .contacts a:last-of-type .fa {
+    line-height: 36px;
+  }
+  .card-one footer {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    position: relative;
+    padding: 1rem;
+    background-color: #008dc8;
+    text-align: center;
+  }
+  .card-one footer a {
+    height: 40px;
+    width: 40px;
+    padding: 0 1rem;
+    color: #e2e2e2;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .card-one footer a:hover {
+    color: #000;
+  }
+  .card-one footer::before {
+    content: '';
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-bottom-color: #008dc8;
+  }
+  .card-two {
+      color: #008dc8;
+    position: relative;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+  }
+  .card-two header {
+      
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #008dc8;
+  }
+  .card-two header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    -webkit-transform: skewY(8deg);
+    -moz-transform: skewY(8deg);
+    -ms-transform: skewY(8deg);
+    -o-transform: skewY(8deg);
+    transform: skewY(8deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .card-two header .avatar {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -50px;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ccc;
+    border: 3px solid #fff;
+  }
+  .card-two header .avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: auto;
+  }
+  .card-two h3 {
+    position: relative;
+    margin: 80px 0 30px;
+    text-align: center;
+  }
+  .card-two h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 1px;
+    background: #000;
+  }
+  .card-two .desc {
+    padding: 0 1rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #777;
+  }
+  .card-two .contacts {
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto 3.5rem;
+  }
+  .card-two .contacts a {
+    display: block;
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    color: #008dc8;
+  }
+  .card-two .contacts a:hover {
+    color: #333;
+  }
+  .card-two .contacts a:hover .fa::before {
+    color: #fff;
+  }
+  .card-two .contacts a:hover .fa::after {
+    top: 0;
+  }
+  .card-two .contacts a .fa {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid #008dc8;
+    border-radius: 50%;
+  }
+  .card-two .contacts a .fa:before {
+    position: relative;
+    z-index: 1;
+  }
+  .card-two .contacts a .fa::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: top 0.3s;
+    -moz-transition: top 0.3s;
+    -ms-transition: top 0.3s;
+    -o-transition: top 0.3s;
+    transition: top 0.3s;
+    background: #008dc8;
+  }
+  .card-two .contacts a:last-of-type .fa {
+    line-height: 36px;
+  }
+  .card-two footer {
+    position: relative;
+    height: 45px;
+    background-color: #008dc8;
+    text-align: center;
+  }
+  .card-two footer p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .card-two footer p a {
+    padding: 0 1rem;
+    color: #e2e2e2;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+  }
+  .card-two footer p a:hover {
+    color: #000;
+  }
+  .card-two footer::before {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    -webkit-transform: skewY(8deg);
+    -moz-transform: skewY(8deg);
+    -ms-transform: skewY(8deg);
+    -o-transform: skewY(8deg);
+    transform: skewY(8deg);
+    -webkit-transform-origin: 100%;
+    -moz-transform-origin: 100%;
+    -ms-transform-origin: 100%;
+    -o-transform-origin: 100%;
+    transform-origin: 100%;
+  }
+  /*** RESPONSIVE ***/
+  @media only screen and (max-width: 810px) {
+    .card {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
