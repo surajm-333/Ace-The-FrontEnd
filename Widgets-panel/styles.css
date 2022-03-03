@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #333;
+}
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+}
+
+h2 span {
+  font-size: 30px;
+}
+p {
+  font-size: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  grid-auto-rows: 183px;
+  height: 100vh;
+  overflow: hidden;
+}
+.container div {
+  background-size: cover;
+
+  /* 
+  heart & soul of project
+  The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed.
+  https://www.w3schools.com/cssref/pr_background-attachment.asp */
+  background-attachment: fixed;
+
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* A transition on grid boxes */
+
+.container div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+/* making selected boxes occupy more columns i.e larger than other ones
+grid colmns is a short-hand property which specifies starting and ending of box  
+synatx => grid-column: starting ending; */
+
+.container div:nth-child(1),
+.container div:nth-child(6),
+.container div:nth-child(9),
+.container div:nth-child(10) {
+  grid-column: span 2;
+
+  /* span means from current position  */
+}
+.bg1 {
+  background: url("https://i.ibb.co/dBLbrRV/bg1.jpg");
+  color: white;
+}
+.bg2 {
+  background: url("https://i.ibb.co/Fb5jb3J/bg2.jpg");
+  color: black;
+}
