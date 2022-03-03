@@ -9,7 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 1). <br />
 ### `npm start`
-
+<p align="center">
+    <img src="https://github.com/surajm-333/Ace-The-FrontEnd/blob/main/Codekaro/demo1.JPG">
+</p><br />
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 2). <br />
