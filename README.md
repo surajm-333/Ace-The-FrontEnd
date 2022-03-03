@@ -74,3 +74,8 @@ HTML, CSS, JS, React
 
 <p align="center">
      <a href="https://github.com/AmolShelke2/50Days50Projects/tree/master/Form%20Wave"><video src="https://user-images.githubusercontent.com/95171638/148639803-c85ee3a0-5b30-4b37-b086-d8c80df7d804.mp4">
+
+### Random Anime Profile pic generator
+
+<p align="center"> 
+    <a href="https://github.com/AmolShelke2/AnimeApp.git"><img src="![192 168 187 73_5501_Random%20Anime%20Profile%20Pic_index html](https://user-images.githubusercontent.com/95171638/156548571-81c0432a-0f27-4e0a-8e0b-55fcc5f59a58.png)">
