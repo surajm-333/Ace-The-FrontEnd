@@ -78,5 +78,5 @@ HTML, CSS, JS, React
 ### Random Anime Profile pic generator
 
 <p align="center"> 
-    <a href="https://github.com/AmolShelke2/AnimeApp.git"><img src="
-    ![192 168 187 73_5501_Random%20Anime%20Profile%20Pic_index html](https://user-images.githubusercontent.com/95171638/156548571-81c0432a-0f27-4e0a-8e0b-55fcc5f59a58.png)">
+    <a href="https://github.com/AmolShelke2/AnimeApp.git">
+        ![192 168 187 73_5501_Random%20Anime%20Profile%20Pic_index html](https://user-images.githubusercontent.com/95171638/156550256-e2bc895e-87d0-4bb7-a978-196093cffd3b.png)
