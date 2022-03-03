@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill splitter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <script src="main.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Splitwise</a>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div >
+      <div class="container ">
+      <div class="card ">
+   
+         <br><br>
+         <span class="input-field col s6 container">
+            <input placeholder="Bill amount" id="total" type="text" class="validate">
+            <label for="first_name"> Enter the total bill:</label>
+          </span>
+          <br><br>
+         <span class="input-field col s6 container">
+            <input placeholder="No of people" id="people" type="text" class="validate">
+            <label for="first_name"> Enter the no of people:</label>
+          </span>
+          <br><br>
+          
+          <span class="container red-text center">Wanna add tip??</span><br><br>
+          <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+          <span class="center"><button class="waves-effect waves-light btn" onclick="tips()">Add</button></span><br><br>
+
+
+          <span id="hidy" class="input-field col s6 container">
+            <input placeholder="Tip" id="tip" type="text" class="validate">
+            <label for="first_name"> Enter tip percentage:</label>
+          </span>
+
+          <button class="waves-effect waves-light btn-large" onclick="add()">Split!!!</button>
+        
+        </div></div></div>
+
+
+        <br><br><br><br><br><br>
+
+
+        <div class="container" id="result">
+            <div class="card salmon ccc">
+                <p>Each person should pay :</p>
+              <p id="fff"></p>
+              </div></div>
+</body>
+</html>
