@@ -1,26 +1,29 @@
 # Getting Started with Create React App
-
+## Codekaro App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## In this application student or any other guy who loves coding will stay up to date with upcoming future coding contest. So that he never miss any future contest ever. This project is created by <a href="https://github.com/Abh1shekSingh">Abhishek Singh</a>
 
 ## Available Scripts
+## Screenshots
 
 In the project directory, you can run:
-
+1). <br />
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2). <br />
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ### `npm test`
-
+3). <br />
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
-
+4). <br />
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
