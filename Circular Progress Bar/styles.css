@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background: linear-gradient(145deg, #d9d9dc, #ffffff);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card{
+    box-shadow:  9px 9px 10px #b3b3b6,
+             -9px -9px 10px #ffffff;
+    border-radius: 21px;
+    height: 450px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.outer{
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(225, 225, 225, 0.7),
+                -0.5px -0.5px 0px rgba(225, 225, 225, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15);
+
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.inner{
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(225, 225, 225, 0.7);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg{
+    position: absolute;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 14px;
+    stroke-dasharray: 430;    
+    stroke-dashoffset: 430;
+    animation: animation 2s linear forwards;    
+}
+
+.number{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.skill-name{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    cursor: context-menu;
+}
+
+
+@keyframes animation{
+    100%{
+        stroke-dashoffset: 43.8;
+    }
+}

@@ -1,0 +1,299 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.ourteam
+{
+    background-color: #42378f;
+    background-image: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+height: 100vh;
+}
+
+.ourteamcontainer::before
+{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(100%  at right  100%);
+}
+.ourteamcontainer::after
+{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 15%);
+    z-index: -1;
+}
+span {
+    left: 34%;
+    position: absolute;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: linear-gradient(to left, #333, rgb(185, 21, 21,1));
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.ourteamcontainer
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    height: 100vh;
+    z-index: 1;
+}
+.ourteamcontainer .card
+{
+    position: relative;
+    width: 280px;
+    height: 480px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.1) ;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+.ourteamcontainer .card .content
+{
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.ourteamcontainer .card .content .imgbox
+
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20%;
+    border-radius: 50%;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.ourteamcontainer .card .content .imgbox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ourteamcontainer .card .content .social-links ul
+{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.ourteamcontainer .card .content .social-links ul li
+{
+    margin: 5.5px;
+}
+.ourteamcontainer .card .content .social-links ul li a i
+{
+    transition: all 0.5s linear;
+}
+.ourteamcontainer .card .content .social-links ul li a i:hover
+{
+    transform: scale(1.4);
+}
+.fa-instagram
+{
+    color: #e84393;
+}
+.fa-facebook-f
+{
+    color: #3c5a99;
+}
+.fa-linkedin-in
+{
+    color: #2867B2;
+}
+.fa-snapchat-ghost
+{
+    color: #FFFC00;
+}
+.ourteamcontainer .card:hover .content
+{
+    transform: translateY(0px);
+    opacity: 5;
+}
+.ourteamcontainer .card .content h1
+{
+    position: absolute;
+    top: -50px;
+    right: 30px;
+    font-size: 3em;
+    color:#fff ;
+    opacity: 0.5;
+    pointer-events: none;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.ourteamcontainer .card .content h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.ourteamcontainer .card .content p
+{
+    font-size: 1em;
+    color: rgba(255,255,255,0.4);
+    font-weight: 300;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.ourteamcontainer .card .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in;
+}
+
+.ourteamcontainer .card .content a:hover
+{
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.ourteam .ourteamcontainer .card1
+{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.1) ;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+.ourteam .ourteamcontainer .card1 .content1
+{
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.ourteam .ourteamcontainer .card1 .content1 .imgbox1
+
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.ourteam .ourteamcontainer .card1 .content1 .imgbox1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ourteam .ourteamcontainer .card1:hover .content1
+{
+    transform: translateX(0px);
+    opacity: 5;
+}
+
+.ourteam .ourteamcontainer .card1 .content1 h3
+{
+    font-size: 1.8em;
+    color:  rgb(185, 21, 21,1);
+    z-index: 1;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.ourteam .ourteamcontainer::before
+{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    clip-path: circle(30%  at right  70%);
+    
+}
+.ourteam .ourteamcontainer::after
+{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    clip-path: circle(20% at 10% 15%);
+    z-index: -1;
+
+}
+.ourteam .ourteamcontainer .card1 .content1 a
+{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: linear-gradient(to left, #333, rgb(185, 21, 21,1));
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in;
+    
+}
+
+.ourteam .ourteamcontainer .card1 .content1 a:hover
+{
+    letter-spacing: 3px;
+}

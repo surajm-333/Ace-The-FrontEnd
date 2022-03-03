@@ -1,0 +1,30 @@
+.iii{
+   height: 80px;
+   width: 80px;
+
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#hidy{
+    display: none;
+}
+
+.ccc{
+    padding: 100px;
+    color: salmon;
+    font-size: 40px;
+    text-align: center;
+}
+
+#result{
+    display: none;
+}
+
+#fff{
+    font-size: 120px;
+    color: lightseagreen;
+    text-align: center;
+}
