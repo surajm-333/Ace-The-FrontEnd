@@ -80,3 +80,8 @@ HTML, CSS, JS, React
 <p align="center">
     <video src="https://user-images.githubusercontent.com/90784567/156310718-32f8d1a5-1e9b-4b05-96f2-ab2f6b0eea53.mp4">
 </p>
+
+### Parallex Web Design
+<p align="center">
+    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/Parallex-Web-Design"><img src="https://github.com/surajm-333/Ace-The-FrontEnd/blob/main/Parallex-Web-Design/demo.png"></a>
+</p>
