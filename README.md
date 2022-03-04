@@ -83,5 +83,5 @@ HTML, CSS, JS, React
 
 ### Parallex Web Design
 <p align="center">
-    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/Parallex-Web-Design"><img src="https://i.ibb.co/gPCPr2k/Parallex.png" alt="Parallex" border="0"></a>
+    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/Parallex-Web-Design"><img src="https://github.com/surajm-333/Ace-The-FrontEnd/main/Parallex-Web-Design/demo.png"></a>
 </p>
