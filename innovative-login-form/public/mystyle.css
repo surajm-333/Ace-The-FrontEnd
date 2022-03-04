@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+::placeholder {
+  color: black;
+  opacity: 1; 
+}
+body{
+  font-family: 'Lato' , san-serif;
+	background-image: url(../assests/i2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  background-attachment: fixed;
+  
+}
+@keyframes example {
+  0% {background-image:url(../assests/ani1-removebg-preview.png);left: 0%;top:0%;}
+  12.5% {background-image:url(../assests/ani2-removebg-preview.png);left:10%; top:10%;}
+  25% {background-image:url(../assests/ani1-removebg-preview.png);left: 20%;top:20%;}
+  37.5% {background-image:url(../assests/ani2-removebg-preview.png);left:30%; top:30%;}
+  50% {background-image:url(../assests/ani1-removebg-preview.png);left: 40%;top:40%;}
+  62.5% {background-image:url(../assests/ani2-removebg-preview.png);left:50%; top:50%;}
+  75% {background-image:url(../assests/ani1-removebg-preview.png);left: 60%;top:60%;}
+  87.5% {background-image:url(../assests/ani2-removebg-preview.png);left:70%; top:70%;}
+  100% {background-image:url(../assests/ani1-removebg-preview.png);left: 71%;top:71%;}
+ }
+ @keyframes ex {
+  0% {background-image:url(../assests/images-removebg-preview.png);left: 20%;top:0%;}
+ 25% {background-image:url(../assests/images-removebg-preview.png);left:10%; top:4%;}
+ 50% {background-image:url(../assests/images-removebg-preview.png);left:0%; top:8%;}
+ 100% {background-image:url(../assests/images-removebg-preview.png);left:-20%; top:12%;}
+ }
+#animation{
+  position:absolute;
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  padding:0 5px;
+}
+#ani2{
+  position:absolute;
+  width: 200px;
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: ex;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  padding:0 5px;
+}
+
+
+#wrapper{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0 20px;
+}
+.form:hover{
+  box-shadow: 0 10px 10px 0 ;
+}
+.form{
+  width: 100%;
+  max-width: 350px;
+  background: white;
+  margin: 0 auto;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 0 2px 13px 0 ;
+}
+
+.heading{
+  height: 45%;
+  position: relative;
+  border-top-right-radius:5px; 
+  border-top-left-radius:5px;
+  overflow: hidden;
+}
+.heading:before{
+  content: "";
+  position: absolute;
+  top:-102%;
+  left:-32%;
+  width: 500px;
+  height: 500px;
+  background: url('../assests/i3.jpg') no-repeat top center;
+  background-size: cover;
+  border-radius: 50%; 
+}
+h1{
+  position: relative;
+  padding-top:35%;
+  text-align: center;
+  color:white;
+  font-size: 2.5rem; 
+}
+.content{
+  position: relative;
+  height: 55%;
+  padding-top: 20px;
+}
+.incon{
+  position: relative;
+}
+input:hover{
+  background-color: orange;
+  color: white;
+}
+
+.input{
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+#email,#pwd{
+  text-align: center;
+  border-radius: 14px; 
+  height: 40px;
+  width: 300px;
+}
+.input .fas{
+  position: absolute;
+  background-color: orange;
+  color:white;
+  margin-top: 7px;
+  margin-left: 5px;
+  padding: 5px;
+  padding-left: 7px;
+  border-radius: 11px; 
+
+}
+.input .a1{
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  margin-left: -52px;
+  letter-spacing: 0px;
+  font-size: 13px;
+}
+.incon .c1{
+  position:absolute;
+  top:-10px; 
+}
+.btn{
+  margin-top: 2rem;
+  margin-left: 6rem;
+  background-color: orange;
+  color:white;
+  box-shadow: 2px 2px  ;
+}
+#social-media{
+  text-align: center;
+  margin-top:1rem;
+}
+.items{
+  position: relative;
+  color:orange;
+  
+}
+.items .fab{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#signup{
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding:1rem;
+  text-align: center;
+  background-color: orange;
+}
