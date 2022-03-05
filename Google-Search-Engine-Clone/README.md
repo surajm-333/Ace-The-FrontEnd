@@ -1,6 +1,5 @@
 ## Google Search Engine Clone with React Js using Google Api
 
-#
 
 ### Deployed Version 
 
@@ -9,7 +8,6 @@
 
 ## Getting Started
 
-#
 
 ### First Run this Command to Install All Modules inside the project
 
