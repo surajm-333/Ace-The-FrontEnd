@@ -8,7 +8,7 @@
 
 
     <div class="clock">
-      <div class="clock-face">
+      <div class="clock-face num">
         <div class="hand hour-hand"></div>
         <div class="hand min-hand"></div>
         <div class="hand second-hand"></div>
@@ -56,12 +56,24 @@
       transform: translateY(-3px);  /* account for the height of the clock hands */
     }
 
+    .num {
+      background: url(./clocknum.png);
+    position: relative;
+    width: 130%;
+    height: 112%;
+    margin: -5% -15%;
+    background-repeat: round;
+    border-radius: 50%;
+    opacity: 0.2;
+    }
+
     .hand {
-      width: 50%;
+      width: 29%;
       height: 6px;
       background: rgb(47, 0, 255);
       position: absolute;
       top: 50%;
+      left: 22%;
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s;
