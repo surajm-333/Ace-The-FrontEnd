@@ -12,4 +12,5 @@ It is an online Expense Tracker which is used to keep record of expenses .
 
 ![Images](https://github.com/rittikadeb/Ace-The-FrontEnd-1/blob/main/Expense%20Tracker/Images/demo_2.PNG)
 
-[DEMO VIDEO](https://github.com/rittikadeb/Ace-The-FrontEnd-1/blob/main/Expense%20Tracker/Images/demo.mp4)
+
+![demo](https://user-images.githubusercontent.com/76259897/157314522-662c766c-9172-4254-9394-2fad1ad48fe9.gif)
