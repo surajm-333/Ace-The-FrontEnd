@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculators</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mx-auto">
+        <div class="col-lg-5 col-sm-6 col-xs-10 mt-2 pt-2 mx-md-auto px-auto">
+          <div class="container card si">
+            <h4 class="mb-4">Simple Interest Calculator</h4>
+            <div class="col-lg-8 col-sm-6 col-xs-10">
+              <div class="amt">
+                <label for="amount" class="row">Principal Amount: </label>
+                <input
+                  type="number"
+                  name="amount"
+                  id="amount"
+                  placeholder=""
+                  class="row"
+                  required
+                />
+              </div>
+              <div class="time">
+                <label for="time" class="row">Time(in years): </label>
+                <input
+                  type="number"
+                  name="time"
+                  id="time"
+                  placeholder=""
+                  class="row"
+                  required
+                />
+              </div>
+              <div class="rate">
+                <label for="rate" class="row">Rate of Interest: </label>
+                <input
+                  type="number"
+                  name="rate"
+                  id="rate"
+                  placeholder=""
+                  class="row"
+                  required
+                />
+              </div>
+              <br />
+              <div class="button row mb-4">
+                <button class="btn" type="submit" onclick="CalculateSI()">
+                  Calculate
+                </button>
+              </div>
+              <div class="row">
+                <label>Simple Interest: </label>
+              </div>
+              <div class="result mb-4 row">
+                <br />
+                <h6 id="si"></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-6 col-xs-10 mt-2 pt-2 mx-md-auto">
+          <div class="container card ci">
+            <h4 class="mb-4">Compound Interest Calculator</h4>
+            <div class="col-lg-8 col-sm-6 col-xs-10">
+              <div class="amt">
+                <label for="amount" class="row">Principal Amount: </label>
+                <input
+                  type="number"
+                  name="amount"
+                  id="principal"
+                  placeholder=""
+                  class="row"
+                  required
+                />
+              </div>
+              <div class="rate">
+                <label for="time" class="row">Rate of Interest: </label>
+                <input
+                  type="number"
+                  name="rate"
+                  id="number-of-years"
+                  placeholder=""
+                  class="row"
+                  required
+                />
+              </div>
+              <div class="time">
+                <label for="rate" class="row">Enter no of years: </label>
+                <input
+                  type="number"
+                  name="time"
+                  id="annual-interest-rate"
+                  placeholder=""
+                  class="row"
+                  required
+                />
+              </div>
+              <div class="compounding-frequency">
+                <label for="rate" class="row">Compounding Frequency: </label>
+                <select
+                  name="CF"
+                  id="compounding-frequency"
+                  required
+                  class="row"
+                >
+                  <option>Yearly</option>
+                  <option>Half Yearly</option>
+                  <option>Quaterly</option>
+                  <option>Monthly</option>
+                </select>
+              </div>
+              <br />
+              <div class="button row mb-4">
+                <button class="btn" type="submit" onclick="CalculateCI()">
+                  Calculate
+                </button>
+              </div>
+              <div class="row">
+                <label>Compound Interest: </label>
+              </div>
+              <div class="result row mb-4">
+                <br />
+                <h6 id="ci"></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
