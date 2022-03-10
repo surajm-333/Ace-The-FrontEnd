@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+* {
+  font-family: "Carter One", cursive;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.25em;
+}
+
+:root {
+  --gradient: linear-gradient(to right, #c31432, #240b36);
+
+  --bevel: inset 0.2em 0.2em 0.2em 0 rgba(10, 2, 2, 0.329),
+    inset -0.2em -0.2em 0.2em 0 rgba(17, 10, 10, 0.74);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #34384bc4;
+  display: flex;
+}
+
+.container {
+  margin-top: 10vw;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--bevel);
+  background-color: #222831;
+  color: #ffffff;
+  height: 400px;
+  width: 700px;
+}
+
+.weather-side {
+  position: relative;
+  height: 100%;
+  border-radius: 25px;
+  background-image: url("picture.jpg");
+  width: 300px;
+  -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--bevel);
+  transition: transform 300ms ease;
+  transform: scale(1.08);
+  float: left;
+}
+
+.weather-side:hover {
+  -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
+  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.weather-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: var(--gradient);
+  border-radius: 25px;
+  opacity: 0.8;
+  padding: 5vw;
+}
+
+.date-container {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.date-dayname {
+  margin: 0;
+}
+
+.date-day {
+  display: block;
+}
+
+.location {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.fa-location-dot {
+  display: inline-block;
+  height: 0.8em;
+  width: auto;
+  margin-right: 5px;
+}
+
+.weather-container {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.weather-temp {
+  margin: 0;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.weather-desc {
+  margin: 0;
+}
+
+.info-side {
+  position: relative;
+  float: left;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 2vw;
+}
+
+.today-info {
+  padding: 15px;
+  margin: 0 25px 25px 25px;
+  box-shadow: 0 0 50px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.clouds,
+.humidity,
+.wind,
+.max-temp,
+.min-temp,
+.pressure,
+.feels-like {
+  width: 300px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  font-size: 18px;
+  align-items: baseline !important;
+  margin-left: 10px;
+}
+
+.value {
+  font-size: 22px;
+}
+
+.location-button {
+  width: 100%;
+  margin: 5px;
+  margin-top: 50px !important;
+  margin-left: 10px !important;
+  padding: 10px;
+  border-width: 0;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  box-shadow: var(--bevel);
+}
+
+.location-button:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    height: 800px;
+    width: 370px;
+    margin-bottom: 20px !important;
+  }
+
+  .weather-side {
+    position: relative;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(24px, 20px);
+  }
+
+  .weather-side:hover {
+    -webkit-transform: scaleY(1.1) perspective(400px) rotateX(-10deg);
+    transform: scaleY(1.1) perspective(400px) rotateX(-10deg);
+  }
+}
