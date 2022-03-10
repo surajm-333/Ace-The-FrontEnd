@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prettywise&display=swap');
+
+body {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+#maintitle {
+    font-family: 'Prettywise', cursive;
+    font-size: 300%;
+    margin-bottom: 40px;
+    color: whitesmoke;
+    text-shadow: 0 0 7px #0074e3, 0 0 10px #0074e3, 0 0 #0074e3, 0 0 42px #0074e3, 0 0 82px #0074e3, 0 0 92px #0074e3;
+    
+}
+
+
+.fa-trash-o {
+    color:  #cc0000;
+}
+
+.fa-trash-o:hover {
+    cursor: pointer;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+input[type=text], input[type=date], input[type=number] {
+    /* background-color: #28467b; */
+    background-color: black;
+    border: none;
+    text-align: center;
+    border-bottom: 4px solid #54add3;
+    color: whitesmoke;
+    font-size: 18px;
+    margin: 10px;
+    height: 30px;
+    /* padding: 5px; */
+    padding: 5px 5px 0px 10px;
+}
+
+input[type=text]:focus, input[type=date]:focus, input[type=number] {
+    outline: none;
+}
+
+/* #transdate {
+    width: 7%;
+} */
+
+#desc {
+    width: 25%;
+}
+
+#val {
+    width: 5%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: whitesmoke;
+    /* opacity: 1; Firefox */
+}
+  
+button {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 7px white, 0 0 30px #0074e3;
+    border: none;
+}
+
+#formAddButton {
+    margin-bottom: 20px;
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+.fa-plus-circle {
+    color: #54add3;
+}
+
+#tabs {
+    margin-bottom: 4rem;
+}
+
+#total, #spend, #earn {
+    display: inline-block;
+    box-shadow: 0 0 7px white, 0 0 10px white, 0 0 #660066, 0 0 42px #660066;
+    width: 12%;
+    text-align: middle;
+    padding: 10px;
+    font-weight: bold;
+    margin: 60px 28px 28px 30px;
+    /* height: 26px; */
+}
+
+#total {
+    background-color: #54add3;
+}
+
+#earn {
+    background-color: rgb(9, 167, 9);
+}
+
+#spend {
+    background-color: red;
+    
+}
+
+#total-amt, #earn-amt, #spend-amt, #txt {
+    display: inline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid  #cc0000;
+}
+
+th {
+    /* font-weight: 900; */
+}
+
+p {
+    margin: 8px;
+}
