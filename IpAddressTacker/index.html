@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./styles.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+     crossorigin=""/>
+    <title>Ip Address Tracker</title>
+  </head>
+  <body>
+     <main>
+       <main class="main">
+         <div class="main__bg"></div>
+         <div class="main__box">
+           <h1 class="main__title">IP Address Tracker</h1>
+
+           <!-- Search Bar -->
+
+           <form class="main__form">
+             <input id="main__input" class="main__input" type="text" placeholder="Search for any IP address or domain">
+             <button class="main__button" onclick="requestAPI()">
+               <img src="./images/icon-arrow.svg" alt="Icon Arrow">
+             </button>
+           </form>
+             
+           <!-- Attributes of your current Ip address  -->
+           <div id="main__detail" class="main__detail">
+             <div class="detail__item">
+               <p class="main__subtitle">IP ADDRESS</p>
+               <p class="main__text">-</p>
+             </div>
+             <div class="detail__item">
+               <p class="main__subtitle">LOCATION</p>
+               <p class="main__text">-</p>
+             </div>
+             <div class="detail__item">
+               <p class="main__subtitle">TIMEZONE</p>
+               <p class="main__text">-</p>
+             </div>
+             <div class="detail__item">
+               <p class="main__subtitle">ISP</p>
+               <p class="main__text">-</p>
+             </div>
+           </div>
+         </div>
+         <!-- Map -->
+         <div id="map"></div>
+         <!-- Snackbar for error handling -->
+         <div id="snackbar"></div>
+
+     </main>
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+       crossorigin=""></script>
+  <script src="index.js" ></script>
+  </body>
+</html>

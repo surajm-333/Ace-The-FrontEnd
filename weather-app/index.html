@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/091bbf61ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-side">
+        <div class="weather-gradient">
+          <div class="date-container">
+            <h2 class="date-dayname" id="date-dayname">Tuesday</h2>
+            <p class="date-day" id="date-day">19th Feb 2022</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="location"
+              ><span id="city">Puducherry </span>,
+              <span id="country"> IN</span></span
+            >
+          </div>
+          <div class="weather-container">
+            <h1 class="weather-temp"><span id="current-temp">19</span>&degC</h1>
+            <h3 class="weather-desc" id="weather-desc">Sunny</h3>
+          </div>
+        </div>
+      </div>
+      <div class="info-side">
+        <div class="info-container">
+          <div class="today">
+            <div class="clouds">
+              <span class="title">Clouds</span>
+              <span class="value"><span id="clouds">76</span> %</span>
+            </div>
+            <div class="humidity">
+              <span class="title">Humidity</span>
+              <span class="value"><span id="humidity">98</span> %</span>
+            </div>
+            <div class="wind">
+              <span class="title">Wind</span>
+              <span class="value"><span id="wind">ch</span> mph</span>
+            </div>
+            <div class="max-temp">
+              <span class="title">Maximum Temperature</span>
+              <span class="value"><span id="max-temp"> ckj</span> &degC</span>
+            </div>
+            <div class="min-temp">
+              <span class="title">Minimum Temperature</span>
+              <span class="value"><span id="min-temp">kn</span> &degC</span>
+            </div>
+            <div class="pressure">
+              <span class="title">Pressure</span>
+              <span class="value"><span id="pressure">jk</span> hPa</span>
+            </div>
+            <div class="feels-like">
+              <span class="title">Feels Like</span>
+              <span class="value"><span id="feels-like">gh</span> &degC</span>
+            </div>
+          </div>
+          <div class="location-container">
+            <button
+              class="location-button"
+              id="#location-button"
+              onclick="getLocation()"
+            >
+              <i class="fa-solid fa-location-dot"></i> Change Location
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

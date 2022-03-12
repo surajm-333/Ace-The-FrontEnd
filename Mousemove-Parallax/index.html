@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./index.css">
+    <title>Mousemove-parallax</title>
+</head>
+<body>
+    <section>
+        <img src="./assets/1.png" data-speed="-5" class="layer" alt="img1">
+        <img src="./assets/2.png" data-speed="5" class="layer" alt="img2">
+        <img src="./assets/3.png" data-speed="2" class="layer" alt="img3">
+        <img src="./assets/4.png" data-speed="6" class="layer" alt="img4">
+        <img src="./assets/5.png" data-speed="8" class="layer" alt="img5">
+        <img src="./assets/6.png" data-speed="-2" class="layer" alt="img6">
+        <img src="./assets/7.png" data-speed="4" class="layer" alt="img7">
+        <img src="./assets/8.png" data-speed="9" class="layer" alt="img8">
+        <img src="./assets/9.png" data-speed="6" class="layer" alt="img9">
+        <img src="./assets/10.png" data-speed="-7" class="layer" alt="img10">
+        <img src="./assets/11.png" data-speed="-5" class="layer" alt="img11">
+        <img src="./assets/12.png" data-speed="5" class="layer" alt="img12">
+       
+        <h1 class="layer" data-speed="2">Parallax</h1>
+    </section>
+
+    <script>
+
+        // on Mouse move translating all the elements respective to thier speed
+
+        document.addEventListener("mousemove",parallax);
+        function parallax(e){
+            this.querySelectorAll('.layer').forEach((layer)=>{
+                const speed = layer.getAttribute('data-speed');
+
+                const x=(window.innerWidth - e.pageX*speed)/100;
+                const y=(window.innerHeight - e.pageY*speed)/100;
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            })
+        }
+    </script>
+   
+</body>
+</html>

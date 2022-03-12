@@ -73,4 +73,17 @@ HTML, CSS, JS, React
 ### Form wave
 
 <p align="center">
-     <a href="https://github.com/AmolShelke2/50Days50Projects/tree/master/Form%20Wave"><video src="https://user-images.githubusercontent.com/95171638/148639803-c85ee3a0-5b30-4b37-b086-d8c80df7d804.mp4">
+     <a href="https://github.com/AmolShelke2/50Days50Projects/tree/master/Form%20Wave"><video src="https://user-images.githubusercontent.com/95171638/148639803-c85ee3a0-5b30-4b37-b086-d8c80df7d804.mp4"></a>
+</p>
+
+### Circular Progress Bar
+<p align="center">
+    <video src="https://user-images.githubusercontent.com/90784567/156310718-32f8d1a5-1e9b-4b05-96f2-ab2f6b0eea53.mp4">
+</p>
+
+### ReactJs Accordion 
+
+<p align="center">
+     <a href="https://github.com/RiyaBhandari-2811/Ace-The-FrontEnd/tree/main2/ReactJsAccordion/react-accordion"><video src="https://user-images.githubusercontent.com/85748264/156423081-35f35173-613e-49cb-90f8-6058f1e6b54d.mp4"></a>
+
+</p>
