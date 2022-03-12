@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        .navbar {
+            background-color: ghostwhite;
+            color: black;
+            padding: 20px;
+            display: inline-block;
+            cursor: pointer;
+            float: left;
+        }
+        
+        .coffee:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .menu:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .ch:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .res:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .rew:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .gift:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .del:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .abt:hover {
+            background-color: black;
+            color: ghostwhite;
+        }
+        
+        .find {
+            color: rgb(6, 39, 6);
+            padding-top: 15px;
+            padding-left: 1000px;
+        }
+        
+        .logo {
+            height: 80px;
+            width: 50px;
+        }
+        
+        p1 {
+            color: rgb(41, 39, 39);
+            padding-left: 1010px;
+        }
+        
+        body {
+            background-color: ghostwhite;
+        }
+        
+        h3 {
+            color: rgb(51, 47, 47);
+        }
+        
+        h2 {
+            color: rgb(51, 47, 47);
+        }
+        
+        .fav {
+            display: inline-block;
+            padding-top: -50px;
+            padding-left: 1100px;
+            float: right;
+            vertical-align: top;
+        }
+        
+        .left {
+            float: left;
+            vertical-align: top;
+            display: inline-block;
+        }
+        
+        h3 {
+            padding-left: 1000px;
+            padding-top: 15px;
+            font-size: larger;
+        }
+        
+        p {
+            padding-left: 1000px;
+            padding-top: 5px;
+            font-size: large;
+        }
+        
+        .left {
+            height: 700px;
+            width: 750px;
+            float: left;
+            display: inline-block;
+            padding-left: 60px;
+        }
+        
+        .icons {
+            color: rgb(43, 38, 38);
+            padding-top: 280px;
+            float: left;
+            display: inline-block;
+            font-size: larger;
+            padding: 50px;
+            margin: 50px;
+            padding-left: 70px;
+            background-color: rgb(224, 223, 223);
+            width: 100%;
+        }
+        
+        p5 {
+            padding-left: 20px;
+            color: rgb(78, 73, 73);
+        }
+        
+        p6 {
+            padding-left: 74px;
+            color: rgb(78, 73, 73);
+        }
+        
+        p3 {
+            color: rgb(78, 73, 73);
+        }
+        
+        p4 {
+            color: rgb(78, 73, 73);
+        }
+        
+        footer {
+            padding-top: 400px;
+        }
+        
+        p2 {
+            font-size: xx-small;
+            color: rgb(78, 73, 73);
+            padding-top: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+            display: inline;
+        }
+        
+        li:hover {
+            background-color: black;
+            color: ghostwhite;
+            display: inline;
+        }
+        
+        li {
+            display: inline;
+            padding: 20px;
+        }
