@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    --base-width: 65px;
+    --base-height: calc(var(--base-width)*6.8);
+    --base-margin: calc(var(--base-width)*0.153846154);
+    --base-font-size: calc(var(--base-width)*0.246153846);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#input {
+    margin-top: calc(var(--base-margin) * 3);
+    font-size: calc(var(--base-margin) * 2.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input textarea {
+    padding: calc(var(--base-margin) * 0.5) var(--base-margin);
+    font-size: calc(var(--base-margin) * 1.8);
+    margin-left: calc(var(--base-margin) * 2);
+}
+
+#keyboard-body {
+    margin: auto;
+    margin-top: calc(var(--base-margin) * 3);
+    width: fit-content;
+    height: var(--base-height);
+    background-color: #d0d6e0;
+    border-radius: calc(var(--base-margin) * 3);
+    overflow: hidden;
+    border: calc(var(--base-margin) * 0.2) solid gray;
+    font-size: var(--base-font-size);
+}
+
+.keyboard-line {
+    width: calc(100% - (var(--base-margin)*2));
+    height: calc((100% - (var(--base-margin)*7))/6);
+    margin: var(--base-margin);
+    display: flex;
+}
+
+.key {
+    height: 100%;
+    background: rgb(213, 213, 213);
+    background: linear-gradient(180deg, rgba(213, 213, 213, 1) 0%, rgba(230, 230, 230, 1) 26%, rgba(248, 248, 248, 1) 55%, rgba(255, 255, 255, 1) 100%);
+    border-radius: var(--base-margin);
+    border: calc(var(--base-margin) * 0.15) solid black;
+    padding: calc(var(--base-margin)/2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(61, 61, 61);
+    cursor: pointer;
+    margin: 0 calc(var(--base-margin)/2);
+}
+
+.key-1 {
+    min-width: calc(var(--base-width) * 1);
+}
+
+.key-3 {
+    min-width: calc(var(--base-width) * 1.47692308);
+}
+
+.key-4 {
+    min-width: calc(var(--base-width) * 1.8);
+}
+
+.key-6 {
+    min-width: calc(var(--base-width) * 4.93846153846);
+}
+
+.key-7 {
+    min-width: calc(var(--base-width) * 1.34615385);
+}
+
+.tag {
+    min-width: calc((var(--base-width) * 2) + (var(--base-margin)* 1.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.top-left {
+    border-top-left-radius: calc(var(--base-margin) * 2);
+}
+
+.top-right {
+    border-top-right-radius: calc(var(--base-margin) * 2);
+}
+
+.bottom-left {
+    border-bottom-left-radius: calc(var(--base-margin) * 2);
+}
+
+.bottom-right {
+    border-bottom-right-radius: calc(var(--base-margin) * 2);
+}
+
+.split-key {
+    width: 100%;
+    text-align: center;
+    font-size: calc(var(--base-margin) * 1.2);
+}
+
+.up {
+    border-bottom: calc(var(--base-margin) * 0.125) solid black;
+    padding-bottom: calc(var(--base-margin) * 0.5);
+}
+
+.down {
+    border-top: calc(var(--base-margin) * 0.125) solid black;
+    padding-top: calc(var(--base-margin) * 0.5);
+}
+
+@media screen and (max-width: 1150px) {
+     :root {
+        --base-width: 55px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+     :root {
+        --base-width: 45px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+     :root {
+        --base-width: 40px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+     :root {
+        --base-width: 35px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+     :root {
+        --base-width: 30px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+     :root {
+        --base-width: 25px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+     :root {
+        --base-width: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+     :root {
+        --base-width: 15px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+     :root {
+        --base-width: 10px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+     :root {
+        --base-width: 7.5px;
+    }
+}
+
+@media screen and (max-width: 130px) {
+     :root {
+        --base-width: 5px;
+    }
+}
+
+@media screen and (max-width: 90px) {
+     :root {
+        --base-width: 3px;
+    }
+}
