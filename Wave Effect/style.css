@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 8px;
+  height: 14px;
+  width: 14px;
+  transition: transform 0.3s linear;
+}
+
+.circle.grow {
+  transform: scale(2);
+}
+
+button {
+  padding: 15px;
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 8px;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+button:active {
+  background: red;
+}

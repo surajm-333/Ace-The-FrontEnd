@@ -1,0 +1,26 @@
+name: New Project Issue
+description: Ace-The-FrontEnd
+title: "[New Issue]: "
+labels: ["GSSoC22"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Make sure to add a screenshot or demo gif/video of the project you wish to add!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Enter a brief description about the project
+      placeholder: Please include a summary which contains techstack used
+      value: "Description of the project here"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct]()
+      options:
+        - label: I follow [Code of conduct](https://github.com/surajm-333/Ace-The-FrontEnd/blob/main/CODE_OF_CONDUCT.md) of this project.
+          required: true

@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e0e0e0;
+}
+
+.card {
+  border-radius: 28px;
+  background: #e0e0e0;
+  box-shadow: 9px 9px 13px #c1c1c1, -9px -9px 13px #ffffff;
+}
+
+.container {
+  margin-top: 60px;
+}
+
+label {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(49, 34, 34);
+  font-size: small;
+}
+
+input,
+select {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 20px;
+  margin-right: 0%;
+  height: 3rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+  border: none;
+}
+
+.btn {
+  font-weight: 500;
+  background: #0a0a0a;
+  color: #fff;
+  box-shadow: 9px 9px 13px #c1c1c1, -9px -9px 13px #ffffff;
+}
+
+.btn:hover {
+  background-color: rgb(59, 54, 54);
+  color: #fff;
+}
+
+.result {
+  padding: 4px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 11px 11px 13px #c7c7c7, -11px -11px 13px #f9f9f9;
+  border: none;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #350942;
+}
+
+@media screen and (max-width: 890px) {
+  .container {
+    margin-top: 20px;
+  }
+}

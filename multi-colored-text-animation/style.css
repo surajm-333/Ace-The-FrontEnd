@@ -1,0 +1,57 @@
+:root {
+    --color-1: #442288;
+    --color-2: #6ca2ea;
+    --color-3: #b5d33d;
+    --color-4: #fed23f;
+    --color-5: #eb7d5b;
+    --angle: 0deg;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 6.5vw;
+    font-weight: 900;
+    line-height: 6vw;
+    text-transform: uppercase;
+    word-spacing: 100vw;
+    background: linear-gradient(
+      var(--angle),
+      var(--color-1) 19%,
+      transparent 19%,
+      transparent 20%,
+      var(--color-2) 20%,
+      var(--color-2) 39%,
+      transparent 39%,
+      transparent 40%,
+      var(--color-3) 40%,
+      var(--color-3) 59%,
+      transparent 59%,
+      transparent 60%,
+      var(--color-4) 60%,
+      var(--color-4) 79%,
+      transparent 79%,
+      transparent 80%,
+      var(--color-5) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    animation: 10s rotate linear infinite;
+  }
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }

@@ -1,0 +1,19 @@
+.night{
+    background:black;
+    color:white;
+}
+
+.chapter-thumbnail {
+  margin-top: 10px;  
+  white-space : pre;  
+  overflow : hidden; 
+  max-height: 100px; 
+  height : 60px;    
+  border-radius: 10px;
+}
+
+#mainViewer {
+  margin-top: 10px;
+  padding-left: 100px;
+  white-space : pre;   
+}
