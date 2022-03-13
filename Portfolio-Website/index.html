@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Rubin | Portfolio</title>
+    <meta name="author" content="harrnish @codegrid">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</head>
+
+<body class="home">
+    <div class="wrapper">
+
+        <!-- menu -->
+        <nav class="menu">
+            <div class="menu__logo">
+                <a href="index.html">dr</a>
+            </div>
+            <div class="menu__items">
+                <div class="menu__items-link"><a href="captures.html">Captures</a></div>
+                <div class="menu__items-link"><a href="about.html">About</a></div>
+                <div class="menu__items-link"><a href="contact.html">Contact</a></div>
+            </div>
+        </nav>
+
+        <!-- horizontal scroll items -->
+        <div class="container">
+            <div class="container__item container__item-header">
+                <h1>Dan Rubin, <br> Photography</h1>
+            </div>
+
+            <div class="container__item container__item-1">
+                <h1 class="container__item-title">
+                    <a href="project.html">Portraits</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-2">
+                <h1 class="container__item-title">
+                    <a href="project.html">Films</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-3">
+                <h1 class="container__item-title">
+                    <a href="project.html">Advertising</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-4">
+                <h1 class="container__item-title">
+                    <a href="project.html">Clients</a>
+                </h1>
+            </div>
+            <div class="container__item container__item-5">
+                <h1 class="container__item-title">
+                    <a href="project.html">Fashion</a>
+                </h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- script -->
+    <script src="js/horizontal-scroll.js"></script>
+    <script>
+        var blocks = document.getElementsByClassName("container__item");
+        var container = document.getElementsByClassName("container");
+        var hs = new HorizontalScroll.default({
+            blocks: blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.8,
+        });
+    </script>
+</body>
+
+</html>

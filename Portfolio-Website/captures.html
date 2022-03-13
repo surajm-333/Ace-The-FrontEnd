@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="ig: @harrnish / @codegridweb" />
+    <title>Captures</title>
+    <link rel="stylesheet" href="css\styles.css" />
+
+    <!-- ANIMEJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- IONICONS -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- SCROLL REVEAL ANIMATIONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css"
+    />
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script>
+
+    <!-- SIMPLE PARALLAX -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
+  </head>
+  <body>
+    <!-- HERO SECTION -->
+    <a name="home"></a>
+    <div class="wrapper">
+      <section class="hero-section">
+        <!-- LOGO -->
+        <div class="hero-logo">
+            <a href="index.html" style="color: white;">DR</a>
+        </div>
+
+
+
+        <!-- VIEW PHOTOS LINK -->
+        <div class="view-photos">
+          <a href="#projects">view photos</a>
+        </div>
+
+        <!-- HERO-IMAGE -->
+        <div class="hero-img">
+          <img src="images\me.jpg" class="hero-img-parallax" />
+        </div>
+
+        <!-- HERO-TITLE -->
+        <div class="hero-title">
+          <h1>Dan</h1>
+        </div>
+        <!-- <div class="overlay">
+          <div class="close-btn">
+            <ion-icon name="close" style="color: white;"></ion-icon>
+          </div>
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </section>
+
+
+      <a name="projects"></a>
+      <section class="project-section">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="arrow-down">
+                  <ion-icon
+                    name="arrow-down"
+                    class="wow fadeInUp"
+                    data-wow-delay="0.2s"
+                  ></ion-icon>
+                </div>
+              </div>
+              <div class="project-heading col-lg-6">
+                <h1 class="wow fadeInUp" data-wow-delay="0.3s">CAPTURES</h1>
+                <p class="wow fadeInUp" data-wow-delay="0.4s">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam quaerat sunt architecto veritatis suscipit nostrum
+                  amet dicta ut, nobis modi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="projects">
+            <div class="row project-row">
+              <div class="project project-1 col-lg-6">
+                <img
+                  src="images\project-1.jpg"
+                  class="project-1-img project-img img-responsive fit-image"
+                />
+              </div>
+              <div class="project project-2 col-lg-6">
+                <img
+                  src="images\project-2.jpg"
+                  class="project-2-img project-img img-responsive fit-image"
+                />
+              </div>
+            </div>
+            <div class="row project-row">
+              <div class="project project-3 col-lg-6">
+                <img
+                  src="images\project-3.jpg"
+                  class="project-3-img project-img img-responsive fit-image"
+                />
+              </div>
+              <div class="project project-4 col-lg-6">
+                <img
+                  src="images\project-4.jpg"
+                  class="project-4-img project-img img-responsive fit-image"
+                />
+              </div>
+            </div>
+            <div class="row project-row">
+              <div class="project project-5 col-lg-6">
+                <img
+                  src="images\project-5.jpg"
+                  class="project-5-img project-img img-responsive fit-image"
+                />
+              </div>
+              <div class="project project-6 col-lg-6">
+                <img
+                  src="images\project-6.jpg"
+                  class="project-6-img project-img img-responsive fit-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <script>
+      new WOW().init();
+
+      var textWrapper = document.querySelector(".hero-title");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+      $(document).ready(function() {
+        anime.timeline({ loop: false }).add({
+          targets: ".hero-title .letter",
+          translateY: [120, 0],
+          translateZ: 0,
+          opacity: [0, 1],
+          easing: "easeOutExpo",
+          duration: 1400,
+          delay: (el, i) => 2000 + 40 * i
+        });
+      });
+
+      var t1 = new TimelineMax({ paused: true });
+
+      TweenMax.from(".hero-logo", 2, {
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 1
+      });
+
+      TweenMax.from(".menu-toggle", 2, {
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 1.2
+      });
+
+      TweenMax.from(".view-photos", 2, {
+        y: 20,
+        opacity: 0,
+        ease: Expo.easeInOut,
+        delay: 1.4
+      });
+
+      TweenMax.staggerFrom(
+        ".media ul li",
+        2,
+        {
+          y: 20,
+          opacity: 0,
+          ease: Expo.easeInOut,
+          delay: 1.6
+        },
+        0.1
+      );
+
+      t1.to(".overlay", 1, {
+        opacity: 1,
+        ease: Expo.easeInOut
+      });
+
+      t1.to(".view-photos, .media", 1, {
+        opacity: 0,
+        ease: Expo.easeInOut
+      });
+
+      t1.staggerFrom(
+        ".menu ul li",
+        1,
+        { y: 100, opacity: 0, ease: Expo.easeOut },
+        0.1
+      );
+
+      t1.reverse();
+      $(document).on("click", ".menu-toggle", function() {
+        t1.reversed(!t1.reversed());
+      });
+
+      $(document).on("click", ".close-btn", function() {
+        t1.reversed(!t1.reversed());
+      });
+
+      t1.reverse();
+      $(document).on("click", "li", function() {
+        t1.reversed(!t1.reversed());
+      });
+
+      var image = document.getElementsByClassName("hero-img-parallax");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      var image = document.getElementsByClassName("project-1-img");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      var image = document.getElementsByClassName("project-2-img");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      var image = document.getElementsByClassName("project-3-img");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      var image = document.getElementsByClassName("project-4-img");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      var image = document.getElementsByClassName("project-5-img");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      var image = document.getElementsByClassName("project-6-img");
+      new simpleParallax(image, {
+        scale: 1.8
+      });
+
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top
+                },
+                1000,
+                function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) {
+                    // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  }
+                }
+              );
+            }
+          }
+        });
+    </script>
+  </body>
+</html>

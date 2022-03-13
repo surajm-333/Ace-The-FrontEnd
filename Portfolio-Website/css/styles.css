@@ -1,0 +1,537 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: "Neue Montreal";
+}
+
+.home {
+    overflow: hidden;
+}
+
+/* menu */
+nav {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.menu__logo, .menu__items-link {
+    padding: 40px;
+}
+
+.menu__logo a {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__logo2, .menu__items-link {
+    padding: 40px;
+}
+
+.menu__logo2 a {
+    color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__items {
+    display: flex;
+}
+
+.menu__items-link a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.menu__items-link.active a {
+    text-decoration: underline;
+}
+
+
+/* horizontal scroll items  */
+
+.container {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.container__item {
+    position: relative;
+    width: 540px;
+    height: 360px;
+    margin: 50px 500px 20px 80px;
+}
+
+.container__item-header h1 {
+    position: relative;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 360px;
+    font-size: 100px !important;
+}
+
+.container__item h1 {
+    position: absolute;
+    left: 40px;
+    bottom: -40px;
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-weight: lighter;
+    font-size: 64px;
+}
+
+.container__item-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container__item-1 {
+    background: url(../images/img-one.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-2 {
+    background: url(../images/img-two.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-3 {
+    background: url(../images/img-three.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-4 {
+    background: url(../images/img-four.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.container__item-5 {
+    background: url(../images/img-five.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+@media(max-width: 900px) {
+    .container__item {
+        width: 300px;
+        height: 200px;
+        margin: 50px 100px 20px 80px;
+    }
+
+    .container__item-header h1 {
+        font-size: 30px !important;
+        left: -50%;
+    }
+
+    .container__item h1 {
+        font-size: 40px;
+        bottom: -20px;
+    }
+}
+
+/* about page styles */
+
+#js-scroll {
+    height: 200%;
+}
+
+.about__container {
+    width: 50%;
+    margin: 180px 0 100px 100px;
+    padding: 40px;
+    /* border: 1px solid #525252; */
+}
+
+.about__container p {
+    margin: 60px 0;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.about__container p span {
+    font-family: "GrandSlang Roman";
+}
+
+.about__container-contact-link a {
+    color: #fff;
+}
+
+p.about__container-link {
+    font-size: 26px;
+}
+
+.about__container-link a {
+    color: #fff;
+    font-size: 26px;
+}
+
+.cursor-follow {
+    position: absolute;
+    background: url(../images/cursor.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    z-index: -1;
+
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px, 5px);
+}
+
+@media(max-width: 900px) {
+    .about__container {
+        width: 70%;
+        margin: 140px 0 60px 40px;
+    }
+
+    .cursor-follow {
+        display: none;
+    }
+}
+
+/* project section */
+
+.project__container {
+    width: 70%;
+    margin: 100px auto;
+    /* border: 1px solid #5c5c5c; */
+    color: #fff;
+    padding: 120px 40px;
+    text-align: center;
+}
+
+.project__container-title h1{
+    color: #fff;
+    font-family: "GrandSlang Roman";
+    font-size: 140px;
+}
+
+.project__container-subtitle {
+    margin: 20px 0;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+}
+
+.project__container-images {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+}
+
+.project__image {
+    background: red;
+    width: 600px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.project__image-one {
+    background: url(../images/img-one.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-two {
+    position: relative;
+    top: -100px;
+    left: -260px;
+    background: url(../images/img-two.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-three {
+    position: relative;
+    left: 300px;
+    background: url(../images/img-three.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project__image-four {
+    position: relative;
+    top: -200px;
+    left: -100px;
+    background: url(../images/img-four.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.project-next-link {
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-next-link a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "GrandSlang Roman";
+    font-size: 160px;
+}
+
+.anime-js-title .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* Another css file */
+
+
+.hero-section {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+}
+
+.hero-logo {
+  position: fixed;
+  margin: 2em;
+  color: white;
+  font-family: "Cosi Azure";
+  font-style: 16px;
+  mix-blend-mode: difference;
+  z-index: 2;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0f0f0f;
+  z-index: 1;
+  opacity: 0;
+}
+
+.overlay ion-icon {
+  position: fixed;
+  right: 0;
+  margin: 2em;
+  color: white;
+}
+
+.overlay ul {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+.overlay ul li {
+  font-size: 84px;
+}
+
+@media (max-width: 900px) {
+  .overlay ul li {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+}
+
+.overlay ul li a {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-family: "Times New Roman";
+  text-transform: uppercase !important;
+}
+
+.overlay ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.view-photos {
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+  margin: 2em;
+  z-index: 2;
+}
+
+.view-photos a {
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.view-photos a:hover {
+  color: white;
+}
+
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.hero-title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-title h1 {
+  font-size: 80px;
+  font-weight: lighter;
+  text-transform: uppercase !important;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .hero-title .letter {
+    font-size: 24px !important;
+  }
+}
+
+.hero-title .letter {
+  display: inline-block;
+  opacity: 0;
+  font-size: 80px;
+  color: white;
+  font-family: "Times New Roman";
+  text-transform: uppercase !important;
+}
+
+.project-section {
+  background: #0f0f0f;
+  overflow: hidden;
+}
+
+.project-section h1 {
+  font-size: 84px;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
+  color: white;
+}
+
+.project-section p {
+  color: grey;
+  width: 100%;
+}
+
+.project-heading {
+  margin-bottom: 120px;
+}
+
+.project-section ion-icon {
+  color: white;
+  font-size: 148px;
+}
+
+.project-img {
+  width: 100%;
+  object-fit: cover;
+  height: 80vh;
+}
+
+.project {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+.social-media {
+  padding: 0 0;
+  margin-top: 120px;
+}
+
+.social-media h1 {
+  font-size: 84px;
+  font-family: "Times New Roman";
+  text-transform: uppercase;
+}
+
+.social-media h3 {
+  font-family: Helvetica;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.social-icons ul {
+  margin: 80px 0 !important;
+  padding: 0 !important;
+}
+
+.social-icons ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 40px;
+}
+
+.social-icons ul li a {
+  color: black;
+  font-style: italic;
+  font-family: "Cormorant";
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media(max-width: 900px) {
+    .project__container-title h1 {
+        font-size: 40px;
+    }
+
+    .project__container {
+        width: 80%;
+    }
+
+    .project__container-images {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .project__image {
+        width: 90%;
+    }
+
+    .project__image-one, .project__image-two, .project__image-three, .project__image-four {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}

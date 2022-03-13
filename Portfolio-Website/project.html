@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <meta name="author">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- locomotive-scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+</head>
+
+<body id="js-scroll">
+    <div class="wrapper">
+
+      <!-- menu -->
+      <nav class="menu">
+          <div class="menu__logo">
+              <a href="index.html">dr</a>
+          </div>
+          <div class="menu__items">
+              <div class="menu__items-link"><a href="captures.html">Captures</a></div>
+              <div class="menu__items-link"><a href="about.html">About</a></div>
+              <div class="menu__items-link"><a href="contact.html">Contact</a></div>
+          </div>
+      </nav>
+
+        <!-- project section -->
+        <div class="project__container" data-scroll-section>
+
+            <div class="project__container-title" data-scroll>
+                <h1 class="anime-js-title">Creative mix</h1>
+            </div>
+            <div class="project__container-subtitle" data-scroll>
+                <p>Visual arts</p>
+            </div>
+
+            <div class="project__container-images">
+                <div class="project__image project__image-one" data-scroll data-scroll-speed="1">
+                </div>
+                <div class="project__image project__image-two" data-scroll data-scroll-speed="2">
+                </div>
+                <div class="project__image project__image-three" data-scrol data-scroll-speed="4">
+                </div>
+                <div class="project__image project__image-four" data-scroll data-scroll-speed="4">
+                </div>
+            </div>
+
+            <div class="project-next-link" data-scroll>
+                <a href="project.html">Next</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+        // smooth scroll
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.75
+        });
+
+        // project title animation
+        var textWrapper = document.querySelector('.anime-js-title');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline()
+            .add({
+                targets: '.anime-js-title .letter',
+                translateY: [60, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1200,
+                delay: (el, i) => 600 + 30 * i
+            });
+
+        // project subtitle animation
+        TweenMax.from(".project__container-subtitle", 2, {
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+
+        // project image fade
+        TweenMax.from(".project__image-one", 2, {
+            opacity: 0,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+
+</html>
