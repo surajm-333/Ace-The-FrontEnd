@@ -67,8 +67,14 @@ HTML, CSS, JS, React
 ### CSS JS clock
 
 <p align="center">
-    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/CSS-JS-Clock"><img src="https://github.com/surajm-333/Ace-The-FrontEnd/blob/main/CSS-JS-Clock/demo.png"></a>
-</p>
+    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/CSS-JS-Clock"><img width="1380" alt="image" src="https://user-images.githubusercontent.com/92572013/158029861-b87683b1-fc24-4a5d-9310-272a523c1d38.png">
+</a></p>
+
+<br>
+
+<p align="center">
+    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/CSS-JS-Clock"><img width="1380" alt="image" src="https://user-images.githubusercontent.com/92572013/158029917-3b13163a-520c-4986-94bf-b0b19d944cbc.png">
+</a></p>
 
 ### Form wave
 
