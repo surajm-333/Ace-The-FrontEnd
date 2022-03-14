@@ -1,0 +1,57 @@
+
+    html {
+      font-size: 10px;
+      box-sizing: border-box;
+      background: url("https://i.pinimg.com/originals/7f/3e/18/7f3e186790208b63dadda09d6b91d334.jpg") bottom center ;
+      overflow: hidden;
+      user-select: none;
+      background-position: center;
+      background-attachment: fixed;
+      padding-left: rgb(255, 0, 0);
+    }
+
+    body {
+    
+      
+      font-family: 
+      font-weight: 200;
+     
+      font-size: 20px;
+    }
+    h1{
+      font-size: 5rem;
+      color: #d9eaf3;
+      font-family: "Arvo", cursive;
+      text-shadow: 3px 0 #DA0463;
+    
+     text-align: center ;
+    }
+
+    .words {
+      max-width: 500px;
+      margin: 50px auto;
+      background:#d9eaf3;
+      border-radius: 5px;
+      box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+      padding: 1rem 2rem 1rem 5rem;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+      background-size: 100% 3rem;
+      position: relative;
+      line-height: 3rem;
+    }
+    
+    p {
+      margin: 0 0 3rem;
+    }
+
+    .words:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      top: 0;
+      left: 30px;
+      bottom: 0;
+      border: 1px solid;
+      border-color: transparent #efe4e4;
+    }
+
