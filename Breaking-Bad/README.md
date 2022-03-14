@@ -1,7 +1,7 @@
 <p align="center">
  <img alt="Project logo" height="80" src="./img/qh (1).png">
 </p>
-<h1 align="center">Breakin Bad Quote</h1>
+<h1 align="center">Breaking Bad Quote</h1>
 
 <div align="center">
   ✨ Generate quotes from Breaking Bad
