@@ -112,3 +112,21 @@ main {
     height: 24px;
     width: 24px;
 }
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.company {
+    margin-right: 2rem;
+}
+
+.company svg {
+    height: 30px;
+}
+
+.company svg * {
+    fill: #999999;
+}
