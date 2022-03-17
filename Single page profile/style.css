@@ -53,3 +53,11 @@ body {
 .content header nav ul li a:hover {
     color: var(--primary);
 }
+
+.logo h1 {
+    font-size: 50px;
+}
+
+.logo h1 span {
+    color: var(--primary);
+}
