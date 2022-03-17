@@ -143,3 +143,15 @@ footer {
 .company svg * {
     fill: #999999;
 }
+
+@media only screen and (max-width: 640px) {
+    .portrait {
+        visibility: hidden;
+    }
+    .company {
+        margin-right: 1rem;
+    }
+    .content {
+        padding: 1rem;
+    }
+}
