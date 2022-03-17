@@ -61,3 +61,29 @@ body {
 .logo h1 span {
     color: var(--primary);
 }
+
+main {
+    padding: 1rem;
+    width: 350px;
+}
+
+.name h1,
+.name span {
+    font-size: 100px;
+    line-height: 80px;
+    font-family: 'Lobster';
+}
+
+.name h1 span {
+    color: var(--primary);
+}
+
+.description {
+    margin-top: 2rem;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
