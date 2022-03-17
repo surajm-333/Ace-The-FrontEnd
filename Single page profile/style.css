@@ -127,6 +127,19 @@ footer {
     height: 30px;
 }
 
+.portrait {
+    width: 40%;
+    background-image: url('https://images.pexels.com/photos/2010877/pexels-photo-2010877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn:hover {
+    box-shadow: 1px 0 50px var(--primary);
+}
+
 .company svg * {
     fill: #999999;
 }
