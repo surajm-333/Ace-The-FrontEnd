@@ -1,0 +1,412 @@
+/* SNOWFALL BACKGORUND*/
+
+html, body {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8));
+    min-height:100%;
+    }
+    
+.snowflakes {
+    width: 100%; height: 1200px;
+    position: absolute; top: -90px; left: 0;
+}
+
+i, i:after, i:before {
+     background: white; 
+}
+
+i {
+    display: inline-block;
+    -webkit-animation: snowflakes 3s linear 2s 20;
+    -moz-animation: snowflakes 3s linear 2s 20;
+    position: relative;
+}
+
+
+i:after, i:before {
+    height: 100%;
+    width: 100%;
+    content: ".";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transform: rotate(120deg);
+}
+i:before { 
+    -webkit-transform: rotate(240deg); 
+}
+
+@-webkit-keyframes snowflakes {
+    0% {
+        -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(0.6);
+    }
+    100% {
+        -webkit-transform: translate3d(15px, 1200px, 0px) rotate(360deg) scale(0.6);
+    };
+}
+
+.snowflakes i:nth-child(3n) {
+    width: 16px; 
+    height: 4px;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 30;
+    -webkit-transform-origin: right -45px;
+}
+
+
+.snowflakes i:nth-child(3n + 1) {
+    width: 24px;
+    height: 6px;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: 45;
+    -webkit-transform-origin: right -30px;
+}
+
+
+.snowflakes i:nth-child(3n + 2) {
+    width: 32px;
+     height: 8px;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: 60;
+    -webkit-transform-origin: right -15px;
+}
+    
+
+
+/* different delays so they don't all start at the same time */
+
+.snowflakes i:nth-child(7n) {
+    opacity:.3;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-timing-function:ease-in;
+}
+
+
+.snowflakes i:nth-child(7n + 1) {
+    opacity:.4;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-timing-function:ease-out;
+}
+
+
+.snowflakes i:nth-child(7n + 2) {
+    opacity:.5;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-timing-function:linear;
+}
+
+
+.snowflakes i:nth-child(7n + 3) {
+    opacity:.6;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function:ease-in;
+}
+
+
+.snowflakes i:nth-child(7n + 4) {
+   
+    opacity:.7;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-timing-function:linear;
+}
+
+
+.snowflakes i:nth-child(7n + 5) {
+   
+    opacity:.8;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-timing-function:ease-out;
+}
+
+
+.snowflakes i:nth-child(7n + 6) {
+   
+    opacity:.9;
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-timing-function:ease-in;
+}
+
+/* SANTA CLAUS*/
+
+.drawing{
+    --skin: #fca;
+    --skindark: #fa9;
+    --suit: #c00;
+    --wool: #f0f0f0;
+    width: 80vmin;
+    height: 80vmin;
+    position: absolute;
+    top:50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.drawing div,
+.drawing div::before,
+.drawing div::after {
+    position: absolute;
+    display:block;
+    box-sizing:border-box;
+}
+
+.face {
+    width:35%;
+    height: 25%;
+    background: var(--skin);
+    border-radius: 120% / 50%;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    box-shadow:
+        inset 0 .25vmin 1vmin var(--skindark),
+        -0.25vmin   -0.5vmin    0.5vmin     #0001,
+         0.5vmin  -.25vmin     0.5vmin     #0002,
+        -1vmin   -5vmin   var(--wool),  
+        1vmin   -5vmin    var(--wool);
+}
+
+.eye {
+    width:24%;
+    height: 30%;
+    border-radius: 100%;
+    border: .25vmin #0001;
+    border-top: 1vmin solid;
+    top: 35%;
+    left: 15%;
+}
+
+.eye + .eye {
+    left: 61%;
+}
+
+.eyebrow {
+    width: 35%;
+    height: 30%;
+    border-radius: 100%;
+    box-shadow: -0.125vmin -2.2vmin 0 -0.5vmin #0000;
+    top: 25%;
+    left: 8%;
+}
+
+.eyebrow + .eyebrow{
+    right: 7.5%;
+    left: auto;
+}
+
+.nose {
+    width: 20%;
+    height: 30%;
+    border-radius: 100% / 120% 120% 80% 80%;
+    background: var(--skin);
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        inset -0.5vmin -.05vmin .5vmin -.25vmin var(--skindark),
+        inset 0vmin -.75vmin .5vmin -.25vmin var(--skindark),
+        inset 0.5vmin -1vmin 1vmin -0.75vmin var(--skindark);
+}
+
+.mustache {
+    width: 30%;
+    height: 30%;
+    background: white;
+    border-radius: 100% 0;
+    top: 59%;
+    left: 50%;
+    transform: translate(-100%, 0) rotate(15deg);
+    box-shadow: inset -0.25vmin -0.25vmin .75min #0002;
+}
+
+.mustache + .mustache {
+    transform: scaleX(-1) translate(0 , 0) rotate(15deg);
+}
+
+.lip {
+    width: 14%;
+    height: 10%;
+    background: var(--skindark);
+    box-shadow: inset 0 -0.25vmin .75vmin #f003;
+    border-radius: 50%;
+    top: 73%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.beard {
+    width: 100%;
+    height: 90%;
+    background: #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100% / 20% 20% 120% 120%;
+    box-shadow: 0 0.5vmin #ddd;
+    filter: drop-shadow(0  0.5vmin 0.5vmin #0002);
+    
+}
+
+
+.beard ::before {
+    content: "";
+    width: 22%;
+    height: 30%;
+    border-radius: 50%;
+    background: #fff;
+    left: -7%;
+    top: 8%;
+    color: #fff;
+    box-shadow: 
+        2vmin 7vmin 0 2.5vmin,
+        6vmin 12vmin 0 1vmin,
+        16vmin 12vmin 0 2vmin,
+        22vmin 10vmin 0 1vmin,
+        24vmin 6vmin 0 1.6vmin,
+        26vmin 0
+    ;
+}
+
+.ear {
+    width: 25%;
+    height: 35%;
+    border-radius:50%;
+    top: 40%;
+    left: -15%;
+    background: 
+        radial-gradient(circle at 100% 50%, var(--skindark) 50%, #0000 0) no-repeat 30% 60% / 50% 80%
+        ;
+    background-color: var(--skin);
+}
+
+.ear + .ear {
+    right: -15%;
+    left: auto;
+    top: 42%;
+
+    background:
+        radial-gradient(circle at 0% 50%, var(--skindark) 50%, #0000 0) no-repeat 70% 60% / 50% 80%
+        ;
+    background-color: var(--skin);
+}
+
+.cheek {
+    width:30%;
+    height: 25%;
+    border-radius: 50%;
+    top: 50%;
+    left: 5%;
+    background: radial-gradient(farthest-side, var(--skindark), #0000);
+    opacity: 1.7;
+}
+
+.cheek + .cheek {
+    left: auto;
+    right: 10%;
+}
+
+
+.body {
+    width: 70%;
+    height: 80%;
+    border-radius: 100% / 120% 120% 14% 20%;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    box-shadow: 
+        inset 2.75vmin -2vmin 1vmin -1.5vmin  #0002,
+        inset -3vmin -1.5vmin 1vmin -1.5vmin #0002,
+        inset 0 -7vmin var(--wool);
+        
+    background: 
+        linear-gradient(to right, #0000 30%, #0002 42%, #e8e8e8 0, var(--wool) , #e8e8e8 58% , #0000 0)
+        linear-gradient(#0000 90%, #ddd)
+    ;
+    background-color: var(--suit);
+}
+
+
+.body::before{
+    content: '';
+    width: 150%;
+    height: 50%;
+    border-bottom: 8vmin solid #181818;
+    border-radius: 50%;
+    transform: translate(-50%, 0); 
+    top: 25%;
+    left: 50%;
+}
+
+
+.body::after {
+    content: "";
+    width: 22%;
+    height: 15%;
+    
+    border: 1.5vmin solid orange;
+    top: 54%;
+    left: 50%;;
+    transform: translate(-50%, 50%);
+    border-radius: 1vmin;
+}
+
+.arms {
+    width: 89%;
+    height: 60%;
+    border-radius: 100% / 160% 170% 10% 14%;
+    background: var(--suit);
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) rotate(3deg);
+    box-shadow: 
+        inset 4vmin     -2vmin    1vmin  -1vmin #0002,
+        inset -3vmin    -1.5vmin   1vmin -1vmin #0002,
+        inset 0         -7vmin    0    -1vmin  var(--wool);
+}   
+
+
+.hand {
+    width: 15%;
+    height: 18%;
+    background: #181818;
+    box-shadow:
+        inset    0.5vmin -0.5vmin 1vmin #0004;
+ 
+    border-radius: 50%;
+    top: 92%;
+    left: 3%;
+}
+
+.hand + .hand {
+    left: auto;
+    right: 6%;
+    top: 94%;
+    box-shadow: 
+        inset   -.75vmin    -.5vmin    1vmin    #0004;
+}
+
+
+.hat {
+    width: 36%;
+    height: 20%;
+    background: var(--suit);
+    left: 50%;
+    right: -5%;
+    transform: translateX(-50%);    
+    border-radius: 100%  20%  0  0;
+}
+
+
+.hat::before {
+    content: "";
+    background: var(--wool);
+    width: 30%;
+    height: 50%;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    transform: translate(70%, -50%);
+    box-shadow: inset   -.5vmin -.5vmin 1vmin #0003;
+}   
+

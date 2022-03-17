@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="/CSS-JS-Clock/css/style.css">
+        <link rel="shortcut icon" href="/CSS-JS-Clock/favicon/icons8-square-clock-24.ico" type="image/x-icon">
+        <!-- <script src="/CSS-JS-Clock/js/index.js"></script> -->
+        <title>Clock</title>
+    </head>
+    <body>
+        <section class="clock container">
+            <div class="clock__container grid">
+                <div class="clock__content grid">
+                    <div class="clock__circle">
+                        <span class="clock__twelve"></span>
+                        <span class="clock__three"></span>
+                        <span class="clock__six"></span>
+                        <span class="clock__nine"></span>
+    
+                        <div class="clock__rounder"></div>
+                        <div class="clock__hour" id="clock-hour"></div>
+                        <div class="clock__minutes" id="clock-minutes"></div>
+                        <div class="clock__seconds" id="clock-seconds"></div>
+
+                        <div class="clock__theme">
+                            <i class='bx bxs-moon' id="theme-button"></i>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="clock__text">
+                            <div class="clock__text-hour" id="text-hour"></div>
+                            <div class="clock__text-minutes" id="text-minutes"></div>
+                            <div class="clock__text-ampm" id="text-ampm"></div>
+                        </div>
+    
+                        <div class="clock__date">
+                            <span id="date-day"></span>
+                            <span id="date-month"></span>
+                            <span id="date-year"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/CSS-JS-Clock/js/index.js"></script>
+    </body>
+</html>

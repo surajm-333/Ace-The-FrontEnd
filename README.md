@@ -67,10 +67,29 @@ HTML, CSS, JS, React
 ### CSS JS clock
 
 <p align="center">
-    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/CSS-JS-Clock"><img src="https://github.com/surajm-333/Ace-The-FrontEnd/blob/main/CSS-JS-Clock/demo.png"></a>
-</p>
+    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/CSS-JS-Clock"><img width="1380" alt="image" src="https://user-images.githubusercontent.com/92572013/158029861-b87683b1-fc24-4a5d-9310-272a523c1d38.png">
+</a></p>
+
+<br>
+
+<p align="center">
+    <a href="https://github.com/surajm-333/Ace-The-FrontEnd/tree/main/CSS-JS-Clock"><img width="1380" alt="image" src="https://user-images.githubusercontent.com/92572013/158029917-3b13163a-520c-4986-94bf-b0b19d944cbc.png">
+</a></p>
 
 ### Form wave
 
 <p align="center">
-     <a href="https://github.com/AmolShelke2/50Days50Projects/tree/master/Form%20Wave"><video src="https://user-images.githubusercontent.com/95171638/148639803-c85ee3a0-5b30-4b37-b086-d8c80df7d804.mp4">
+     <a href="https://github.com/AmolShelke2/50Days50Projects/tree/master/Form%20Wave"><video src="https://user-images.githubusercontent.com/95171638/148639803-c85ee3a0-5b30-4b37-b086-d8c80df7d804.mp4"></a>
+</p>
+
+### Circular Progress Bar
+<p align="center">
+    <video src="https://user-images.githubusercontent.com/90784567/156310718-32f8d1a5-1e9b-4b05-96f2-ab2f6b0eea53.mp4">
+</p>
+
+### ReactJs Accordion 
+
+<p align="center">
+     <a href="https://github.com/RiyaBhandari-2811/Ace-The-FrontEnd/tree/main2/ReactJsAccordion/react-accordion"><video src="https://user-images.githubusercontent.com/85748264/156423081-35f35173-613e-49cb-90f8-6058f1e6b54d.mp4"></a>
+
+</p>

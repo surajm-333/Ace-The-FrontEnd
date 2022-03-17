@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Expense Tracker
+        </title>
+        <link rel="icon" href="https://img.icons8.com/bubbles/50/000000/money.png"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="maintitle">Expense Manager</h1>
+        
+        <p>Enter positive value for earnings.</p>
+        <p>Enter negative value for expenses.</p>
+
+        <form>
+            <input type="text" id="desc" placeholder="Description..."/>
+            <input type="number" id="val" placeholder="₹"/>
+            <input type="date" id="transdate"/>
+            <button id="formAddButton"><i class="fa fa-plus-circle fa-3x"></i></button>
+        </form>
+
+        <div id="tabs">
+            <div id="total">Total Left: &nbsp;₹  &nbsp;<span id="total-amt">0</span></div>
+            <div id="earn">Total Earned:  &nbsp;₹  &nbsp;<span id="earn-amt">0</span></div>
+            <div id="spend">Total Spent:  &nbsp;₹ &nbsp;<span id="spend-amt">0</span></div>
+        </div>
+
+        <table id="transactions">
+            <tr>
+              <th style="width: 10%;"> </th>
+              <th style="width: 40%;">Description</th>
+              <th style="width: 30%">Amount</th>
+              <th style="width: 10%;">Date</th>
+            </tr>
+          </table>
+
+          <script src="script.js"></script>
+
+    </body>
+</html>
