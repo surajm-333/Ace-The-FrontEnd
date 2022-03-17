@@ -9,3 +9,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
