@@ -87,3 +87,28 @@ main {
     align-items: center;
     margin-top: 1rem;
 }
+
+.cta .btn {
+    padding: 0.6rem 1.3rem;
+    border: none;
+    outline: none;
+    background: var(--primary);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-sec {
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 1rem;
+}
+
+.btn-sec svg {
+    height: 24px;
+    width: 24px;
+}
