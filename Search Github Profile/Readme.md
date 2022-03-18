@@ -14,5 +14,14 @@ A person with no knowledge of github can now search for a user and see his/her p
 2. CSS, SCSS
 3. JavaScript
 
+## Screenshots
+
+![wokingimage1](https://user-images.githubusercontent.com/72140108/159041942-0af6145c-c86b-4da0-8f47-16241a39614a.png)
+
+![workingimage2](https://user-images.githubusercontent.com/72140108/159042124-af81b173-e04e-40a8-b59b-b585dd3efc36.png)
+
+
+
+
 
 Suggestions on improving the template are welcomed!
