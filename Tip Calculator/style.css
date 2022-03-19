@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: radial-gradient(circle at 60% 40%, #10b981 25%, transparent 26%),radial-gradient(circle at 40% 60%, #10b98180 25%, transparent 26%) ;            background-size: 2em 2em;
+    background-color: #f9f9ff;
+    z-index: -1;
+    font-family: 'Rubik', sans-serif;
+}
