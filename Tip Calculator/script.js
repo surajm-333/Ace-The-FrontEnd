@@ -1,3 +1,4 @@
+// declared html elements for DOM manipulation
 let billAmount = document.querySelector("#billAmount");
 let selectTipAmount = document.querySelector("#tipPercentage")
 let tipPercentage = Number(selectTipAmount.options[selectTipAmount.selectedIndex].value);
@@ -5,16 +6,15 @@ let noOfPeople = document.querySelector("#noOfPeople");
 let perPerson = document.querySelector("#perPerson");
 let tipAmount = document.querySelector("#tipAmount");
 let btn = document.querySelector("#btn");
-
 let incrementBtn = document.querySelector("#incrementBtn")
 let decrementBtn = document.querySelector("#decrementBtn")
 
 function incrementFunc(){
-    noOfPeople.stepUp();
+    noOfPeople.stepUp(); //increases number by 1
 }
 
 function decrementFunc(){
-    noOfPeople.stepDown();
+    noOfPeople.stepDown(); //decreases number by 1
 }
 
 incrementBtn.addEventListener("click", incrementFunc);
@@ -39,4 +39,5 @@ function btnClickHandler(){
     perPerson.innerText = `₹ ${amountPerPersonFinder()}`;
 }
 
+// event listener for button click
 btn.addEventListener("click", btnClickHandler);
