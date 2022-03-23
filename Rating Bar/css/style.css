@@ -33,4 +33,6 @@ img {
     position: relative;
     width: 0;
     height: 128px;
+    cursor: pointer;
+    transition: 0.5s;
 }
