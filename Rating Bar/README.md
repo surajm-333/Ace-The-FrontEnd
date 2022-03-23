@@ -10,7 +10,7 @@
 <br />
 
 ## ⚡️ Introduction
-It is a cool rating bar with stylish animation
+It is a cool rating bar with stylish animation and effects
 
 ## 📷 Screenshots
 
