@@ -39,3 +39,7 @@ img {
     text-align: center;
     opacity: 0;
 }
+
+.rating:hover label {
+    width: 160px;
+}
