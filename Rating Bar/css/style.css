@@ -22,4 +22,5 @@ img {
 .rating {
     position: relative;
     display: flex;
+    flex-direction: row-reverse;
 }
