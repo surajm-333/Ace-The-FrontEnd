@@ -62,3 +62,8 @@ img {
     transform: translateY(-50px) scale(0);
     transition: 0.5s;
 }
+
+.rating input:hover+label h4,
+.rating input:checked+label h4 {
+    opacity: 1;
+}
