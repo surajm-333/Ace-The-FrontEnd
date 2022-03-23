@@ -59,4 +59,6 @@ img {
     font-weight: 500;
     white-space: nowrap;
     opacity: 0;
+    transform: translateY(-50px) scale(0);
+    transition: 0.5s;
 }
