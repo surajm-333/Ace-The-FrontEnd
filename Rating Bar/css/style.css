@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -86,5 +86,8 @@
     @media only screen and (max-width: 720px) {
         .text {
             font-size: 21px;
+            img {
+                height: 40px;
+                width: 40px;
+            }
         }
-    }
