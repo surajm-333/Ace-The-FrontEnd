@@ -4,3 +4,7 @@
 </p>
 <h1 align="center">Rating Bar</h1>
 
+<div align="center">
+  ✨ A cool single page rating bar
+</div>
+
