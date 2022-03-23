@@ -35,4 +35,7 @@ img {
     height: 128px;
     cursor: pointer;
     transition: 0.5s;
+    filter: grayscale(1);
+    text-align: center;
+    opacity: 0;
 }
