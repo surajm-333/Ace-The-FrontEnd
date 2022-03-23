@@ -13,3 +13,7 @@ body {
     min-height: 100vh;
     background: #201528;
 }
+
+img {
+    height: 120px;
+}
