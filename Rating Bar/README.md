@@ -15,7 +15,7 @@ It is a cool rating bar with stylish animation
 ## 📷 Screenshots
 
 ![ss1](./img/sci_demo1.jpg)
-![ss2]()
+![ss2](./img/sci_demo2.jpg)
 
 
 
