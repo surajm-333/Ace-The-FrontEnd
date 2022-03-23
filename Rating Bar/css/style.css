@@ -51,3 +51,8 @@ img {
     opacity: 1;
     width: 160px;
 }
+
+.rating label h4 {
+    color: #fff;
+    font-size: 24px;
+}
