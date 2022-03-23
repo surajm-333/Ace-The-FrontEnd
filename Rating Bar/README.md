@@ -7,4 +7,9 @@
 <div align="center">
   ✨ A cool single page rating bar
 </div>
+<br />
+
+## ⚡️ Introduction
+It is a cool rating bar with stylish animation
+
 
