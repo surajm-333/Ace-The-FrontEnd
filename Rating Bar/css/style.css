@@ -73,4 +73,7 @@ img {
     position: absolute;
     top: -80px;
     left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 500px;
 }
