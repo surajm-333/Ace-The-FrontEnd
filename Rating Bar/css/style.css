@@ -55,4 +55,6 @@ img {
 .rating label h4 {
     color: #fff;
     font-size: 24px;
+    padding-top: 10px;
+    font-weight: 500;
 }
