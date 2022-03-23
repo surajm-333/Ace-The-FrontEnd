@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -76,4 +76,6 @@ img {
     transform: translateX(-50%);
     color: #fff;
     width: 500px;
-}
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
