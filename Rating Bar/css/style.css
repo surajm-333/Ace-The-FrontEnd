@@ -48,4 +48,5 @@ img {
 .rating input:hover+label,
 .rating input:checked+label {
     filter: grayscale(0);
+    opacity: 1;
 }
