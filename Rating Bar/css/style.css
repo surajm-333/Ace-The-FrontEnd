@@ -44,3 +44,8 @@ img {
     width: 160px;
     opacity: 0.2;
 }
+
+.rating input:hover+label,
+.rating input:checked+label {
+    filter: grayscale(0);
+}
