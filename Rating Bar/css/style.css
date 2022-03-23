@@ -66,4 +66,5 @@ img {
 .rating input:hover+label h4,
 .rating input:checked+label h4 {
     opacity: 1;
+    transform: translateY(0) scale(1);
 }
