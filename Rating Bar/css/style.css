@@ -18,3 +18,8 @@ img {
     height: 120px;
     width: 120px;
 }
+
+.rating {
+    position: relative;
+    display: flex;
+}
