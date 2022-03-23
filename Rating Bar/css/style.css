@@ -42,4 +42,5 @@ img {
 
 .rating:hover label {
     width: 160px;
+    opacity: 0.2;
 }
