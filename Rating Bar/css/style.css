@@ -28,3 +28,9 @@ img {
 .rating input {
     display: none;
 }
+
+.rating label {
+    position: relative;
+    width: 0;
+    height: 128px;
+}
