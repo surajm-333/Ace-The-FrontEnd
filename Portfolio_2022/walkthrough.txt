@@ -1,0 +1,22 @@
+**Hi Guys , this is Kunal Srivastava and here I am to help you create your own Portfolio website using the template that I have made for you**
+
+
+
+Before Getting started with the code, these are the prerequisites
+Step 1: Find All the Relevant Pictures and edit it according to your NEED.(Profile Picture , 2 pics describing your skillset). 
+Step 2: Write Two paragraphs describing your skills. 
+Step 3: Think of your gig and write it down somewhere.
+Step 4: Get all the links of your social media platforms , You can add or change those icons in the footer from fontawesome 
+Note:
+    You can also change the animation if you want (A big shoutout to AOS{ANIMATION ON SCROLL} , Just google it)
+
+Now get in the Code :
+Step 5: Go straight down to line number 39 , 49 and 66 and change the images.
+Step 6: Change the texts in lines 34 , 55 to 58 , 67 to 70.
+Step 7: Change the links of the social media icons in the footer.
+Step 8: Chnage the gig and 💥You Are Done HomeBoy!!!
+
+If you like my work then https://www.buymeacoffee.com/ksrivastava  🙂♥️
+
+Want an Avtaar like me ? DM me on LinkedIn/Twitter
+The link on the social icons in the footer is mine👍🏻
