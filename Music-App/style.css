@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Montserrat',sans-serif;
+}
+.app
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1
+{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+header p
+{
+    font-size: 20px;
+}
+.pads
+{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+.pads>div
+{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+}
+.pad1
+{
+    background: #604394;
+}
+.pad2
+{
+    background: #d36060;
+}
+.pad3
+{
+    background: #03fc88;
+}
+.pad4
+{
+    background: #34ebe8;
+}
+.pad5
+{
+    background: #4287f5;
+}
+.pad6
+{
+    background: #f099e7;
+}
+.visual>div 
+{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
+@keyframes jump
+{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual>div
+{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+}

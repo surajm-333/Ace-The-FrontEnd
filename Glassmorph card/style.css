@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+  width:100%;
+  height: 100vh;
+  background-image:url("./Desktop.jpg");
+  background-position: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  img {
+    justify-items: center;
+    width: 200px;
+    height: 200px;
+  }
+
+  .card{
+    width:90%;
+    max-width: 440px;
+    color:#fff;
+    text-align:center;
+    padding: 50px 35px;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow:0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+  }
+
+.card img {
+  width: 190px;
+  border-radius: 50%;
+}
+
+.card h2 {
+  font-size:40px;
+  font-weight: 600px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fff;
+  color: #ff0141;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin:30px ;
+
+}
+
