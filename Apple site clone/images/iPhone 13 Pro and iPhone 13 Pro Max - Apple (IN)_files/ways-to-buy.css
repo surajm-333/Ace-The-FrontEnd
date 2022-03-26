@@ -1,0 +1,16 @@
+#ac-globalfooter .ac-gf-buystrip-info-icon-ways_to_buy {
+    width: 100%;
+    height: 56px;
+    background-size: 100% 56px;
+    background-repeat: no-repeat;
+    background-image: url("/in/global/includes/buystrip/images/ways-to-buy/icon_large.svg")
+}
+
+.ac-theme-dark #ac-globalfooter .ac-gf-buystrip-info-icon-ways_to_buy,
+#ac-globalfooter.ac-globalfooter-dark .ac-gf-buystrip-info-icon-ways_to_buy {
+    width: 100%;
+    height: 56px;
+    background-size: 100% 56px;
+    background-repeat: no-repeat;
+    background-image: url("/in/global/includes/buystrip/images/ways-to-buy/icon_dark_large.svg")
+}
