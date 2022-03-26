@@ -1,0 +1,47 @@
+
+html{
+    scroll-behavior: smooth;
+}
+.navi
+{
+    background-color: rgb(49, 218, 96);
+    border-radius: 70px;
+    overflow: auto;
+    padding:5px;
+    
+
+    
+
+} 
+ .navi li{
+    list-style: none;
+    float:left;
+    margin: 13x 20px;
+    padding: 15px;
+    position:sticky;
+ }
+.hello
+{
+    margin-left: 80%;
+     
+}
+h2
+{
+    text-align: justify;
+}
+
+.tp,.tip,.LAS
+{
+    border:1px solid;
+     width: 20%;
+    margin-left:5%;
+    margin-top: 10px;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     color: rgb(43, 226, 58);
+     border-radius: 2px;
+     padding-left: 4px;
+}
+.P
+{
+    margin-left: 10%;
+}
