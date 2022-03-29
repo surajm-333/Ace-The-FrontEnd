@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: sticky; */
+     width:100%;
+     border: 2px solid gainsboro;
+}
+
+section{
+    /* border: 2px solid red; */
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    width:100%;
+   height: 100%;
+    background: linear-gradient(#ac23d6,rgb(219, 141, 154)); 
+   /* filter:blur(100px); */
+}
+.cicle{
+   position: absolute;
+   background:linear-gradient(rgb(143, 143, 218),blue);
+   width: 100px;
+	height: 100px;
+    border-radius: 40px;
+   clip-path: circle(20% center 50% );
+   
+}
+.triangle{
+    background-color: #ee622b;
+	clip-path: polygon(50% 0, 100% 100%, 0 100%);
+	width: 200px;
+	height: 100px;
+    top:400px;
+    left:800px;
+    
+    position: absolute;
+}
+.container{
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    background: rgba(255,255,255,0.1);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 25px 100px solid rgba(0,0,0,0.1);
+    border:0.2px solid rgba(255,255,255,0.1);
+}
+.internal{
+    /* border:1px solid green ; */
+    padding:10px;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    margin:7px 30px;
+  /* overflow: hidden; */
+
+
+
+}
+#login{
+    background-color: rgb(141, 218, 27);
+    padding:8px 30px;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    margin-bottom:30px ;
+    text-align: center;
+    
+    /* border: 0.1px solid rgb(252, 248, 248); */
+    margin:0px 120px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+h4{
+    color:rgb(30, 248, 10);
+}
+input{
+    margin:8px;
+    padding: 8px 32px;
+    border-radius: 20px;
+    border:none;
+    outline: none;
+}
