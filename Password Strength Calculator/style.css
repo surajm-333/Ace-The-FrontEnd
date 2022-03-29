@@ -1,0 +1,370 @@
+/* Importing Fonts from Google-Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400&family=Roboto:wght@300&display=swap');
+
+/* Universal CSS + Removal of Browser's padding & margin */
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+/* Main div CSS */
+ .maindiv{
+    display:flex;
+    flex-direction:column;
+    background-image: linear-gradient(90deg, #595CFF 0%, #6810ce 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Div cointaining header */
+.heading{
+    background-color: rgb(255, 255, 255);
+    height:5rem;
+    width:44rem;
+    margin: auto;
+    margin-top:1rem;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius:0.8rem;
+    box-shadow: 0 0.625rem 1.5625rem 0 rgba(0,0,0,0.15);
+}
+
+/* Header Text */
+.headingH1{
+    margin:1.6rem 0 0 0;
+    padding:0;
+    font-size:2rem;
+    text-align: center;
+}
+
+/* Secure word in heading */
+.secure{
+    background-color: rgb(174, 253, 174);
+    border-radius:0.15rem;
+    height:2.6rem;
+}
+
+/* Button for checking the password strength */
+.btnCheck{
+    background-color: #071349;
+    color: rgb(248, 165, 87);
+    border:0.0938rem solid rgb(248, 165, 87);
+    width:10rem;
+    height:3rem;
+    border-radius:0.5rem;
+    opacity: 0.9;
+    font-size: 1.25rem;
+    align-items: center;
+    margin:0 0 0 5rem;
+    position:relative;
+    z-index: 4;
+
+}
+
+.btnCheck:hover , .toggleBtn:hover{
+    color:rgb(255, 255, 255)
+}
+
+/* Button for Hide/Show option*/
+.toggleBtn{
+    background-color: #071349;
+    color: rgb(248, 165, 87);
+    border:0.0938rem solid rgb(248, 165, 87);
+    width:10rem;
+    height:3rem;
+    border-radius:0.5rem;
+    opacity: 0.9;
+    font-size: 1.25rem;
+    margin: 4rem 2rem 0 5rem;
+    position:relative;
+}
+
+.main-form{
+    position:relative;
+    width:40rem;
+    height:24rem;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    margin-top:2.2rem;
+    border-radius:0.8rem;
+    box-shadow: 0 0.625rem 1.5625rem 0 rgba(0,0,0,0.15);
+    border:0.0938rem solid rgb(248, 165, 87);
+}
+
+/* Password input field */
+.passinput{
+    margin:0.5rem 0 0 5rem;
+    padding: 0;
+    width:26rem;
+    height:2.5rem;
+    transition: all 0.3s;
+    border:0.0625rem solid rgb(248, 165, 87);
+}
+.passinput:focus{
+    border-color:rgb(166, 201, 255);
+}
+
+
+/*CSS for Label inside Password input field */
+.form-label{
+    margin:3.5rem 0 0 5rem;
+    font-size: 1.2rem;
+    background-color:rgb(255, 248, 187);
+    border-radius: 0.125rem;
+    padding: 0 0.3rem 0 0.3rem;
+}
+
+.form-text{
+    margin:0.5rem 0 0 5rem;
+}
+
+/* Paragraph showing strength of password{Strong,Medium,Weak} */
+#demo{
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    padding:0.1rem 0.625rem;
+    font-size:1.25rem;
+    font-weight:500;
+    width:95%;
+    height:2rem;
+    border-radius:0.2rem;
+    text-align:center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+/*Paragraph showing 'Time-to-hack' & 'No. of characters' */
+#cn , #nochar{
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    padding:0.1rem 0.625rem;
+    font-size:1.25rem;
+    font-weight:500;
+    width:95%;
+    height:2rem;
+    border-radius:0.2rem;
+    text-align:center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+
+
+/*  Tips section */
+.menu{
+    display: flex;
+    position:relative;
+    width:60%;
+    height:auto;
+    margin:auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background: white;
+    box-shadow: 0 0.625rem 1.5625rem 0 rgba(0,0,0,0.15);
+    border-radius:0.4rem;
+    display:none;
+}
+.cta-btn{
+    padding:0;
+    margin:0;
+    justify-content:center;
+}
+.action .tips{
+    position:relative;
+    width:9rem;
+    height:3rem;
+    background-color: #071349;
+    color:rgb(250, 192, 85);
+    border-radius:0.6rem;
+    border:1.5px solid rgb(250, 192, 85);
+    cursor:pointer;
+    margin:2rem 0 0.8rem;
+    margin-left: 36.5rem;
+    font-size:1.2rem;
+}
+
+.action .menu > ol{
+    left: 0;
+    padding: 1.5rem;
+}
+
+.action .menu ol li{
+    color:rgb(59, 6, 109);
+    cursor:pointer;
+    font-size:1.2rem;
+    position: relative;
+    line-height: 2.2rem;
+    list-style: none;
+}
+.action .menu ol li:hover{
+    color:rgb(136, 103, 255);
+    font-size:1.25rem;
+}
+.tips-txt{
+    background-color: rgb(218, 253, 220);
+    border-radius: 0.4rem;
+    height: 30rem;
+    margin-top: 70rem;
+}
+
+.action .menu:before{
+    content:'';
+    position:absolute;
+    height:auto;
+    width:60%;
+    margin:auto;
+
+}
+/* Tips section ends */
+
+footer{
+    padding-top: 0.8rem;
+    margin-top:1rem;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    background-color: #0b1647;
+    color:rgb(248, 165, 87);
+}
+
+/* Media queries for responsive screen at different break-points */
+@media screen and (max-width: 1440px){
+    #btn{
+        margin-left: 40rem;
+    }
+
+}
+@media screen and (min-width:1025px){
+    #btn{
+        margin-left:35rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    #btn{
+        margin-left: 27rem;
+    }
+
+}
+@media screen and (max-width: 768px){
+    #btn{
+        margin-left: 30rem;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+   
+   .heading{
+    width: 22rem;
+   }
+    .headingH1{
+       font-size: 1rem;
+       
+   }
+   .form-label{
+       font-size: 1rem;
+       margin-left: 8rem;
+   }
+   #password{
+       width: 13rem;
+
+   }
+   .btnCheck,.toggleBtn{
+       display: block;
+       margin-left: 6.5rem;
+   }
+   .main-form{
+       width: 25rem;
+       height: fit-content;
+   }
+   #btn{
+       margin: 3rem;
+       margin-left: 9rem;
+   }
+   .menu{
+       width: 25rem;
+   }
+   .tips-txt{
+       font: 1em sans-serif;
+       width: 8rem;
+       margin-bottom: 3rem;
+   }
+}
+
+@media screen and (max-width: 375px){
+
+    .form-label{
+        font-size: 1rem;
+        margin-left: 7rem;
+    }
+    #password{
+        width: 13rem;
+        margin-left: 4rem;
+ 
+    }
+    #btn{
+        margin: 2rem;
+        margin-left: 7rem;
+    }
+    .btnCheck,.toggleBtn{
+        display: block;
+        margin-left: 6rem;
+    }
+    .menu{
+        width: 21rem;
+    }
+    #demo,#cn,#nochar{
+        font-size: 1rem;
+    }
+    .main-form{
+        width:22rem;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .heading{
+        width: 18rem;
+       }
+       .form-label{
+        font-size: 1rem;
+        margin-left: 6rem;
+    }
+    #demo,#cn,#nochar{
+        font-size: .9rem;
+    }
+    #password{
+        width: 13rem;
+        margin-left: 3rem;
+ 
+    }
+    #btn{
+        margin-left: 6rem;
+    }
+    .btnCheck,.toggleBtn{
+        display: block;
+        margin-left: 4.5rem;
+    }
+    .main-form{
+        width: 18rem;
+
+    }
+    .menu{
+        width: 19rem;
+    }
+}
+/* Media-queries end */
