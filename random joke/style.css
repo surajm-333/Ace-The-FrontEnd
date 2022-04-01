@@ -1,0 +1,21 @@
+body{
+    text-align:center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 2em;
+    width: 800px;
+    margin: 50px auto;
+}
+
+img{
+    width: 10%;
+    height: auto;
+}
+button{
+    font-size: .8em;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 5px;
+    cursor:pointer;
+}
