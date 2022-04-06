@@ -14,8 +14,8 @@ It is a cool rating bar with stylish animation and effects
 
 ## 📷 Screenshots
 
-![ss1](./img/sci_demo1.jpg)
-![ss2](./img/sci_demo2.jpg)
+![ss1](./img/demo_gif%20(1).gif)
+!
 
 ## ‎‍💻 Authors
 
