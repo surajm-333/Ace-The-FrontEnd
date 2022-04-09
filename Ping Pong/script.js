@@ -7,3 +7,12 @@ const storeName = "PPName";
 const storeScore = "PPMaxScore";
 const rod1Name = "Rod 1";
 const rod2Name = "Rod 2";
+
+let score,
+    maxScore,
+    movement,
+    rod,
+    ballSpeedX = 2,
+    ballSpeedY = 2;
+
+let gameOn = false;
