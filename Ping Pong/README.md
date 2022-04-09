@@ -26,8 +26,8 @@
 
 ## 📷 Screenshots
 
-![ss1]()
-![ss2]()
+![ss1](./img/Web%20capture_9-4-2022_5395_127.0.0.1.jpeg)
+![ss2](./img/Web%20capture_9-4-2022_54011_127.0.0.1.jpeg)
 
 ## ‎‍💻 Authors
 
