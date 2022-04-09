@@ -23,3 +23,13 @@
     color: white;
     font-weight: bold;
 }
+
+#rod1 {
+    background-color: blue;
+    top: 0px;
+}
+
+#rod2 {
+    background-color: blueviolet;
+    bottom: 0px;
+}
