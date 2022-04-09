@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Password Strength Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!--Parent div-->
+  <div class="maindiv">
+
+    <!-- Heading Div -->
+    <div class="heading col-auto">
+      <h1 class="headingH1"> Hello Human, Is Your Password <span class="secure">Secure</span>?</h1>
+    </div>
+
+    <!-- Password form div begins -->
+    <div class="main-form">
+      <div class="pass-form">
+        <label for="inputPassword6" class="form-label">Password : </label>
+
+        <input type="password" id="password" placeholder="  Type a password" class="form-control passinput"
+          aria-describedby="passwordHelpInline">
+      </div>
+      <!-- Password form div ends -->
+
+      <!--Buttons for checking the password strength & Show/Hide option for the same -->
+      <button class="btn btnCheck my-3" onclick="calc()">Check 🤝</button>
+      <button class="toggleBtn btn my-2" onclick="toggle()">Show/Hide</button>
+
+      <!-- Div containing the messages appearing upon checking the password{ Strong/Medium/Weak,Time to hack the password & No. of characters it contains } -->
+      <div class="area-2">
+        <p id="demo"></p>
+        <p id="cn"></p>
+        <p id="nochar"></p>
+      </div>
+    </div>
+
+    <!-- Tips button divs -->
+    <div class="action">
+      <div class="cta-btn">
+        <button class="tips tipsBtn" id="btn">Tips:</button>
+      </div>
+
+      <!-- Tips list{appearing on clicking the Tips button} -->
+      <div class="menu" id="main-menu">
+        <ol>
+          <li><span class="tips-txt">Avoid reusing passwords.</span></li>
+          <li><span class="tips-txt">Poor password practices 101: Creating easy passwords.</span></li>
+          <li><span class="tips-txt">Never save passwords on multiple browsers.</span></li>
+          <li><span class="tips-txt">Do not share passwords with non-trusted sites.</span></li>
+          <li><span class="tips-txt">Passwords should have minimum of 12-16 characters.</span></li>
+          <li><span class="tips-txt">Go all out:Lowercase,uppercase,numbers,special characters!.</span></li>
+          <li><span class="tips-txt">Refrain from similar passwords.</span></li>
+          <li><span class="tips-txt">Do not stretch it out unnecessarily.</span></li>
+          <li><span class="tips-txt">Avoid adopting MFA.</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Concluding footer-->
+    <footer>
+      <p>The World is Open-Source! &#128150</p>
+    </footer>
+  </div>
+
+  <!-- Linking External JS file -->
+  <script src="./script.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

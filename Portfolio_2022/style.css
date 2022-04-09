@@ -1,0 +1,1323 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    position: relative;
+    margin-left: 46rem;
+}
+.help{
+    display: none;
+}
+li{
+    list-style-type: none;
+    margin: 7px;
+    font-size: larger;
+    margin-left: 3rem;
+}
+.white{
+    color: aliceblue;
+}
+li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+li a:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+    color: coral;
+    font-size: 1.5rem
+
+}
+li a:active{
+    color: coral;
+}
+
+.navbar-items{
+
+    margin-top: 0;
+    position: relative;
+}
+
+.blue{
+    position: absolute;
+    margin-left: 56rem;
+    margin-top: 0;
+    z-index: -1;
+    height: 34rem;
+    width: 44rem;
+    background-color: rgb(0, 80, 80);
+
+}
+.green{
+    position: absolute;
+    margin-left: 66rem;
+    margin-top: 50rem;
+    z-index: -1;
+    height: 17rem;
+    width: 17rem;
+    background-color: rgb(29, 184, 55);
+
+}
+.intro{
+    position: absolute;
+    margin-left: 14rem;
+    margin-top: 10rem;
+    height: 28rem;
+    width: 30rem;
+    z-index: 0;
+    font-size: 3rem;
+}
+.intro-p{
+    position: absolute;
+    margin-left: 14rem;
+    margin-top: 9rem;
+    height: 28rem;
+    width: 30rem;
+    z-index: 0;
+    font-family: 'Lato', sans-serif;
+    color: coral;
+
+}
+.hire{
+    position: absolute;
+    background-color: white;
+    margin-left: 19rem;
+    margin-top: 28rem;
+    z-index: 0;
+    font-family: 'Lato', sans-serif;
+    color: rgb(53, 53, 68);
+    border: 1px solid coral;
+}
+.hire a{
+    color: rgb(53, 53, 53);
+}
+button{
+    width: 7rem;
+}
+.profilePic{
+    margin-left: 37rem;
+    margin-top: 5rem;
+    height: 35rem;
+
+}
+span{
+    font-family: 'Lato', sans-serif;
+    color: coral;
+}
+#p2{
+    display: block;
+}
+#p2{
+    display: none;
+}
+
+  .manStanding{
+      position: absolute;
+      margin-left: 8rem;
+      height: 40rem;
+      z-index: 1;
+  }
+  .coral{
+      position: absolute;
+      height: 15rem;
+      width: 30rem;
+      background-color: coral;
+  }
+.blue2{
+      position: absolute;
+      height: 10rem;
+      width: 38rem;
+      margin-left: 15rem;
+      margin-top: 25rem;
+      background-color: rgb(16, 38, 167);
+}
+.aboutMe{
+    position: absolute;
+    height: 25rem;
+    width: 38rem;
+    margin-left: 45rem;
+    margin-top: 7rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(35, 35, 36);
+
+}
+.abouth , .remoteh{
+    text-decoration: underline;
+    font-weight: 800;
+}
+.remoteWork{
+    position: absolute;
+    height: 25rem;
+    width: 38rem;
+    margin-left: 19rem;
+    margin-top: 50rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(35, 35, 36);
+}
+.ditalNomad{
+    position: absolute;
+    margin-top: 47rem;
+    margin-left: 52rem;
+    height: 25rem;
+    z-index: 1;
+}
+.red{
+    position: absolute;
+    height: 8rem;
+    width: 30rem;
+    margin-top: 37rem;
+    margin-left: 72rem;
+    background-color: rgb(167, 16, 16);
+}
+.green2{
+    position: absolute;
+    height: 7rem;
+    width: 35rem;
+    margin-top: 62rem;
+    margin-left: 26rem;
+    background-color: rgb(29, 105, 13);
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+
+#pricing{
+    width: 989px;
+    margin: 100px auto;
+    font-family: 'Open Sans', Helvetica;
+    border-radius: .8rem;
+    
+    }
+    .price{
+        color: aliceblue;
+    }
+    .alpha , .bravo , .charlie {
+        border-style: solid ;
+        border-color: rgb(199, 197, 197);
+        border-radius: .8rem;
+       
+    }
+    .price_card{
+    width: 300px;
+    background: rgb(255, 255, 255);
+    display: inline-table;
+    top: 0;
+    border-radius: .8rem;
+    }
+    .price_card:not(:last-child){
+    margin-right: 40px;
+    }
+    .header{
+    color: rgb(255, 255, 255);
+    border-radius: .8rem;
+    }
+    .alpha .header{
+    background: rgb(245, 166, 35);
+    border-radius: .8rem;
+    }
+    .bravo .header{
+    background: rgb(246, 77, 77);
+    border-radius: .8rem;
+    }
+    .charlie .header{
+    background: rgb(48, 219, 181);
+    border-radius: .8rem;
+    }
+    .price{
+    width: 100%;
+    font-size: 60px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    padding: 30px 0 10px;
+    }
+    .name{
+    color: rgb(7, 14, 20);
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    padding: 0 0 30px;
+    }
+    .features{
+    list-style: none;
+    text-align: center;
+    color: rgb(138, 138, 138);
+    margin: 0;
+    padding: 0;
+    }
+    .features li{
+    margin: 0 35px;
+    padding: 20px 15px;
+    width: 200px;
+    }
+    .features li:not(:last-child){
+    border: 1px solid rgb(242, 242, 242);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    }
+    button{
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 20px auto 35px;
+    }
+    .alpha button{
+    background: rgb(245, 166, 35);
+    }
+    .bravo button{
+    background: rgb(246, 77, 77);
+    }
+    .charlie button{
+    background: rgb(48, 219, 181);
+    }
+    .tip{
+    font-family: 'Indie Flower';
+    position: absolute;
+    color: rgb(117, 117, 117);
+    margin: 10px 5px;
+    }
+
+    #coralFooter{
+        position: absolute;
+        height: 40rem;
+        width: 10rem;
+        margin-left: 95rem;
+        margin-top: 10rem;
+    }
+
+
+    .darkBlue{
+        background-color: rgb(20, 13, 89);
+       height: 10rem;
+       width: 40rem;
+    }
+    .social{
+        position: absolute;
+        height: 4rem;
+        width: 38rem;
+        z-index: 1;
+        margin-left: 60rem;
+        margin-top: 6rem;
+
+    }
+    i{
+        width: 10rem;
+    }
+
+    .fa-solid {
+        margin-top: 4rem;
+        margin-left: 10.4rem;
+    }
+
+    .contact{
+        position: absolute;
+        margin-left: 63rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 1309px){
+        .blue{
+            height: 24rem;
+            width: 32rem;
+        }
+        .green{
+            height: 13rem;
+            width: 13rem;
+        }
+        .profilePic{
+            height: 30rem;
+        }
+        .intro{
+            height: 24rem;
+        }
+        button{
+            width: 6rem;
+
+        }
+        .manStanding{
+            height: 35rem;
+        }
+        .coral{
+            height: 14rem;
+            width: 28rem;
+        }
+        .blue2{
+            height: 9rem;
+            width: 34rem;
+        }
+        .aboutMe{
+            height: 23rem;
+            width: 35rem;
+        }
+        .remoteWork{
+            height: 23rem;
+            width: 34rem;
+        }
+        .ditalNomad{
+            height: 23rem;
+        }
+        .red{
+            height: 7rem;
+            width: 28rem;
+        }
+        .green2{
+            height: 6rem;
+            width: 33rem;
+        }
+
+    }
+    @media screen and (max-width: 1024px){
+       li{
+            font-size: .7rem;
+            margin-left: 2.5rem;
+       }
+       ul{
+           margin-left: 40rem;
+       }
+        .blue{
+            height: 14rem;
+            width: 20rem;
+            margin-left: 49rem;
+        }
+        .green{
+            height: 11rem;
+            width: 11rem;
+            margin-top: 35rem;
+            margin-left: 53rem;
+        }
+        .profilePic{
+            height: 22rem;
+        }
+        .intro{
+            height: 18rem;
+        }
+
+        .intro-p{
+            margin-top: 15rem;
+        }
+
+        button{
+            width: 5rem;
+
+        }
+        .manStanding{
+            height: 32rem;
+        }
+        .coral{
+            height: 8rem;
+            width: 24rem;
+        }
+        .blue2{
+            height: 6rem;
+            width: 29rem;
+        }
+        .aboutMe{
+            height: 16rem;
+            width: 24rem;
+            margin-left: 38rem;
+        }
+        .remoteWork{
+            height: 20rem;
+            margin-top: 42rem;
+            width: 30rem;
+        }
+        .ditalNomad{
+            height: 15rem;
+            margin-left: 43rem;
+            margin-top: 43rem;
+        }
+        .red{
+            height: 5rem;
+            width: 20rem;
+            margin-left: 55rem;
+        }
+        .green2{
+            height: 3rem;
+            width: 22rem;
+            margin-top: 53rem;
+        }
+        #coralFooter{
+            height: 27rem;
+            width: 7rem;
+            margin-left: 70rem;
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 7rem;
+            width: 30rem;
+        }
+        .social{
+            height: 3rem;
+            margin-left: 38rem;
+            margin-top: 4rem;
+            width: 34rem;
+        }
+        .contact{
+            margin-top: .7rem;
+            margin-left: 39rem;
+        }
+        i{
+            width: 7rem;
+        }
+        .lineBreak2 , .lineBreak3{
+            display: none;
+        }
+
+    }
+    @media screen and (max-width: 768px){
+       li{
+            font-size: .7rem;
+            margin-left: 1.8rem;
+
+       }
+       #p1{
+           font-size: 1rem;
+
+       }
+       ul{
+           margin-left: 26rem;
+       }
+        .blue{
+            height: 15rem;
+            width: 23rem;
+            margin-left: 33rem;
+        }
+        .green{
+            height: 9rem;
+            width: 9rem;
+            margin-top: 30rem;
+            margin-left: 34rem;
+        }
+        .profilePic{
+            height: 22rem;
+            margin-left: 20rem;
+            margin-top: 2rem;
+        }
+        .intro{
+            height: 18rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+
+        .intro-p{
+            margin-top: 15rem;
+            font-size: 0.9rem;
+            margin-left: 10rem;
+        }
+        
+        .hire{
+            font-size: .7rem;
+            margin-left: 10rem;
+        }
+        button{
+            width: 5rem;
+
+        }
+        .manStanding{
+            height:22rem;
+        }
+        .coral{
+            height: 5rem;
+            width: 20rem;
+        }
+        .blue2{
+            height: 4rem;
+            width: 18rem;
+            margin-top: 17rem;
+        }
+        .aboutMe{
+            height: 10rem;
+            width: 24rem;
+            margin-left: 24rem;
+            margin-top: 6rem ;
+            font-size: .7rem;
+        }
+        .abouth{
+            font-size: 1.5rem;
+        }
+        .remoteWork{
+            height: 10rem;
+            margin-top: 37rem;
+            width: 24rem;
+            margin-left: 9rem;
+            font-size: .7rem;
+
+        }
+        .remoteh{
+            font-size: 1.5rem;
+        }
+        .ditalNomad{
+            height: 13rem;
+            margin-left: 25rem;
+            margin-top: 36rem;
+        }
+        .red{
+            height: 4rem;
+            width: 20rem;
+            margin-left: 35rem;
+            margin-top: 30rem;
+        }
+        .green2{
+            height: 2.7rem;
+            width: 20rem;
+            margin-top: 45rem;
+            margin-left: 13rem;
+        }
+        #coralFooter{
+            height: 73rem;
+            width: 5rem;
+            margin-left: 43rem;
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 7rem;
+            width: 20rem;
+        }
+        .social{
+            height: 3rem;
+            margin-left: 27rem;
+            margin-top: 4rem;
+            width: 34rem;
+        }
+        .contact{
+            margin-top: .2rem;
+            margin-left: 28rem;
+        }
+        i{
+            width: 6rem;
+        }
+        .help{
+            display: block;
+        }
+     #pricing{
+         margin-top: 4rem;
+     }
+        .price_card{
+            display: block;
+            margin: 3rem;
+            margin-left: 17rem;
+        }
+        .lineBreak, .lineBreak2 , .lineBreak3{
+            display: block;
+        }
+
+    }
+    @media screen and (max-width: 425px){
+       li{
+            font-size: .7rem;
+            margin-left: 1rem;
+
+       }
+       #p1{
+           font-size: 1rem;
+
+       }
+       ul{
+           margin-left: 7rem;
+       }
+        .blue{
+            height: 12rem;
+            width: 20rem;
+            margin-left: 13rem;
+        }
+        .green{
+            height: 6rem;
+            width: 6rem;
+            margin-top: 20rem;
+            margin-left: 20rem;
+        }
+        .profilePic{
+            height: 13rem;
+            margin-left: 10rem;
+            margin-top: 1rem;
+        }
+        .intro{
+            height: 18rem;
+            width: 10rem;
+            margin-left: 3rem;
+        }
+
+        .intro-p{
+            margin-top: 16rem;
+            font-size: 0.6rem;
+            margin-left: 3.5rem;
+        }
+        
+        .hire{
+            font-size: .7rem;
+            margin-left: 10rem;
+        }
+        button{
+            width: 5rem;
+
+        }
+        .manStanding{
+            height:16rem;
+            margin-left: 4rem;
+        }
+        .coral{
+            height: 3rem;
+            width: 10rem;
+        }
+        .blue2{
+            height: 2rem;
+            width: 11rem;
+            margin-top: 13rem;
+            margin-left: 11rem;
+        }
+        .aboutMe{
+            height: 19rem;
+            width: 10rem;
+            margin-left: 15rem;
+            margin-top: 1.5rem ;
+            font-size: .5rem;
+        }
+        .abouth , .remoteh{
+            font-size: 1rem;
+        }
+        .remoteWork{
+            height: 10rem;
+            margin-top: 23rem;
+            width: 10rem;
+            margin-left: 4rem;
+            font-size: .5rem;
+
+        }
+    
+        .ditalNomad{
+            height: 8rem;
+            margin-left: 15rem;
+            margin-top: 25rem;
+        }
+        .red{
+            height: 2rem;
+            width: 10rem;
+            margin-left: 19rem;
+            margin-top: 21rem;
+        }
+        .green2{
+            height: 2rem;
+            width: 15rem;
+            margin-top: 30rem;
+            margin-left: 7rem;
+        }
+        #coralFooter{
+            height: 73rem;
+            width: 5rem;
+            margin-left: 43rem;
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 4.5rem;
+            width: 10rem;
+        }
+        .social{
+            height: 2rem;
+            margin-left: 10rem;
+            margin-top: 2rem;
+            width: 25rem;
+        }
+        .contact{
+            margin-top: .2rem;
+            margin-left: 12rem;
+        }
+        i{
+            width: 6rem;
+        }
+        .lineBreak{
+            display: none;
+        }
+        .help{
+            display: none;
+        }
+        .price_card{
+            display: block;
+            margin: 3rem;
+            margin-left: 5rem;
+        }
+
+    }
+    @media screen and (max-width: 768px){
+       li{
+            font-size: .7rem;
+            margin-left: 1.8rem;
+
+       }
+       #p1{
+           font-size: 1rem;
+
+       }
+       ul{
+           margin-left: 26rem;
+       }
+        .blue{
+            height: 15rem;
+            width: 23rem;
+            margin-left: 33rem;
+        }
+        .green{
+            height: 9rem;
+            width: 9rem;
+            margin-top: 30rem;
+            margin-left: 34rem;
+        }
+        .profilePic{
+            height: 22rem;
+            margin-left: 20rem;
+            margin-top: 2rem;
+        }
+        .intro{
+            height: 18rem;
+            width: 15rem;
+            margin-left: 10rem;
+        }
+
+        .intro-p{
+            margin-top: 15rem;
+            font-size: 0.9rem;
+            margin-left: 10rem;
+        }
+        
+        .hire{
+            font-size: .7rem;
+            margin-left: 10rem;
+        }
+        button{
+            width: 5rem;
+
+        }
+        .manStanding{
+            height:22rem;
+        }
+        .coral{
+            height: 5rem;
+            width: 20rem;
+        }
+        .blue2{
+            height: 4rem;
+            width: 18rem;
+            margin-top: 17rem;
+        }
+        .aboutMe{
+            height: 10rem;
+            width: 24rem;
+            margin-left: 24rem;
+            margin-top: 6rem ;
+            font-size: .7rem;
+        }
+        .abouth{
+            font-size: 1.5rem;
+        }
+        .remoteWork{
+            height: 10rem;
+            margin-top: 37rem;
+            width: 24rem;
+            margin-left: 9rem;
+            font-size: .7rem;
+
+        }
+        .remoteh{
+            font-size: 1.5rem;
+        }
+        .ditalNomad{
+            height: 13rem;
+            margin-left: 25rem;
+            margin-top: 36rem;
+        }
+        .red{
+            height: 4rem;
+            width: 20rem;
+            margin-left: 35rem;
+            margin-top: 30rem;
+        }
+        .green2{
+            height: 2.7rem;
+            width: 20rem;
+            margin-top: 45rem;
+            margin-left: 13rem;
+        }
+        #coralFooter{
+            height: 73rem;
+            width: 5rem;
+            margin-left: 43rem;
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 7rem;
+            width: 20rem;
+        }
+        .social{
+            height: 3rem;
+            margin-left: 27rem;
+            margin-top: 4rem;
+            width: 34rem;
+        }
+        .contact{
+            margin-top: .2rem;
+            margin-left: 28rem;
+        }
+        i{
+            width: 6rem;
+        }
+        .lineBreak{
+            display: none;
+        }
+        .price_card{
+            display: block;
+            margin: 3rem;
+            margin-left: 17rem;
+        }
+
+    }
+    @media screen and (max-width: 425px){
+       li{
+            font-size: .7rem;
+            margin-left: 1rem;
+
+       }
+       #p1{
+           font-size: 1rem;
+
+       }
+       ul{
+           margin-left: 7rem;
+       }
+        .blue{
+            height: 10rem;
+            width: 14rem;
+            margin-left: 13rem;
+        }
+        .green{
+            height: 6rem;
+            width: 6rem;
+            margin-top: 13rem;
+            margin-left: 19rem;
+        }
+        .profilePic{
+            height: 13rem;
+            margin-left: 10rem;
+            margin-top: .5rem;
+        }
+        .intro{
+            height: 18rem;
+            width: 10rem;
+            margin-left: 3rem;
+        }
+
+        .intro-p{
+            margin-top: 19rem;
+            font-size: 0.6rem;
+            margin-left: 3.5rem;
+        }
+        
+        .hire{
+            font-size: .7rem;
+            margin-left: 10rem;
+        }
+        button{
+            width: 5rem;
+
+        }
+        .manStanding{
+            height:16rem;
+            margin-left: 2.5rem;
+        }
+        .coral{
+            height: 3rem;
+            width: 10rem;
+        }
+        .blue2{
+            height: 2rem;
+            width: 11rem;
+            margin-top: 13rem;
+            margin-left: 11rem;
+        }
+        .aboutMe{
+            height: 19rem;
+            width: 10rem;
+            margin-left: 15rem;
+            margin-top: 1.5rem ;
+            font-size: .5rem;
+        }
+        .abouth , .remoteh{
+            font-size: 1rem;
+        }
+        .remoteWork{
+            height: 10rem;
+            margin-top: 23rem;
+            width: 10rem;
+            margin-left: 4rem;
+            font-size: .5rem;
+
+        }
+    
+        .ditalNomad{
+            height: 8rem;
+            margin-left: 15rem;
+            margin-top: 25rem;
+        }
+        .red{
+            height: 2rem;
+            width: 10rem;
+            margin-left: 19rem;
+            margin-top: 21rem;
+        }
+        .green2{
+            height: 2rem;
+            width: 15rem;
+            margin-top: 30rem;
+            margin-left: 7rem;
+        }
+        #coralFooter{
+            height: 63rem;
+            width: 5rem;
+            margin-left: 25rem;
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 4.5rem;
+            width: 10rem;
+        }
+        .social{
+            height: 2rem;
+            margin-left: 10rem;
+            margin-top: 2rem;
+            width: 25rem;
+        }
+        .contact{
+            margin-top: .2rem;
+            margin-left: 12rem;
+        }
+        i{
+            width: 6rem;
+        }
+        .lineBreak{
+            display: none;
+        }
+        .price_card{
+            display: block;
+            margin: 3rem;
+            margin-left: 5rem;
+            margin-bottom: 2rem;
+        }
+        .price{
+            font-size: large;
+        }
+
+    }
+    @media screen and (max-width: 375px){
+       li{
+            font-size: .5rem;
+            margin-left: 1rem;
+
+       }
+       #p1{
+           font-size: 1rem;
+           margin-top: .8rem;
+        
+
+       }
+       ul{
+           margin-left: 8rem;
+       }
+        .blue{
+            height: 10rem;
+            width: 14rem;
+            margin-left: 13rem;
+        }
+        .green{
+            height: 5rem;
+            width: 5rem;
+            margin-top: 13rem;
+            margin-left: 17rem;
+        }
+        .profilePic{
+            height: 10rem;
+            margin-left: 10rem;
+            margin-top: .5rem;
+        }
+        .intro{
+            height: 18rem;
+            width: 10rem;
+            margin-left: 2rem;
+        }
+
+        .intro-p{
+            margin-top: 19rem;
+            font-size: 0.6rem;
+            margin-left: 3.5rem;
+        }
+        
+        .hire{
+            font-size: .7rem;
+            margin-left: 10rem;
+        }
+        button{
+            width: 4rem;
+
+        }
+        .manStanding{
+            height:13rem;
+            margin-left: 2.5rem;
+        }
+        .coral{
+            height: 3rem;
+            width: 10rem;
+        }
+        .blue2{
+            height: 2rem;
+            width: 9rem;
+            margin-top: 10rem;
+            margin-left: 11rem;
+        }
+        .aboutMe{
+            height: 19rem;
+            width: 10rem;
+            margin-left: 12rem;
+            margin-top: .6rem ;
+            font-size: .5rem;
+        }
+        .abouth , .remoteh{
+            font-size: .7rem;
+            text-decoration: underline;
+        }
+        .remoteWork{
+            height: 10rem;
+            margin-top: 20rem;
+            width: 7rem;
+            margin-left: 1.3rem;
+            font-size: .5rem;
+
+        }
+    
+        .ditalNomad{
+            height: 8rem;
+            margin-left: 10rem;
+            margin-top: 20rem;
+        }
+        .red{
+            height: 2rem;
+            width: 10rem;
+            margin-left: 19rem;
+            margin-top: 16rem;
+        }
+        .green2{
+            height: 1rem;
+            width: 15rem;
+            margin-top: 26.5rem;
+            margin-left: 4rem;
+        }
+        #coralFooter{
+            height: 57rem;
+            width: 4rem;
+
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 4.5rem;
+            width: 8rem;
+        }
+        .social{
+            height: 1rem;
+            margin-left: 7.8rem;
+            margin-top: 2rem;
+            width: 25rem;
+        }
+        .contact{
+            margin-top: .1rem;
+            margin-left: 9rem;
+        }
+        i{
+            width: 6rem;
+        }
+        .lineBreak , .lineBreak2{
+            display: none;
+        }
+        .price_card{
+            display: block;
+            margin: 3rem;
+            margin-left: 3rem;
+            margin-bottom: 2rem;
+        }
+        .price{
+            font-size: large;
+        }
+        #pricing{
+            width: 600px;
+        }
+
+    }
+    @media screen and (max-width: 320px){
+       li{
+            font-size: .6rem;
+            margin-left: .8rem;
+
+       }
+       #p1{
+           font-size: 1rem;
+           margin-top: 12rem;
+           margin-left: 2rem;
+        
+
+       }
+       ul{
+           margin-left: 4rem;
+       }
+        .blue{
+            height: 2rem;
+            width: 12rem;
+            margin-left: 9rem;
+        }
+        .green{
+            height: 5rem;
+            width: 5rem;
+            margin-top: 13rem;
+            margin-left: 13rem;
+        }
+        .profilePic{
+            height: 10rem;
+            margin-left: 5rem;
+            margin-top: 1rem;
+        }
+        .intro{
+            height: 18rem;
+            width: 10rem;
+            margin-left: 1rem;
+        }
+
+        .intro-p{
+            margin-top: 43rem;
+            font-size: 0.6rem;
+            margin-left: 2rem;
+        }
+        
+        .hire{
+            font-size: .7rem;
+            margin-left: 12rem;
+        }
+        button{
+            width: 3.5rem;
+
+        }
+        .manStanding{
+            height:10rem;
+            margin-left: 7.3rem;
+        }
+        .coral{
+            height: 2rem;
+            width: 7rem;
+            margin-left: 3rem;
+        }
+        .blue2{
+            height: 2rem;
+            width: 7rem;
+            margin-top: 7rem;
+            margin-left: 12rem;
+        }
+        .aboutMe{
+            height: 19rem;
+            width: 8rem;
+            margin-top: 10rem;
+            margin-left: 7rem;
+            font-size: .5rem;
+        }
+        .abouth , .remoteh{
+            font-size: .7rem;
+            text-decoration: underline;
+            margin-left: 2.7rem;
+        }
+        .remoteWork{
+            height: 10rem;
+            margin-top: 30rem;
+            width: 7rem;
+            margin-left: 8rem;
+            font-size: .5rem;
+        }
+        .remoteh{
+            margin-left: 0rem;
+        }
+    
+        .ditalNomad{
+            height: 5rem;
+            margin-left: 7rem;
+            margin-top: 23rem;
+        }
+        .red{
+            height: 1.5rem;
+            width: 10rem;
+            margin-left: 11.5rem;
+            margin-top: 21rem;
+        }
+        .lineBreak2 , .lineBreak3{
+            display: block;
+        }
+        .green2{
+            height: 1rem;
+            width: 12rem;
+            margin-top: 26.5rem;
+            margin-left: 0;
+        }
+        #coralFooter{
+            height: 57rem;
+            width: 4rem;
+
+            margin-top: 8rem;
+
+        }
+        .darkBlue{
+            height: 4.5rem;
+            width: 6rem;
+        }
+        .social{
+            height: 1rem;
+            margin-left: 7rem;
+            width: 25rem;
+        }
+
+        .contact{
+            margin-left: 7rem;
+            font-size: 1rem;
+        }
+        i{
+            width: 4.5rem;
+        }
+    
+        .price_card{
+            display: block;
+            margin: 3rem;
+            margin-left: .2rem;
+            margin-bottom: 2rem;
+        }
+        .price{
+            font-size: large;
+        }
+        #pricing{
+            width: 300px;
+        }
+
+    }
