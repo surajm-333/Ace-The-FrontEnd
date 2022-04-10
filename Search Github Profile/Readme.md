@@ -9,6 +9,12 @@ This template can be used in any website for the user to search the Github Profi
 ## Issue Fixed:
 A person with no knowledge of github can now search for a user and see his/her profile.
 
+## User Manual:
+1. Search for the Github Username in the search box provided in the template.
+2. Now You will find the profile picture, followers, following and repositories the person with the username has.
+3. This can be used in any website easily.
+
+
 ## Tech-Stack Used:
 1. HTML5
 2. CSS, SCSS
