@@ -1,6 +1,6 @@
 ## DEMO
 
-https://user-images.githubusercontent.com/95171638/158048998-91fd70c5-0256-4f37-84c1-78186abce12d.mp4
+![Animated_Countdown_-_Google_Chrome_2022-02-12_09-26-20_AdobeCreativeCloudExpress](https://user-images.githubusercontent.com/95171638/163165404-9b2630f3-71e0-4d18-adc1-a16ac19c8fff.gif)
 
 ## Tools and Technologies
 
