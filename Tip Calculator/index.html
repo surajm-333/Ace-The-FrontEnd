@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <!-- Tailwind CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-lime-100">
+    
+    <section class="flex flex-col justify-center items-center mx-auto my-2 w-4/5 p-8 rounded-2xl border-2 border-green-500 backdrop-blur-md">
+        <p class="text-4xl font-bold">Tip Calculator</p>
+        <label for="billAmount" class="text-gray-600 font-extrathin">Enter bill total: </label>
+        <p class="text-teal-700">
+            <span class="text-2xl">&#8377;</span>
+            <input type="number" class="border-2 border-b-green-500 focus:border-green-500 rounded-md p-1 focus:outline-none transition ease-in-out delay-100 font-bold text-2xl drop-shadow-xl" id="billAmount" min="0">
+        </p>
+        <br>
+        <label class="text-gray-600 font-extrathin" for="tipPercentage">Tip Amount:</label>
+        <select name="Tip" class="bg-green-500 text-gray-100 border-2 border-green-500 rounded-md focus:outline-none drop-shadow-xl text-2xl" id="tipPercentage">
+            <option value="5">5%</option>
+            <option value="10">10%</option>
+            <option value="15">15%</option>
+            <option value="20">20%</option>
+            <option value="25">25%</option>
+            <option value="30">30%</option>
+            <option value="35">35%</option>
+            <option value="40">40%</option>
+            <option value="45">45%</option>
+            <option value="50">50%</option>
+        </select>
+        <br>
+        <label class="text-gray-600 font-extrathin" for="people">Split Among:</label>
+        <p>
+            <button class="bg-emerald-500 text-gray-100 px-4 py-2 rounded-md text-xl" id="incrementBtn">+</button>
+            <input type="number" class="border-2 border-b-green-500 focus:border-green-500 rounded-md p-1 focus:outline-none transition ease-in-out delay-100 font-bold drop-shadow-xl text-teal-700 text-center text-2xl" id="noOfPeople" name="" id="people" min="1" value="1">
+            <button class="bg-emerald-500 text-gray-100 px-4 py-2 rounded-md text-xl" id="decrementBtn">-</button>
+        </p>
+        <br>
+        <button class="bg-emerald-500 text-gray-100 drop-shadow-xl shadow-green-700 px-4 py-2 rounded-md text-xl" id="btn" type="button">Show</button>
+        <br>
+        <section class="bg-green-300 p-8 drop-shadow-xl rounded-xl">
+            <p class="text-gray-600 font-extrathin">Total per person: </p>
+            <p class=" text-center text-teal-700 font-bold text-3xl" id="perPerson">	&#8377; 0</p>
+            <p class="text-gray-600 font-extrathin">Tip Amount: </p>
+            <p class=" text-center text-teal-700 font-bold text-3xl" id="tipAmount">	&#8377; 0</p>
+        </section>
+
+        <footer class="my-4">
+            <p class="text-gray-600">Made by <a class="text-blue-500 underline underline-offset-2 hover:decoration-wavy" href="https://ashutoshdash.netlify.app">Ashutosh Dash</a>🌱</p>
+        </footer>
+    </section>        
+
+    <script src="script.js"></script>
+</body>
+</html>

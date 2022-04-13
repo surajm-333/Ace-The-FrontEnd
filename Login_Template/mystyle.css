@@ -72,15 +72,18 @@ h1{
 	width: 19rem;
 	padding: 5px;
 	position: absolute;
-	right: 6.5rem;
+	right: 9.5rem;
 	top: 35%;/*16rem;*/
 	background-image: linear-gradient(284deg, #0e5b91, #177da7c4);
 	box-shadow: 4px 7px 20px 5px #1f7462bd;
-	border-radius: 5rem;
+	border-radius: 10px;
     border: 0;
     z-index: 4;
 }
-
+.form-check-label{
+	font-weight: bold;
+	color: #000729;
+}
 .btn-primary {
     color: #0f046a;
     font-weight: bold;

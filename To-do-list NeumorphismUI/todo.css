@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    width:100%;
+    background-color: #ebf5fc;
+}
+.container{
+    position: relative;
+    margin:120px auto;
+    max-width: 500px;
+    width:100%;
+    background-color: #ebf5fc;
+    border-radius: 10px;
+    padding:25px;
+    box-shadow: -5px -5px 15px rgba(255,255,255,0.8),
+                 5px 5px 10px rgba(0,0,0,0.1);
+
+}
+.container header{
+    text-align: center;
+    color:#32a3b1;
+    font-size:30px;
+    font-weight:600;
+    letter-spacing: 2px;
+
+}
+.container .row{
+    display: flex;
+    height: 45px;
+    width:100%;
+    margin:20px 0;
+}
+.row input{
+    outline:none;
+    width:85%;
+    height:100%;
+    background-color: #ebf5fc;
+    color:#32a3b1;
+    border:none;
+    font-size: 22px;
+    border-radius: 40px;
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,1),
+                 inset 2px 2px 6px rgba(0,0,0,0.1);
+    padding-left: 15px;
+
+}
+.row button{
+    width: 60px;
+    height:108%;
+    border:none;
+    outline:none;
+    background:#f72585;
+    color:#ebf5fc;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-left:5px;
+    box-shadow:  -2px -2px 6px rgba(255,255,255,0.1),
+                 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.container .todoList{
+ max-height: 250px;
+ overflow-y: auto;
+ padding-left:0px;
+}
+
+.container .todoList li{
+    list-style: none;
+    height:45px;
+    line-height:45px;
+    font-size: 20px;
+    position: relative;
+    background-color: #ebf5fc;
+    color:#eb8a90;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    padding:0 15px ;
+    cursor:default;
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,1),
+                 inset 2px 2px 6px rgba(0,0,0,0.1);
+
+}
+.todoList li span {
+    position:absolute;
+    width: 45px;
+    text-align: center;
+    border-radius: 45px;
+    color:#ff0047;
+    cursor:pointer;
+    right:0px;
+}
+
+.container .footer{
+  display: flex;
+  width:100%;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.footer button{
+   
+    border:none;
+    outline:none;
+    right:0px;
+    background:#ebf5fc;
+    color:#66999b;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left:5px;
+    padding: 6px 10px;
+    box-shadow:  -2px -2px 6px rgba(255,255,255,1),
+                  2px 2px 6px rgba(0,0,0,0.1);}
+
+.footer button:active{
+    box-shadow:  inset -2px -2px 6px rgba(255,255,255,1),
+                 inset  2px 2px 6px rgba(0,0,0,0.1);}
+
+
+.footer span{
+    color:#32a3b1;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}

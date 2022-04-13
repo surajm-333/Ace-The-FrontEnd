@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div id="particles-js"></div> 
+        <div class="box">
+          <div class="square" style="--i:0;"></div>
+          <div class="square" style="--i:1;"></div>
+          <div class="square" style="--i:2;"></div>
+          <div class="square" style="--i:3;"></div>
+          <div class="square" style="--i:4;"></div>
+          <div class="square" style="--i:5;"></div>
+          
+         <div class="container"> 
+          <div class="form"> 
+            <h2>LOGIN TO OUR PAGE</h2>
+            <form action="">
+              <div class="inputBx">
+                <input type="text" required="required">
+                <span>Login</span>
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div class="inputBx password">
+                <input id="password-input" type="password" name="password" required="required">
+                <span>Password</span>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                <i class="fas fa-key"></i>
+              </div>
+              <label class="remember"><input type="checkbox">
+                Remember</label>
+              <div class="inputBx">
+                <input type="submit" value="Log in" disabled> 
+              </div>
+            </form>
+            <p>Forgot password? <a href="#">Click Here</a></p>
+            <p>Don't have an account <a href="#">Sign up</a></p>
+          </div>
+        </div>
+          
+        </div>
+     
+
+
+
+    
+    <!-- particles.js container --> 
+<!-- stats - count particles -->
+</section>
+
+<div class="count-particles"> <span class="js-count-particles">--</span> particles </div> 
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> 
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
