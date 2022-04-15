@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <h1>Memory Card Game</h1>
+<p>Click on the cards and find the matching images</p>
+<div class="board" id="tangramgrid"></div>
+<svg style="display:none" viewBox="0 0 100 100">
+  <defs>
+    <polygon id="tangram1" points="0 0, 50 50, 0 100" />
+    <polygon id="tangram2" points="50 50, 75 25, 100 50, 75 75" />
+    <polygon id="tangram3" points="0 100, 25 75, 75 75, 50 100"/>
+  </defs>
+</svg>
+</body>
+<script src="script/script.js"></script>
+</html>
