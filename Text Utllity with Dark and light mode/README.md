@@ -2,24 +2,23 @@
 
 To start Run the following commands in the terminal 
 
-1 npm i
-2 npm start
+1 npm i <br>
+2 npm start<br>
+Page will be available on 127.0.0.1:3000 <br>
 
-Page will be available on 127.0.0.1:3000 
+Added a text utility that can<br>
+✅ Parse text from HTML<br>
+✅ Convert to lowercase, UPPERCASE, and Capitalize<br>
+✅ Remove extra spaces<br>
+✅ Can tell no of words and characters entered<br>
 
-Added a text utility that can
-✅ Parse text from HTML
-✅ Convert to lowercase, UPPERCASE, and Capitalize
-✅ Remove extra spaces
-✅ Can tell no of words and characters entered
-
-Project has
-✅ Vibrant animations
-✅ Option to switch between light and dark mode
-✅ Can greet according to time
+Project has<br>
+✅ Vibrant animations<br>
+✅ Option to switch between light and dark mode<br>
+✅ Can greet according to time<br>
 
 
-##Demo <br>
+#Demo <br>
 
 
 
