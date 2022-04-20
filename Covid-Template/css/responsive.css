@@ -1,0 +1,303 @@
+/*--------------------------------------------------------------------- 
+File Name: responsive.css 
+---------------------------------------------------------------------*/
+
+@media (min-width: 1343px) and (max-width: 1500px) {
+   
+    #banner1 .carousel-control-prev {
+       right: 10%;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+   
+    .full_bg {
+        height: 100%;
+    }
+     .latest .read_more {top: 19%;}
+  
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo_midle::before {right: 9px;}
+    .full_bg {
+        height: 100%;
+    }
+    .photog h1 {padding-bottom: 35px;}
+   .site-navbar ul li { padding-right: 44px;}
+    .owl-next {right: 39%;}
+    .owl-prev {left: 39%;}
+    .titlepage h2 {font-size: 35px;}
+    ul.top_infomation li {font-size: 15px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+   .left, .right {display: none;}
+   .site-navbar ul li {padding-right: 32px;}
+   .logo_midle::before {right: 2px;}
+    .full_bg {
+        height: 100%; 
+    }
+    
+  
+    .photog h1 {
+        font-size: 50px;
+        line-height: 53px; padding-bottom: 40px;
+    }
+    
+ .about {margin: 0 10px; padding: 80px 20px; margin-top: -90px;}
+
+ .titlepage h2 {font-size: 33px; line-height: 40px;}
+.about_img {padding-right: 0; padding-left: 0;}
+.nostrud {
+    padding: 20px 0px 0 0px; }
+    .nostrud h3 {
+    font-size: 16px;
+    line-height: 20px; padding-top: 15px;
+  }
+  .owl-next {right: 37%;}
+    .owl-prev {left: 37%;}
+   .cases {padding: 0; padding-top: 70px; }
+   .latest {padding: 15px 15px 0px 15px;}
+   .latest .read_more {top: 12%;}
+   #banner1 .carousel-control-prev, #banner1 .carousel-control-next {top: 96%;}
+    .di_no {
+        display: none !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header-area {
+    padding: 27px 16px;}
+     .left, .right {display: none;}
+     .logo_sm {
+    display: inherit;
+} 
+    .full_bg {
+        height: 100%;
+    }
+    .logo a {position:relative;}
+.logo a::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    background: url(../images/logo1.png);
+    width: 158px;
+    height: 122px;
+    z-index: 999;
+    left: -15px;
+}
+   .logo_midle {
+    display: none !important;
+}
+  #banner1 .carousel-control-prev, #banner1 .carousel-control-next {top: 95%;}
+    .photog h1 {
+        font-size: 50px;
+        line-height: 53px;
+        padding-bottom: 29px;
+padding-top: 42px;
+    }
+  .about {margin: 0 10px; padding: 80px 20px; margin-top: -90px;}
+    .about_img, .coronata_img {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 30px;
+    }
+   .latest {
+    max-width: 425px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.owl-prev {
+    left: 31%;
+}
+.owl-next {
+    right: 32%;
+}
+.map-responsive {
+    margin-top: 30px;
+}
+
+    .grid {
+        display: grid;
+    }
+    .oder1 {
+        order: -1;
+    }
+    .titlepage h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+   .doctors {background: transparent;}
+    .d_none {
+        display: none;
+    }
+  
+    /* navbar css for mobile start */
+    .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 99999;
+    }
+    .site-navbar {
+        min-height: 39px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        left: -15px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ed242e;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgb(192, 190, 182);
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+    .site-navbar ul li a {
+        padding: 25px 25px 0px 25px;
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        padding-bottom: 25px;
+        overflow: visible;
+    }
+    /* navbar css for mobile end */
+}
+
+@media (max-width: 575px) {
+     .header-area {
+    padding: 27px 16px;}
+     .left, .right {display: none;}
+     .logo_sm {
+    display: inherit;
+} 
+    .full_bg {
+        height: 100%;
+    }
+.logo a {position:relative;}
+.logo a::before {
+    position: absolute;
+    content: "";
+    top:10px;
+    background: url(../images/logo1.png);
+    width: 158px;
+    height: 122px;
+    z-index: 999;
+    left: -15px;
+}
+   .logo_midle {
+    display: none !important;
+}
+    .slider_main {
+        padding-top: 27%;
+    }
+  
+    .photog .read_more {margin-bottom: 5px;}
+   
+
+  .photog h1 {
+    font-size: 44px;
+    line-height: 51px;
+}
+  
+    .about_img, .coronata_img  {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 30px;
+    }
+    .about {
+    padding: 80px 10px;
+    position: relative;
+    margin: 0px;
+    margin-top: -70px;
+}
+   .latest {
+    max-width: 425px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+ .cases {padding: 0; padding-top: 70px; }
+.owl-prev {
+    left: 10%;
+}
+.owl-next {
+    right: 10%;
+}
+.map-responsive {
+    margin-top: 30px;
+}
+.nostrud h3 {font-size: 20px;
+line-height: 25px;}
+
+.doctors {
+    background: transparent;}
+    .grid {
+        display: grid;
+    }
+    .oder1 {
+        order: -1;
+    }
+.titlepage h2 {
+font-size: 25px;
+line-height: 30px;
+}
+   
+    .d_none {
+        display: none;
+    }
+
+
+
+     /* navbar css for mobile start */
+    .navbar-area {
+        margin-top: -16px;
+    }
+    .nav-toggler {
+        display: block;
+        position: absolute;
+        right: 15px;
+        z-index: 99999;
+    }
+    .site-navbar {
+        min-height: 58px;
+    }
+    .site-navbar ul {
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ed242e;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgb(192, 190, 182);
+    }
+    .site-navbar ul li {
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+    }
+    .site-navbar ul li a {
+        padding: 25px 25px 0px 25px;
+    }
+    .site-navbar ul.open {
+        max-height: 100vh;
+        padding-bottom: 25px;
+        overflow: visible;
+       
+    }
+}
