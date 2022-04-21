@@ -25,7 +25,7 @@ const renderCalendar = () => {
         0
     ).getDay();
 
-    const nextDays = 7 - lastDayIndex - 1;
+    const nextDays = 8 - lastDayIndex - 1;
 
     const months = [
         "January",
