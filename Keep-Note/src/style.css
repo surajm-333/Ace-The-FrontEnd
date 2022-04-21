@@ -1,0 +1,115 @@
+.headicon{
+    margin-top: -1%;
+    color: white;
+}
+.headerspan{
+    color: white;
+    font-size: 200%;
+    /* letter-spacing: 5px; */
+}
+.header{
+    padding: 5px;
+    /* height: 30%; */
+    background-color: orange;
+    
+}
+
+footer{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 27px;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.main_note{
+    position: relative;
+    margin-top: 10px;
+    width: 27%;
+    border-radius: 10px;
+    box-shadow: 5px 6px 8px 4px #d1a0467d;
+    padding: 1%;
+}
+
+.main_note input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.main_note textarea{
+    margin-top: 1%;
+    width:100%;
+    height: 135px;
+    border: none;
+    outline: none;
+}
+
+.main_icon{
+    /* color: white; */
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    background: white;
+    position:absolute;
+    z-index:10;
+    bottom:2px;
+    right:2px;
+}
+.main_icon:hover{
+    background: orange;
+}
+.plus_sign{
+    color: orange;
+}
+.plus_sign:hover{
+    color:white;
+}
+
+.sub_note{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 20%;
+    min-width: 220px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px 0px #d1a0467d;
+    padding: 1%;
+    /* text-align: left; */
+    float:left;
+    
+}
+
+.sub_note h5{
+    /* background:grey; */
+}
+
+.sub_note p{
+    /* background:grey; */
+    height:80%;
+    overflow-y: auto;
+    word-break: break-all;
+}
+.sub_icon{
+    position:absolute;
+    bottom:2px;
+    right:2px;
+    border-radius: 50%;
+    background:white;
+    
+}
+.delete_icon{
+    color:orange;
+}
+.sub_icon:hover{
+    background: orange;
+}
+.delete_icon:hover{
+    color:white;
+}
