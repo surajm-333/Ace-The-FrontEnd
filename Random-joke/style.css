@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2;
+    font-size: 2em;
+    width: 100%;
+    padding: 40px auto;
+    background-color: rgba(0, 0, 0, 0.749);
+    color: black;
+}
+
+img {
+    width: 10%;
+    height: auto;
+}
+
+button {
+    font-size: .8em;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+.joke{
+    padding-top: 30px;
+    align-items: center;
+    border: 5px solid black;
+    width: 35vw;
+    height: 70vh;
+    background-color: darkgray;
+    border-radius: 25px;
+    margin-left: 450px;
+}
+
+.fun{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
