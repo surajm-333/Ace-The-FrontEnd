@@ -1,36 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <!--Google Font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="first">
+        <div class="calculator">
 
-<body>
-    <div class="container">
-        <h1>BMI Calculator</h1>
-        <div class="display">
-            <p id="result">20.0</p>
-            <p id="category">Normal weight</p>
+
+          <div class="wrapper system">
+            <p class="system1">US Units</p>
+            
+            <div class="dropdown" onmouseenter="menu()" onmouseleave="hide()">
+              <img src="images/down.png" alt="downarrow" height="50%" />
+              <div class="dropdown-content">
+                <p class="usUnits">US Units</p><hr style="color: aqua;">
+                <p class="metricUnits">Metric Units</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <label for="height">Enter your height</label>
+            <div class="usMetrics">
+              <div class="units">
+                <p>feet</p>
+                <input type="text" name="height" data-val="feet"  id="feet"/>
+              </div>
+              <div class="units">
+                <p>inches</p>
+                <input type="text" name="height" data-val="inches"  id="inches"/>
+              </div>
+            </div>
+ 
+            <div class="units cms">
+              <p >cm</p>
+              <input type="text" id="cm">
+            </div>
+
+
+          </div>
+          <div class="wrapper">
+            <div class="units">
+              <label for="weight">Enter your weight</label>
+              <p style="top: 50%" class="pounds" >pounds</p>
+              <p style="top: 50%" class="kg">kg</p>
+              <input type="text" name="weight"  id="weight"/>
+            </div>
+          </div>
+
+          <div class="button-back"> 
+          <button class="calculate" onclick="calculate()">Calculate</button>
+          </div>
+
+          <div class="wrapper">
+            
+            <div class="result" style="color: #126180">Result</div>
+          </div>
+          <div class="formula">
+            <p>BMI = weight(in kg) / height(m^2)</p>
+          </div>
         </div>
-        <div class="row">
-            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
-            <span id="weight-val">20 kg</span>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <div class="photo">
+          <img src="images/pic1.png" alt="img" height="100%" width="100%" />
         </div>
-        <div class="row">
-            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
-            <span id="height-val">100 cm</span>
-        </div>
+      </div>
+    </section>
 
+    <section class="section2">
+      <div class="desc">
+          <p class="heading">What is Body Mass Index?</p>
+          <p class="answer">
+            Body mass index, or BMI, is a measure of body size. 
+            It combines a person’s weight with their height. The 
+            results of a BMI measurement can give an idea about 
+            whether a person has the correct weight for their height.
+          </p>
+          <p class="answer">
+            BMI is a screening tool that can indicate whether a person
+            is underweight or if they have a healthy weight, excess 
+            weight, or obesity. If a person’s BMI is outside of the healthy 
+            range, their health risks may increase significantly.
+        </p>
+        <p class="answer">
+            Carrying too much weight can lead toTrusted Source a 
+            variety of health conditions, such as type 2 diabetes, high 
+            blood pressure, and cardiovascular problems.
+        </p>
+        <p class="answer">
+            A weigh that is too low can increase the risk of malnutrition,
+            osteoporosis, and anemia. The doctor will make suitable 
+            recommendations.
+        </p>
+        <p class="answer">
+            BMI does not measure body fat directly, and it does not
+            account for age, sex, ethnicity, or muscle mass in adults.
+        </p>
+        <p class="answer">
+            However, it uses standard weight status categories that can 
+            help doctors to track weight status across populations and 
+            identify potential issues in individuals.
+        </p>
+      </div>
+          <table class="table">
+              <tr>
+                  <td style="font-size: 2.5rem; font-weight: bold;"> 
+                      BMI
+                  </td>
+                  <td style="font-size: 2.5rem; font-weight: bold;">
+                      Weight Status
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      Below 18.5 
+                  </td>
+                  <td>
+                      Underweight
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      18.5 - 24.9
+                  </td>
+                  <td>
+                      Healthy
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    25.0 - 29.9
+                  </td>
+                  <td>
+                      Overweight
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      30.0 and Above
+                  </td>
+                  <td>
+                      Obese.
+                  </td>
+              </tr>
+          </table>
+      <div >
+          <img src="images/bmi.png" alt="bmi" height="400px" width="800px" class="bmi">
+      </div>
+    </section>
 
-    </div>
-
-    <!--Script-->
-    <script src="app.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
