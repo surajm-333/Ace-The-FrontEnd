@@ -8,6 +8,7 @@ import {
   Switch,
   Button,
   TextField,
+  Tooltip,
 } from "@mui/material";
 import { generate } from "../../../utils/passwords";
 
@@ -21,6 +22,7 @@ const StyledTextField = styled(TextField)({
 const Generator = () => {
   const [genPassword, setGenPassword] = useState("");
   const [options, setOptions] = useState({ length: 8 });
+  const [tooltip, setTooltip] = useState(false);
 
   const onGenPassword = () => {
     if (isNaN(options.length)) {
@@ -49,6 +51,14 @@ const Generator = () => {
     }
   };
 
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(genPassword);
+    setTooltip(true);
+    setTimeout(() => {
+      setTooltip(false);
+    }, 1500);
+  };
+
   const handleChange = e => {
     const { name, value, checked } = e.target;
 
@@ -67,9 +77,20 @@ const Generator = () => {
       alignItems="center"
     >
       <Stack spacing={2} alignItems="center">
-        <Typography variant="h4">
-          {genPassword ? genPassword : "Password Generator"}
-        </Typography>
+        <Tooltip
+          open={tooltip}
+          title="Copied to clipboard!"
+          arrow
+          placement="top"
+        >
+          <Typography
+            variant="h4"
+            sx={{ cursor: genPassword ? "pointer" : "default" }}
+            onClick={copyToClipboard}
+          >
+            {genPassword ? genPassword : "Password Generator"}
+          </Typography>
+        </Tooltip>
         <Button variant="contained" color="primary" onClick={onGenPassword}>
           Generate
         </Button>

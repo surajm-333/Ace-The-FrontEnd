@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Password Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a password manager application made with react and electron. It is a simple application that allows you to store your passwords in a secure way. It is a good way to store your passwords in case you forget them. It encrypts your passwords using a key that only you can generate using a master password.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- [x] Encrypts passwords
+- [x] Decrypts passwords
+- [x] Stores passwords in a sqlite3 database
+- [x] Uses master password as a key to encrypt the database
+- [x] Have a password generator inbuilt
+- [x] Have a password strength checker inbuilt
+- [x] Full support for CRUD operations on the database
 
-### `npm start`
+## Running the application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Download the source code or clone the repository
+2. `cd` into the directory containing the source code from terminal.
+3. Install dependencies using `npm install`
+4. Run the application using `npm run dev`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+### Landing Screen (if user didn't already created a master password)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 2022-03-18 210320](https://user-images.githubusercontent.com/84276404/159033801-a80b71ab-5f41-4fc3-8be7-c97a67a0c7c2.png)
 
-### `npm run build`
+### A cool password generator which can be used across all the app e.g when adding a new account
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 2022-03-18 210111](https://user-images.githubusercontent.com/84276404/159033824-f61e3931-de1c-4064-a254-58ad51e2101e.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Very Simple Form to add new accounts to your vault
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2022-03-18 210010](https://user-images.githubusercontent.com/84276404/159033843-fa9c762a-a4d5-43f0-98a9-5b183eb28bc7.png)
 
-### `npm run eject`
+### Clean looking UI and very easy to understand. User can do full CRUD operations on any of his accounts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot 2022-03-18 205926](https://user-images.githubusercontent.com/84276404/159033861-6f6fd62f-da19-4b3f-b83c-bc6ae000d620.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<hr>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Finally thanks for trying out this application and please feel free to give feedback on the issues you faced or any other feedback you have :heart:
