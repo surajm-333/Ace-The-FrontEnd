@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="30 Days 30 Projects" height="80" src="./img/add-readme (1).png">
+    <img alt="rating bar" height="80" src="./img/add-readme (1).png">
   </a>
 </p>
 <h1 align="center">Rating Bar</h1>
@@ -14,10 +14,9 @@ It is a cool rating bar with stylish animation and effects
 
 ## 📷 Screenshots
 
-![ss1](./img/sci_demo1.jpg)
-![ss2](./img/sci_demo2.jpg)
+![ss1](./img/demo_gif%20(1).gif)
+!
 
 ## ‎‍💻 Authors
 
 - [@iamrahulmahato](https://github.com/iamrahulmahato)
-

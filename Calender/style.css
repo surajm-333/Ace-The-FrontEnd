@@ -22,7 +22,7 @@ html {
 .calendar {
     border: 2px solid white;
     width: 45rem;
-    height: 52rem;
+    height: 58rem;
     background-color: black;
     box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
 }
@@ -76,7 +76,7 @@ html {
 }
 
 .days {
-    width: 100%;
+    width: 110%;
     display: flex;
     flex-wrap: wrap;
     padding: 0.2rem;
