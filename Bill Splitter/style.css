@@ -28,3 +28,24 @@ body{
     color: lightseagreen;
     text-align: center;
 }
+.nav-wrapper{
+    padding-left: 45%;
+    font-family: 'Anton',sans-serif;
+}
+.brand-logo{
+    font-size: 100rem;
+}
+.btn{
+    font-size: small;
+    padding-bottom:  2.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+ }
+ .btn :hover{
+    color: yellow;
+ }
+ .red-text{
+     padding-top: 5%;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 2.5rem;
+ }
