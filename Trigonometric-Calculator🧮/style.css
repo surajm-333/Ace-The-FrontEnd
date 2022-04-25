@@ -1,0 +1,106 @@
+body
+{
+    font-family: cursive;
+    background-color: rgb(69, 46, 46);
+}
+
+p
+{
+    margin: 0;
+    font-size: 150%;
+    font-weight: normal;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: beige;
+    font-family: cursive;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+div
+{
+    /* border-bottom: 2px solid gray;
+   padding-left: 550px;
+   margin: 60px;
+  font-size: 30px;
+   background-color: aqua; */
+   top: 460px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 500px;
+    box-shadow: inset -8px -8px 12px rgb(125, 180, 25),
+                inset 8px 8px 12px rgb(180, 214, 8);
+                border-radius: 50px;
+
+    background-color: rgb(23, 23, 10);
+}
+
+label{
+    padding-top: 100px;
+}
+
+h3{
+    padding-left: 40px;
+    padding-top: 20px;
+    color: rgb(229, 229, 245);
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+h4{
+    padding-left: 40px;
+    font-size: 18px;
+    font-family: cursive;
+    color: rgb(211, 211, 234);
+}
+
+#num{
+  margin-left: 40px;
+  height: 25px;
+  width: 150px;
+  font-family: cursive;
+  padding-left: 50px;
+ /* margin-bottom: 5px; */
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid rgb(115, 176, 9);
+  color: beige;
+  /* background-color: aqua; */
+  background-color: rgb(49, 15, 6);
+}
+
+#num:hover{
+    border: 4px solid rgb(115, 176, 9);
+}
+
+#precision:hover{
+    border: 4px solid rgb(115, 176, 9);
+}
+#precision{
+   
+    margin-left: 40px;
+    height: 18px;
+    width: 80px;
+    font-family: cursive;
+    font-size: 16px;
+    border-radius: 20px;color: beige;
+    border:2px solid rgb(115, 176, 9);
+    background-color: rgb(49, 15, 6);
+ margin-bottom: 46px;
+
+}
+
+
+p{
+   font-family: cursive;
+   margin-left: 45px;
+   margin-top: 2px;
+   font-weight: bold;
+   color: rgb(251, 251, 251);
+}
