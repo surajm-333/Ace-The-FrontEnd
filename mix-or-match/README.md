@@ -3,8 +3,9 @@
 > An enthusiastic and interesting puzzle game Mix or Match
 
 <h1 align="center">
-<a href=""/>
-<img src="" />
+<a href="https://user-images.githubusercontent.com/64265337/165134853-fda90c3b-24e7-4a99-98c5-0d3ca527033c.png"
+/>
+<img src="https://user-images.githubusercontent.com/64265337/165134853-fda90c3b-24e7-4a99-98c5-0d3ca527033c.png" />
 </h1></a>
 
 ---
@@ -25,8 +26,10 @@
 
 ---
 # Screenshots & Gif
+<img src="https://github.com/Sabarinathan07/Ace-The-FrontEnd/blob/main/mix-or-match/MixOrMatch.gif?raw=true" width='100%'/>
 
-
+![Screenshot 2022-04-25 at 9 48 41 PM](https://user-images.githubusercontent.com/64265337/165134965-e58b5e5e-463e-42e2-8bce-0d7dd3cfb314.png)
+![Screenshot 2022-04-25 at 9 48 59 PM](https://user-images.githubusercontent.com/64265337/165134972-66aab04b-6e89-443c-8379-f08fb15c9bb7.png)
 ---
 
 # Quick Start 🚀
