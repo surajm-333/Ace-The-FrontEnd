@@ -1,0 +1,86 @@
+/* Responsive Code  */
+body {
+    margin: 0;
+  }
+  
+  /* Background image attaching and Sizing */
+  .container {
+    background: url("https://www.google.com/drive/static/images/home/intro-1600.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  /* Styling Navbar */
+  .container .row1 {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+
+  /*  Heading-> Google Drive styling */
+  .container .row1 .head {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: cursive;
+  }
+
+  /* Right content of navbar styling */
+  .container .row1 .heading {
+    display: flex;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  .container .row1 .heading div {
+    margin: 0px 10px;
+  }
+  
+  /* Main body styling */
+  .container .row2 {
+    height: calc(100vh - 50px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container .row2 img {
+    height: 77px;
+  }
+  
+  .container .row2 div {
+    color: white;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  /* Button Style */
+  .container .row2 button {
+    background: dodgerblue;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 4px 3px 4px   rgb(181, 161, 161);
+
+  }
+
+  .row1,.row2, .row2 button:hover{
+    cursor: pointer;
+  }
+  
+  /* Adding Hover properties on button */
+  #button:hover{
+      background-color: rgb(54, 159, 212);
+  }
+  
+  
