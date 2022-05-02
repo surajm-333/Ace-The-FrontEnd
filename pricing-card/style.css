@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif !important;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 100px 0;
+}
+
+.card{
+    position:relative;
+    max-width: 300px;
+    height: auto;
+    background: linear-gradient(-45deg,#fe0847,#feae3f);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.col-sm-4:nth-child(1).card,.col-sm-4:nth-child(1).card.title.fa{
+    background: linear-gradient(-45deg,#f403d1,#64b5f6);
+}
+
+.col-sm-4:nth-child(2).card,.col-sm-4:nth-child(3).card.title.fa{
+    background: linear-gradient(-45deg,#ffec61,#f321d7);
+}
+
+.col-sm-4:nth-child(3).card,.col-sm-4:nth-child(3).card.title.fa{
+    background:linear-gradient(-45deg,#24ff72,#9a4eff);
+}
+
+.card:before{
+content: '';
+position: absolute;
+bottom:0;
+left:0;
+width: 100%;
+height: 40%;
+background:rgba(255,255,255,0.1);
+z-index: 1;
+transform:skewY(-5deg) scale(1.2)
+}
+
+.title .fa{
+    color: #fff;
+    font-size: 60px;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    box-shadow:0 10px 10px rgba(0,0,0,.2)
+}
+
+.title h2{
+    position: relative;
+    margin: 20px 0 0;
+    padding:0;
+    color: #fff;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.price{
+    postion:relative;
+    z-index: 2;
+}
+
+.price h4{
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 60px;
+}
+
+.option{
+    position: relative;
+    z-index: 2;
+}
+
+.option ul{
+    margin:0;
+    padding:0;
+}
+
+.option ul li{
+    margin:0 0 10px;
+    padding:0;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.card a{
+    position:relative;
+    z-index: 2;
+    background: #fff;
+    color: #2c3e50;
+    width: 150px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin:20px auto 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.card a:hover{
+    text-decoration: none;
+    background: #ecf0f1;
+}

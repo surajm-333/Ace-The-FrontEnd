@@ -1,6 +1,7 @@
 ## DEMO
 
-https://user-images.githubusercontent.com/95171638/158048998-91fd70c5-0256-4f37-84c1-78186abce12d.mp4
+![Animated-Countdown-Google-Chrome](https://user-images.githubusercontent.com/95171638/163347757-6b9b0e57-1095-4d9f-a6c4-ec8f6adffa7e.gif)
+
 
 ## Tools and Technologies
 

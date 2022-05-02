@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+:root {
+  --bg: #7AD3FF;
+  --wr: #fff;
+  --bor: #7AD3FF;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.wrap{
+    width: 800px;
+    background-color: var(--wr);
+    border-radius: 15px;
+    padding: 35px;
+}
+
+.wrap .input-field{
+    z-index: -999;
+    opacity: 0;
+    position: absolute;
+}
+
+.wrap .content-box{
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 2px solid var(--bor);
+}
+
+.content-box .typing-text{
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.typing-text::-webkit-scrollbar{
+    width: 0;
+}
+
+.typing-text p{
+    font-size: 21px;
+    text-align: justify;
+    letter-spacing: 1px;
+    /* word-break:break-all; */
+}
+
+.typing-text p span{
+    position: relative;
+}
+
+.typing-text p span.correct{
+    color: 	#228B22;
+}
+
+.typing-text p span.incorrect{
+    color: #cb3439;
+    background: var(--bg);
+    outline: 1px solid var(--wr);
+    border-radius: 4px;
+}
+
+.typing-text p span.active{
+    color: var(--bor);
+}
+
+.typing-text p span.active::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    background: var(--bor);
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 1;
+    }
+}
+
+.content-box .cont{
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 0;
+    justify-content: space-between;
+    border-top: 2px solid var(--bor);
+    display: flex;   
+}
+
+.cont .result-details{
+    display: flex;
+    width: calc(100% - 120px);
+    justify-content: space-between;
+}
+
+.result-details li{
+    height: 22px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.result-details li:not(:first-child){
+    padding-left: 22px;
+    border-left: 1px solid var(--bor);
+}
+
+.result-details li p{
+    font-size: 20px;
+}
+
+.result-details li span{
+    display: block;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.result-details li:not(:first-child) span{
+    font-weight: 500;
+}
+
+.result-details li p{
+    font-weight: 400;
+}
+
+.cont button{
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 100px;
+    font-weight: 500;
+    background: #9BA5BB;
+    border-radius: 5px;
+    padding: 7px 0;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.cont button:hover{
+    background: var(--bg);
+}
+
+
+.cont button:active{
+    transform: scale(0.97); 
+}
