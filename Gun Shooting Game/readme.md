@@ -5,6 +5,11 @@
 **THML,CSS,JS**
 
 ## Screenshot:
+![image](https://user-images.githubusercontent.com/77873383/166866605-c1437cc8-f7bb-45dd-b237-041ad75bd518.png)
 
 
 ## Demo:
+
+
+https://user-images.githubusercontent.com/77873383/166866613-f2a1d301-e8c4-4a91-a87e-6673b646cd9e.mp4
+
