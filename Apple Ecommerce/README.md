@@ -31,6 +31,6 @@
   - git clone https://github.com/surajm-333/Ace-The-FrontEnd.git
 ```
 
-- Change Directory to 'Drum Kit' By using:
+- Change Directory to 'Apple Ecommerce' By using:
      - ``` cd Apple Ecommerce ```
-- Run the index file and see the kit. 😀
+- Run the index file and see the website. 😀
