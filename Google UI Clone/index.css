@@ -70,6 +70,7 @@ header .links button {
     background-color: #1a73e8;
 }
 
+/* hover effects */
 header .links button:hover {
     background-color: #2b7de9;
 }
@@ -107,7 +108,8 @@ header .links button:hover {
     transition: 0.1s;
 }
 
-.container .searchcontainer #search:focus, .container .searchcontainer #search:active {
+/* active element effects of search bar */
+.container .searchcontainer #search:focus, .container .searchcontainer #search:active { 
     box-shadow: 0 0 3px darkgrey;
 }
 
@@ -144,13 +146,23 @@ footer {
 
 footer a {
     font-size: 0.9em;
-    display: inline-block;
+    display: inline;
     text-decoration: none;
     margin: 20px;
     color: rgb(128, 128, 128);
     cursor: pointer;
 }
 
+/* hover effects of footer with link underline */
 footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width:590px) {
+    .container .searchcontainer form {
+        max-width: 370px;
+    }
+    .lang {
+        margin: 40px;
+    }
 }
