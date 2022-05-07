@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #4a536b;
+    --sea-foam: #aed6dc;
+    --salmon: #ff9a8d;
+    --sidebar-text-color: #eee;
+    --text-color: #333;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background: var(--sea-foam);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background: var(--purple);
+    color: var(--sidebar-text-color);
+    min-height: 150px;
+    padding: 2.5rem;
+    flex: 1 1 30%;
+}
+
+.logo {
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.logo>span {
+    font-weight: 700;
+}
+
+.nav-links {
+    display: inline-block;
+    color: var(--sidebar-text-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 100;
+    margin-right: 1.2rem;
+}
+
+.nav-links>span {
+    font-weight: 400;
+}
+
+@media(min-width: 940px) {
+    .nav-links {
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
+
+.main-content {
+    flex: 1 1 70%;
+    min-height: 100vh;
+    padding: 5rem;
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.5rem;
+}
+
+.portfolio-item {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.portfolio>.images {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.square {
+    background: url('assets/img-1.jpeg');
+    grid-area: 1/1/3/3;
+}
+
+.square-2 {
+    background: url('assets/img-2.jpeg');
+    color: var(--sidebar-text-color);
+    grid-area: 3/1/5/3;
+}
+
+.large-square {
+    background: url('assets/img-3.jpeg');
+    grid-area: 1/3/4/6;
+}
+
+.small-square {
+    background: url('assets/img-4.jpeg');
+    grid-area: 4/3/5/4;
+}
+
+.tall {
+    background: url('assets/img-5.jpeg');
+    color: var(--sidebar-text-color);
+    grid-area: 4/4/7/6;
+}
+
+.wide {
+    background: url('assets/img-6.jpeg');
+    color: var(--sidebar-text-color);
+    grid-area: 5/1/7/4;
+}
+@media (max-width: 600px){
+    .portfolio{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .images{
+        width: 100%;
+        height: 175px;
+    }
+    .portfolio-item{
+        margin: 1rem;
+    }
+}
