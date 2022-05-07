@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;  
+}
+.list { 
+    position: relative; 
+    text-align: center; 
+    list-style: none;
+    text-decoration: none;
+} 
+a{
+    display:inline-block;
+    color: #333; 
+    text-decoration: none; 
+    font-size: 50px; 
+    padding: 5px 10px; 
+    font-weight: 800;
+}
+.Lists:hover li a { 
+    color: #0002; 
+} 
+.Lists li:hover a { 
+    color: #000; 
+    background: rgba(255,255,255,1); 
+    border-radius: 5px;
+} 
+.Lists li a:hover:before { 
+    content: attr(data-text); 
+    opacity: 1; 
+    left: 50%; 
+    letter-spacing: 10px; 
+    width: 2000px; 
+    height: 2000px; 
+}
+.Lists li a:before { 
+    content: ''; 
+    opacity: 0; 
+    position: absolute; 
+    z-index: -2; 
+    transform: translate(-50%,-50%); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 200px; 
+    color: rgba(0,0,0,.1); 
+    border-radius: 100px; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    letter-spacing: 300px; 
+    transition: letter-spacing 0.5s,left 0.5s; 
+}
+.Lists .list:nth-child(1) a:before { 
+    background: #81ecec; 
+   }
+
+.Lists .list:nth-child(2) a:before { 
+    background: #ff7675; 
+} 
+
+.Lists .list:nth-child(3) a:before { 
+   background: #55efc4; 
+} 
+
+.Lists .list:nth-child(4) a:before { 
+   background: #a29bfe; 
+} 
+
+.Lists .list:nth-child(5) a:before { 
+   background: #fd79a8; 
+}
+
+.Lists .list:nth-child(6) a:before { 
+   background: #ffeaa7; 
+}
