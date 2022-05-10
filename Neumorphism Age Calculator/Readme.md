@@ -1,4 +1,4 @@
-## Neumorphic Age Calculator
+## Neumorphism Age Calculator
 
 <h2>Tech Stack:</h2>
 <ul>
@@ -9,3 +9,4 @@
 
 <h2>Screenshots:</h2>
 
+![Age](https://user-images.githubusercontent.com/72568715/167623198-89bcbb9b-69e9-444b-b88f-3a647bd5b042.PNG)
