@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shopping cart page</title>
+  <link rel='stylesheet' href='Style.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid position-relative" style="z-index: 99999;">
+	<div class="row">
+		<div class="col-md-12 shadow-sm">
+			<div class="container">
+				<div class="row mb-4">
+					<div class="col-md-8">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Company Profile</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Contact us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-1">
+						<ul class="nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-globe"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">English</a>
+									<a class="dropdown-item" href="#">Türkçe</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-1">
+						<ul class="nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-coins"></i>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Dollar</a>
+									<a class="dropdown-item" href="#">Euro</a>
+									<a class="dropdown-item" href="#">Türk Lirası</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul class="nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fas fa-user"></i>
+									<span>Membership</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-right">
+									<a class="dropdown-item" href="#">Sign In</a>
+									<a class="dropdown-item" href="#">Sign up</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mb-4">
+					<div class="col-md-2">
+				  <a href="#"><img src="" class="img-thumbnail p-0 border-0" /></a>
+				</div>
+					<div class="col-md-6">
+						<div class="input-group input-group-lg">
+							<input type="text" id="" name="" class="form-control" placeholder="What search?" />
+							<select class="form-control form-control-lg rounded-0">
+								<option>Categories</option>
+								<option>Electronics</option>
+								<option>Decoration</option>
+								<option>Computers</option>
+								<option>Sports</option>
+							</select>
+							<div class="input-group-append">
+								<button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-outline-secondary btn-block btn-lg" type="button">
+							<i class="fas fa-sync-alt"></i>
+						</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-outline-secondary btn-block btn-lg" type="button">
+							<i class="fas fa-heart"></i>
+						</button>
+					</div>
+					<div class="col-md-2">
+						<div class="dropdown">
+							<button class="btn btn-outline-secondary btn-block btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-shopping-bag"></i>
+								<span>Cart</span>
+							</button>
+							<div class="dropdown-menu dropdown-menu-right p-3" style="width:500px;">
+								<table class="table table-sm table-striped table-bordered m-0">
+									<tbody>
+										<tr>
+											<td class="text-center">
+												<img src="https://via.placeholder.com/30x30" class="img-thumbnail p-0" alt="" />
+											</td>
+											<td class="text-left">
+												<p class="m-0">
+													<a href="#">
+														<i class="fas fa-times"></i>
+													</a>
+													<span>iPhone 11 Plus</span>
+												</p>
+											</td>
+											<td class="text-center">1x</td>
+											<td class="text-right">$123.20</td>
+										</tr>
+										<tr>
+											<td class="text-center">
+												<img src="https://via.placeholder.com/30x30" class="img-thumbnail p-0" alt="" />
+											</td>
+											<td class="text-left">
+												<p class="m-0">
+													<a href="#">
+														<i class="fas fa-times"></i>
+													</a>
+													<span>iPhone 11 Plus</span>
+												</p>
+											</td>
+											<td class="text-center">1x</td>
+											<td class="text-right">$123.20</td>
+										</tr>
+										<tr>
+											<td class="text-center">
+												<img src="https://via.placeholder.com/30x30" class="img-thumbnail p-0" alt="" />
+											</td>
+											<td class="text-left">
+												<p class="m-0">
+													<a href="#">
+														<i class="fas fa-times"></i>
+													</a>
+													<span>iPhone 11 Plus</span>
+												</p>
+											</td>
+											<td class="text-center">1x</td>
+											<td class="text-right">$123.20</td>
+										</tr>
+										<tr>
+											<td class="text-right" colspan="3">Sub-Total</td>
+											<td class="text-right">$601.00</td>
+										</tr>
+										<tr>
+											<td class="text-right" colspan="3">Eco Tax (-2.00)</td>
+											<td class="text-right">$4.00</td>
+										</tr>
+										<tr>
+											<td class="text-right" colspan="3">VAT (20%)</td>
+											<td class="text-right">$120.20</td>
+										</tr>
+										<tr>
+											<td class="text-right" colspan="3">Total</td>
+											<td class="text-right">$725.20</td>
+										</tr>
+										<tr>
+											<td class="text-right" colspan="4">
+												<a class="btn btn-secondary" href="#" role="button">
+													<i class="fas fa-shopping-cart"></i>
+													<span>View Cart</span>
+												</a>
+												<a class="btn btn-primary" href="#" role="button">
+													<i class="fas fa-share"></i>
+													<span>Checkout</span>
+												</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-expand-lg navbar-light bg-white">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto">
+									<li class="nav-item active">
+										<a class="nav-link" href="#">Electronics, Computers</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Clothing, Jewelry</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home, Living</a>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Decoration</a>
+											<a class="dropdown-item" href="#">Furniture</a>
+											<a class="dropdown-item" href="#">Textile</a>
+											<a class="dropdown-item" href="#">Lighting</a>
+											<a class="dropdown-item" href="#">Kitchenware</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Stationery, Office</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Auto, Garden, Building</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Sports, Sightseeing</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Cosmetics, Care</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Hobby, Film, Music, Books</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid mb-3">
+	<div class="row">
+		<div class="col-md-12 bg-light border-bottom pt-5 pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Shopping Cart</h2>
+						<ol class="breadcrumb p-0 m-0 bg-transparent">
+							<li class="breadcrumb-item"><a href="#">Home</a></li>
+							<li class="breadcrumb-item"><a href="#">Shopping</a></li>
+							<li class="breadcrumb-item active">Shopping Cart</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row mb-5">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<p class="m-0 h5">Shopping Cart (1.00kg)</p>
+				</div>
+				<div class="card-body">
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th class="text-center" width="100">Image</th>
+								<th class="text-left">Product Name</th>
+								<th class="text-left" width="100">Model</th>
+								<th class="text-center" width="200">Quantity</th>
+								<th class="text-right" width="100">Unit Price</th>
+								<th class="text-right" width="120">Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="text-center">
+									<img alt="" class="img-thumbnail p-0 border-0" src="https://via.placeholder.com/50x50" />
+								</td>
+								<td class="text-left">
+									<p class="m-0">HP LP3065</p>
+									<p class="m-0">Delivery Date: 2011-04-22</p>
+								</td>
+								<td class="text-left">LP3065</td>
+								<td class="text-center">
+									<div class="input-group">
+										<input type="number" class="form-control text-center" id="" name="" value="1" min="1" max="5" placeholder="Quantity" />
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-sync-alt"></i></button>
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-times"></i></button>
+										</div>
+									</div>
+								</td>
+								<td class="text-right">$122.00</td>
+								<td class="text-right">$122.00</td>
+							</tr>
+							<tr>
+								<td class="text-center">
+									<img alt="" class="img-thumbnail p-0 border-0" src="https://via.placeholder.com/50x50" />
+								</td>
+								<td class="text-left">
+									<p class="m-0">HP LP3065</p>
+								</td>
+								<td class="text-left">LP3065</td>
+								<td class="text-center">
+									<div class="input-group">
+										<input type="number" class="form-control text-center" id="" name="" value="1" min="1" max="5" placeholder="Quantity" />
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-sync-alt"></i></button>
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-times"></i></button>
+										</div>
+									</div>
+								</td>
+								<td class="text-right">$122.00</td>
+								<td class="text-right">$122.00</td>
+							</tr>
+							<tr>
+								<td class="text-center">
+									<img alt="" class="img-thumbnail p-0 border-0" src="https://via.placeholder.com/50x50" />
+								</td>
+								<td class="text-left">
+									<p class="m-0">HP LP3065</p>
+									<p class="m-0">Reward Points: 300</p>
+								</td>
+								<td class="text-left">LP3065</td>
+								<td class="text-center">
+									<div class="input-group">
+										<input type="number" class="form-control text-center" id="" name="" value="1" min="1" max="5" placeholder="Quantity" />
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-sync-alt"></i></button>
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-times"></i></button>
+										</div>
+									</div>
+								</td>
+								<td class="text-right">$122.00</td>
+								<td class="text-right">$122.00</td>
+							</tr>
+							<tr>
+								<td class="text-center">
+									<img alt="" class="img-thumbnail p-0 border-0" src="https://via.placeholder.com/50x50" />
+								</td>
+								<td class="text-left">
+									<p class="m-0">HP LP3065</p>
+								</td>
+								<td class="text-left">LP3065</td>
+								<td class="text-center">
+									<div class="input-group">
+										<input type="number" class="form-control text-center" id="" name="" value="1" min="1" max="5" placeholder="Quantity" />
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-sync-alt"></i></button>
+											<button class="btn btn-outline-secondary" type="button"><i class="fas fa-times"></i></button>
+										</div>
+									</div>
+								</td>
+								<td class="text-right">$122.00</td>
+								<td class="text-right">$122.00</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td class="text-right" colspan="5">Sub-Total</td>
+								<td class="text-right">$100.00</td>
+							</tr>
+							<tr>
+								<td class="text-right" colspan="5">Eco Tax (-2.00)</td>
+								<td class="text-right">$2.00</td>
+							</tr>
+							<tr>
+								<td class="text-right" colspan="5">VAT (20%)</td>
+								<td class="text-right">$20.00</td>
+							</tr>
+							<tr>
+								<td class="text-right" colspan="5"><p class="m-0 h5">Genaral Total</p></td>
+								<td class="text-right"><p class="m-0 h5">$122.00</p></td>
+							</tr>
+						</tfoot>
+					</table>
+					<p class="mt-4 mb-0 h3">What would you like to do next?</p>
+					<p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+							<div class="card-header bg-white" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">Use Coupon Code</div>
+							<div id="collapseOne" class="collapse">
+								<div class="card-body">
+									<div class="form-group row">
+										<label for="" class="col-sm-12 col-form-label">Enter your coupon here</label>
+										<div class="col-sm-12">
+											<div class="input-group">
+												<input type="text" class="form-control" id="" name="" placeholder="Enter your coupon here" />
+												<div class="input-group-append">
+													<button class="btn btn-outline-secondary" type="button">Apply Coupon</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header bg-white" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false">Estimate Shipping & Taxes</div>
+							<div id="collapseTwo" class="collapse">
+								<div class="card-body">
+									<p>Enter your destination to get a shipping estimate.</p>
+									<div class="form-group row">
+										<label for="" class="col-sm-12 col-form-label">Country</label>
+										<div class="col-sm-12">
+											<select class="form-control" id="" name="">
+												<option value="">Country</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="" class="col-sm-12 col-form-label">Region / State</label>
+										<div class="col-sm-12">
+											<select class="form-control" id="" name="">
+												<option value="">Country</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="" class="col-sm-12 col-form-label">Post Code</label>
+										<div class="col-sm-12">
+											<input type="text" class="form-control" id="" name="" placeholder="Enter your coupon here" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header bg-white" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">Use Gift Certificate</div>
+							<div id="collapseThree" class="collapse">
+								<div class="card-body">
+									<div class="form-group row">
+										<label for="" class="col-sm-12 col-form-label">Enter your gift certificate code here</label>
+										<div class="col-sm-12">
+											<div class="input-group">
+												<input type="text" class="form-control" id="" name="" placeholder="Enter your gift certificate code here" />
+												<div class="input-group-append">
+													<button class="btn btn-outline-secondary" type="button">Apply Gift Certificate</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer text-right">
+					<button type="button" class="btn btn-secondary">Continue Shopping</button>
+					<button type="button" class="btn btn-primary">Checkout</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row mb-5">
+		<div class="col-md-2">
+			<div class="card">
+				<div class="card-header">Corporate</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item p-2">About Us</li>
+					<li class="list-group-item p-2">Company Profile</li>
+					<li class="list-group-item p-2">Blog</li>
+					<li class="list-group-item p-2">Site Maps</li>
+					<li class="list-group-item p-2">Contact Us</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+				<div class="card-header">Services</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item p-2">Discounts</li>
+					<li class="list-group-item p-2">Campaigns</li>
+					<li class="list-group-item p-2">Brands</li>
+					<li class="list-group-item p-2">Gift Certificates</li>
+					<li class="list-group-item p-2">Returns</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+				<div class="card-header">Account</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item p-2">Sign In</li>
+					<li class="list-group-item p-2">Sign up</li>
+					<li class="list-group-item p-2">My Account</li>
+					<li class="list-group-item p-2">Order History</li>
+					<li class="list-group-item p-2">Wish List</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="card">
+				<div class="card-header">Support</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item p-2">FAQ</li>
+					<li class="list-group-item p-2">Ticket</li>
+					<li class="list-group-item p-2">Feedback</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">Contact Us</div>
+				<div class="card-body">
+					<p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+					<p class="m-0"><strong>Address</strong></p>
+					<p>4710-4890 Breckinridge St, UK Burlington, VT 05401</p>
+					<p class="m-0"><strong>Need Help?</strong></p>
+					<p>Call: 1-800-345-6789</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 mt-5 mb-5">
+			<div class="card">
+				<div class="card-body">
+					<ul class="nav justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-facebook-f"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-twitter"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-instagram"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-google-plus-g"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-youtube"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-pinterest"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-2x fab fa-linkedin-in"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<ul class="nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Privacy Policy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Terms & Conditions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Site Map</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-4">
+			<p class="text-center">Copyright © 2019 Your Store All Right Reserved.</p>
+		</div>
+		<div class="col-md-4">
+			<ul class="nav justify-content-end">
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-diners-club"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-amex"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-discover"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-jcb"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-mastercard"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-paypal"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><i class="fab fa-cc-visa"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+</body>
+</html>
