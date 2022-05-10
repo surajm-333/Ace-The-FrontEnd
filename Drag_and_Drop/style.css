@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(215, 250, 164);
+}
+.whiteBox{
+    height: 155px;
+    width: 155px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: white;
+    display: inline-block;
+ 
+   
+}
+.imgBox{
+    background-image: url("./pic.png");
+    height: 145px;
+    width:  145px;
+    border-radius: 80px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    
+}
+.hide{
+    display: none;
+}
+.hold{
+    border: 3px solid red;
+}
+.border{
+    border-style: dotted;
+    background-color: rgb(172, 163, 163);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    text-align: center;
+    font-family: serif;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
