@@ -1,0 +1,80 @@
+/* Adding Color Picker */
+[type='color'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    /* border: 1.2px solid black; */
+    border-radius: 50px;
+  }
+  
+  [type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  [type='color']::-webkit-color-swatch {
+    border: none;
+  }
+  /* Added Picker */
+  /* Adding style to the main div */
+  .color-picker {
+   padding: 6px 11px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: -450px;
+    margin-left: 740px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+    box-shadow: 10px 10px 10px 0 green;
+    border: 2px solid rgb(214, 214, 233);
+    border-radius: 8px;
+    background-image: linear-gradient(to right, white, rgb(203, 170, 241));
+  }
+  /* More feature(hover) */
+.color-picker:hover{
+    background-image: linear-gradient(to right, rgb(152, 220, 152),rgb(243, 212, 155));
+}
+
+/* Heading style */
+  h1{
+      font-size: 52px;
+      margin-top: 100px;
+      margin-left: 755px;
+      margin-bottom: -80px;
+      font-family: cursive;
+  }
+
+  h2{
+      margin-top: 150px;
+      font-family: cursive;
+      margin-left: 120px;
+  }
+  h3{
+    margin-left: 60px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+/* body styling */
+body {
+      background-image: linear-gradient(to right, purple,yellow);
+  }
+
+  h3{
+font-size: 22px;
+  }
+
+  h2{
+      font-size: 31px;
+  }
+
+  h1,h2,h3{
+      color:whitesmoke;
+  }
