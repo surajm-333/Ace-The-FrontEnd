@@ -15,7 +15,9 @@ And in order to tick the check box just put x inside them for example - [x] like
 - [x] JavaScript
 
 for more details please refer to the attached images.
-![Screenshot (173)](https://user-images.githubusercontent.com/73521123/167017162-d4c74b31-b8e9-42e4-954f-cf7e38cdd681.png)
+
+![Screenshot (189)](https://user-images.githubusercontent.com/73521123/167659268-4a80538f-eed0-4c59-ba60-b00201dcd543.png)
+
 
 https://user-images.githubusercontent.com/73521123/167017118-bbcdd211-71d5-4301-9b5e-a1e3d2d17812.mp4
 
