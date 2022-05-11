@@ -1,6 +1,6 @@
 
-# Window 11 using HTML, CSS and Javascript
-## Overview Of Window 11 using HTML, CSS and Javascript
+# Window 11 Desktop using HTML, CSS and Javascript
+## Overview Of Window 11 Desktop using HTML, CSS and Javascript
 
 > _Window 11  build using HTML, CSS & JavaScript._
 
