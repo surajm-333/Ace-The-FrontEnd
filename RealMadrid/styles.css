@@ -1,0 +1,166 @@
+body {
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 150px;
+    background-color: #9A0F98;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+    font-family: 'Montserrat', sans-serif;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f9cdfd;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #f7f7f7;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #39065A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flexbox;
+    flex-direction: row;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 25px;
+    height: 70px;
+    padding-top: 5px;
+    float: left;
+}
+
+.navel {
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    margin-right: 25px;
+    margin: 42px;
+}
+
+.navel a {
+    padding: 15px;
+    text-decoration: none;
+    color: #f9cdfd;
+}
+
+.active {
+    color: #f7f7f7 !important;
+}
+
+.navel :hover {
+    color: #f7f7f7;
+}
+
+.container {
+    width: 80%;
+    margin-left: 300px;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flexbox;
+    width: 25%;
+    flex-direction: column;
+    margin: 0%;
+    padding: 0%;
+}
+
+.cabinet {
+    transition: transform .5s;
+}
+
+.cabinet:hover {
+    transform: scale(1.8);
+    justify-content: center;
+}
+
+.card {
+    margin: 5%;
+    padding: 2% 3%;
+    border-radius: 7px;
+    height: fit-content;
+    width: 80%;
+    background-color: #6A0572;
+}
+
+.trophy-text {
+    margin-top: -25px;
+    margin-bottom: 5% !important;
+}
+
+.trophy-card {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.trophy-card h5 {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    color: #f7f7f7;
+    text-align: left !important;
+    padding-left: 2% !important;
+    padding-bottom: 2%;
+    margin-left: 0em !important;
+    font-size: large;
+    padding: 2px;
+}
+
+li h6 {
+    margin: 0;
+    text-align: left;
+}
+
+.song h3,
+h6 {
+    margin-top: 0;
+    margin: 2.45%;
+}

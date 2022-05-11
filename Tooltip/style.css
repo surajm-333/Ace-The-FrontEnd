@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #29304e;
+}
+
+figure {
+    position: relative;
+}
+
+figure::before,
+figure::after {
+    --scale: 0;
+    --transition-delay: 0.7s;
+    --tooltip-color: #eee;
+
+    position: absolute;
+    top: -1rem;
+    font-size: 1.5rem;
+    font-family: Arial;
+    background-color: var(--tooltip-color);
+    padding: 1rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+    transition: var(--transition-delay);
+    transform-origin: bottom;
+}
+
+figure::before {
+    --translate-y: -100%;
+    content: attr(data-tooltip);/*Acces tootltip data element*/
+    width: max-content;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+figure:hover::before,
+figure:hover::after {
+    --scale: 1;
+}
+
+.mountain-image {
+    border-radius: 10px;
+    border: 5px solid #eee;
+}
