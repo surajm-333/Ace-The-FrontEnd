@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url("heart-5106075__340.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.outer {
+  margin-bottom: 4rem;
+}
+
+.hero-icon img {
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: 2rem;
+}
+
+.outer h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.outer p {
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+  font-weight: 300;
+  color: #000;
+  letter-spacing: 0.9px;
+}
+
+.btn {
+  background-color: aliceblue;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: azure;
+}
+
+/* Outer styles done */
+
+/* Inner styles */
+.inner {
+  max-width: 900px;
+}
+
+.inner p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  display: none;
+}
