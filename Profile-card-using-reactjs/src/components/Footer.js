@@ -1,11 +1,11 @@
 import React from "react"
-import { FontAwesomeIcon } from "@fontawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faGithubSquare,
     faInstagramSquare,
     faFacebookSquare,
     faTwitterSquare
-  } from '@fontawesome/free-brands-svg-icons';
+  } from '@fortawesome/free-brands-svg-icons';
 import "../style.css"
 
 export default function Footer() {
