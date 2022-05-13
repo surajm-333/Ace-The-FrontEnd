@@ -1,0 +1,78 @@
+:root{
+    --speed:5
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: black;
+}
+
+.machine{
+    height: 45vh;
+    width: 70vw;
+    display: flex;
+    /* margin: auto; */
+    background-color: lightsalmon;
+}
+
+.slot{
+  height: 35vh;
+  width:20vw;
+  background-color: bisque;
+  margin: 20px;
+  border: solid darkblue 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  overflow: hidden;
+}
+
+.slot p{
+    animation: infinite alternate slotSpin;
+    animation-duration: calc(1/var(--speed));
+}
+@keyframes slotSpin{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(200px);
+    }
+}
+
+h1{
+    color:darkgoldenrod;
+    font-weight: 900;
+}
+
+.but{
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+}
+
+button{
+    color:blue;
+    padding:10px;
+    background-color:darkgreen;
+    font-size: 1rem;
+    margin: 10px;
+    font-weight: 900;
+}
+
+.last{
+    color:bisque;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: monospace;
+}
