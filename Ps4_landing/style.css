@@ -116,3 +116,127 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
+
+.col-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#ff469f, #ff6062);
+  position: absolute;
+  left: -40px;
+  top: 8px;
+}
+
+.col-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2 .controller {
+  width: 90%;
+}
+
+.color-box {
+  position: absolute;
+  background: linear-gradient(#ff469f, #ff6062);
+  top: 0;
+  right: 0;
+  border-radius: 20px 0 0 20px;
+  height: 100%;
+  width: 80%;
+  right: 0;
+  z-index: -1;
+  transform: translateX(150px);
+}
+
+.add-btn img {
+  width: 35px;
+  margin-bottom: 5px;
+}
+
+.add-btn {
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.social-links img {
+  height: 15px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.social-links {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#ff469f, #ff6062);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+  }
+
+  nav ul.active {
+    display: block;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  nav ul li a:hover {
+    color: #000;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-list {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  .col-2 .container {
+    width: 77%;
+  }
+
+  .color-box {
+    transform: translateX(75px);
+  }
+
+  .col-1 {
+    flex-basis: 100%;
+  }
+
+  .col-1 h2 {
+    font-size: 35px;
+  }
+
+  .col-1 h3 {
+    font-size: 15px;
+  }
+}
