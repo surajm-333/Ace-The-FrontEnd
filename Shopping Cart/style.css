@@ -1,0 +1,9 @@
+body {
+    max-width: 100vw;
+    height: min-content;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

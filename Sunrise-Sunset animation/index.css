@@ -1,0 +1,296 @@
+@use postcss-preset-env;
+
+html {
+  overflow-x: hidden;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.totalcontainer {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: -10;
+  animation: sunfade 40s infinite;
+}
+.container1 {
+  transform: scaleX(1.11);
+}
+.container2 {
+  transform: scaleX(1.25);
+}
+.layer-1 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #fed8c1; */
+}
+
+.layer-2 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay2.svg")
+    no-repeat center center fixed;
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.layer-3 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay3.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+.layer-4 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay4.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+.layer-5 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453880/codepen/lay5.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.55s
+    both;
+}
+.layer-6 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453881/codepen/lay6.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s
+    both;
+}
+.layer-7 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453881/codepen/lay7.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.85s
+    both;
+}
+.layer-8 {
+  background: url("https://res.cloudinary.com/dkgrf00g1/image/upload/v1536453882/codepen/lay8.svg")
+    no-repeat center center fixed;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s both;
+}
+.laya-please {
+  position: absolute;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0px;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.suncontainer {
+  margin-top: 28vh;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: sunanimation 40s infinite;
+  z-index: -200 !important;
+  position: absolute;
+}
+.sun-m{
+  display: none;
+}
+.sun {
+  width: 120px;
+  height: 120px;
+  background-color: #ffdb41;
+  border-radius: 50%;
+  animation: sunback 40s infinite;
+}
+
+@keyframes sunanimation {
+  0% {
+    transform: rotate(220deg) translateX(30vw);
+  }
+  100% {
+    transform: rotate(360deg) translateX(30vw);
+  }
+}
+
+@keyframes sunfade {
+  0% {
+    filter: brightness(30%);
+  }
+  30% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(30%);
+  }
+}
+@keyframes moon {
+  0% {
+    margin-left: 10vw;
+  }
+  30% {
+    margin-left: 10vw;
+  }
+  75% {
+    margin-left: 30vw;
+  }
+  100% {
+    margin-left: 15vw;
+  }
+}
+.mobile {
+  background: url("./Mesa\ de\ trabajo\ 1xxxhdpi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2da0d966;
+}
+.mobile-s{
+  background: url("./Artboard\ 4xxxhdpi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: #2da0d966;
+}
+
+.moon-m{
+  background-image: url('./PikPng.com_full-moon-png_322060.png');
+  height: 120px;
+  width: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  margin-top: 24vh;
+  margin-left: 10vw;
+  animation: moon 40s infinite;
+}
+.mobileContainer{
+  width: 100vw;
+  height: 100vh;
+  animation: sunfade 40s infinite;
+  overflow: hidden;
+  display: none;
+}
+.mobileContainerSmall{
+  width: 100vw;
+  height: 100vh;
+  animation: sunfade 40s infinite;
+  overflow: hidden;
+  display: none;
+}
+
+
+@media screen and (width<1290px) {
+  .totalcontainer {
+    display: none;
+  }
+  .mobile{
+    display: flex;
+  }
+  .suncontainer{
+    margin-top: 26vh;
+  }
+  .moon-m{
+    display: flex;
+  }
+  .sun-m{
+    display: flex;
+  }
+  .mobileContainer{
+    display: flex;
+  }
+  footer{
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (width<920px) {
+  .totalcontainer {
+    display: none;
+  }
+  .mobile{
+    display: none;
+  }
+  .suncontainer{
+    margin-top: -5vh;
+  }
+  .moon-m{
+    display: none;
+  }
+  .sun-m{
+    display: none;
+  }
+  .mobile-s{
+    display: flex;
+  }
+  .mobileContainerSmall{
+    display: flex;
+  }
+  .mobileContainer{
+    display: none;
+  }
+  footer{
+    margin-top: 0px !important;
+  }
+}
+
+footer{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 90vh;
+  position: absolute;
+  width: 100%;
+}
