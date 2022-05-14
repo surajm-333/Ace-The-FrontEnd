@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PS_4 Landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav section  -->
+      <div class="navbar">
+        <img src="assets/logo.png" class="logo" alt="" />
+        <nav>
+          <ul id="menu-list">
+            <li><a href="#">Game Controller</a></li>
+            <li><a href="#">Vr Accesories</a></li>
+            <li><a href="#">Media Remotes</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </nav>
+        <img src="assets/menu.png" class="menu-icon" alt="" />
+      </div>
+      <!-- nav section ends  -->
+
+      <!-- Row section starts -->
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            PS4 V2 <br />
+            DualShock 4
+          </h2>
+          <h3>Wireless Controller for playstation 4</h3>
+          <p>(Compatible/Generic)</p>
+          <h4>$32.50</h4>
+          <button type="button">
+            Buy Now <img src="assets/arrow.png" alt="" />
+          </button>
+        </div>
+        <!-- Col2 section -->
+        <div class="col-2">
+          <img src="assets/controller.png" alt="" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="assets/add.png" alt="" />
+            <p><small>Add to cart</small></p>
+          </div>
+        </div>
+      </div>
+      <!-- row section ends  -->
+
+      <!-- social links starts  -->
+      <div class="social-links">
+        <img src="assets/fb.png" alt="" />
+        <img src="assets/ig.png" alt="" />
+        <img src="assets/tw.png" alt="" />
+      </div>
+    </div>
+
+    <!-- js for menu button  -->
+    <script defer>
+      const menuList = document.getElementById("menu-list");
+      const menuBtn = document.querySelector(".menu-icon");
+
+      menuBtn.addEventListener("click", toggleMenu);
+
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu() {
+        if (menuList.style.maxHeight === "0px") {
+          menuList.style.maxHeight = "130px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
