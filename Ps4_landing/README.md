@@ -9,3 +9,4 @@ It is a Landing page for a PS_4 controller created with HTML CSS and JS for some
 - JavaScript
 
 ## Preview
+![192 168 196 73_5501_index html](https://user-images.githubusercontent.com/95171638/168441253-57be2c0b-ba69-4775-81ce-8f52948df143.png)
