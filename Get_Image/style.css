@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(white, rgb(243, 150, 150));
+    height: 100vh;
+}
+#imgcont{
+    width: 48vw;
+    height: 70vh;
+    margin: auto;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 6px;
+}
+#btn{
+    border: none;
+    color: black;
+    border-radius: 12px;
+    font-size: 19px;
+    font-family: emoji;
+    padding: 6px 20px;
+    background-color: #f887a5;
+}
+#btn:hover{
+    background-color: #fa3267;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px black;
+}
+#pic{
+    border: 2px solid black;
+}
+#pic:hover{
+    
+}
