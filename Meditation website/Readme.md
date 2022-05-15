@@ -11,6 +11,10 @@ This project is created using HTML, CSS, JavaScript .
 - [✅] CSS
 - [✅] JS
 
-## Screenshot
+## Demo Video
 
-![Image](https://user-images.githubusercontent.com/59368657/168222994-0fa6ce82-cccc-4b99-be05-fbd65140d1b4.png)
+
+
+https://user-images.githubusercontent.com/59368657/168458372-92615368-c234-4b6d-b74f-630461fc1d6e.mp4
+
+
