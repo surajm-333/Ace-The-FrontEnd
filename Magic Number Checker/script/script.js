@@ -1,6 +1,6 @@
 function getInputValue() {
   var num = document.getElementById("num1").value;
-  if (isMagic(num)){
+  if (num % 9 == 1){
     document.getElementById("result").value = "Magic Number";
   }
   else {
@@ -8,23 +8,6 @@ function getInputValue() {
   }
 }
 
-function isMagic(n)
-   {
-       var sum = 0;
-       while (n > 0 || sum > 9)
-       {
-           if (n = 0)
-           {
-               n = sum;
-               sum = 0;
-           }
-           sum += n % 10;
-           n /= 10;
-       }
-      
-       // Return true if sum becomes 1.
-       return (sum = 1);
-   }
 
 
 
