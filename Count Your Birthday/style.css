@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, rgb(238, 51, 30),rgb(217, 217, 17));
+}
+h2{
+    font-size: 52px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(197, 245, 229);
+    display: flex;
+    justify-content: center;
+}
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.container .dateDisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .dateDisplay input {
+  padding: 10px;
+}
+
+.container .dateDisplay button {
+  padding: 10px;
+}
+
+.container h1 {
+  margin-top: 40px;
+}
+
+.container h1 span {
+  display: inline-block;
+  color: blue;
+  background-color: rgb(38, 24, 6);
+  padding: 5px;
+  font-family: cursive;
+  border-radius: 20px;
+
+}
+button{
+width: 150px;
+height: 40px;
+margin-top: 30px;
+border-radius: 20px;
+font-weight: bold;
+background-color: rgb(176, 10, 79);
+color: whitesmoke;
+border: 2px solid rgb(118, 235, 118);
+}
+button:hover{
+    background-color: rgb(236, 155, 225);
+    color: red;
+    width: 150px;
+    height: 45px;
+    border: 3px solid rgb(125, 248, 125)yellow;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.dateDisplay{
+    margin-top: -400px;
+   /* display: inline-block; */
+   padding-left: 20px;
+   margin-left: 20px;
+}
+
+.month{
+    margin-right: 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    /* background-color: rgb(37, 19, 19); */
+    background-image: linear-gradient(to right, rgb(3, 1, 1),rgb(107, 9, 9));
+    color: white;
+    border: 2px white;
+}
+.date{
+    margin-right: 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    /* background-color: rgb(37, 19, 19); */
+    background-image: linear-gradient(to right, rgb(3, 1, 1),rgb(107, 9, 9));
+    color: white;
+    border: 2px white;
+}
+.year{
+    margin-right: 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    /* background-color: rgb(37, 19, 19); */
+    background-image: linear-gradient(to right, rgb(3, 1, 1),rgb(107, 9, 9));
+    color: white;
+    border: 2px white;
+}
+
+.time_left{
+  margin-top: 40px;
+  font-family: cursive;
+  background: transparent;
+}
