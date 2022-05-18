@@ -1,4 +1,4 @@
-﻿<h1>Balance Animation </h1>
+<h1>Balance Animation </h1>
 
 <p> A css animation of balancing balls</p>
 
