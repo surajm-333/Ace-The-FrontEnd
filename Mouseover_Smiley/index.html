@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Smiley</title>
+</head>
+<body>
+    <div class="wrapper ">
+                <script>
+                    function disp(){
+                        document.getElementById("disp").style.display="none";
+                        document.getElementById("show").style.display="block"
+                    }
+                    function show(){
+                        document.getElementById("disp").style.display="block";
+                        document.getElementById("show").style.display="none"
+                    }
+               </script>
+                <br>
+                <h5 style="display: none;" class="text-center" id="disp"> Online Exams</h5>
+                <h5 style="display: none;" class="text-center"id="show">Offline Exams</h5>
+
+                <div class="container1"onmouseover="disp()" onmouseout="show()">
+                    <div class="face "id="face">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                    </div>           
+                </div>
+    </div>
+</body>
+</html>
+
+
