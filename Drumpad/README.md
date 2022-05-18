@@ -1,4 +1,4 @@
-﻿<h1>DRUMPAD </h1>
+<h1>DRUMPAD </h1>
 
 <p> Creates different sound</p>
 
