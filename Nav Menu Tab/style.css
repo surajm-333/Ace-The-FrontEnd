@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Crafty+Girls);
+body{
+  text-align:center;
+	background-color: #fff;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+.menu{
+  font-family: 'Crafty Girls', cursive;
+  font-size:3rem;
+  line-height300px;
+  verticle-align:middle;
+  margin-right:30px;
+  border-radius:20px;
+  transition: 2s ease 0s; 
+  cursor:pointer;
+}
+.menu:nth-child(1){
+  content:"hello";
+  box-shadow: inset 0px -5px 0px #B73327;
+}
+.menu:nth-child(1):hover{
+  box-shadow:inset 0px -300px 0px #B73327;
+}
+.menu:nth-child(2){
+  box-shadow:inset 0px 5px 0px #2F3A68;
+}
+.menu:nth-child(2):hover{
+  box-shadow:inset 0px 300px 0px #2F3A68;
+}
+.menu:nth-child(3){
+  box-shadow:inset 0px -5px 0px #8AAABF;
+}
+.menu:nth-child(3):hover{
+  box-shadow:inset 0px -300px 0px #8AAABF;
+}
+.menu:nth-child(4){
+  box-shadow:inset 0px 5px 0px #E4D18C;
+}
+.menu:nth-child(4):hover{
+  box-shadow:inset 0px 300px 0px #E4D18C;
+}
+.menu:nth-child(5){
+  box-shadow:inset 0px -5px 0px #639465;
+}
+.menu:nth-child(5):hover{
+  box-shadow:inset 0px -300px 0px #639465;
+}
