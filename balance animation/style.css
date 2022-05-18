@@ -1,0 +1,121 @@
+*
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #3552f1;
+            overflow: hidden;
+        }
+        .container
+        {
+            position: relative;
+            transform: translateY(-100px);
+        }
+        .container::before
+        {
+            content:'';
+            position: absolute;
+            top: 200px;
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border-radius: 50%;
+            animation: animateCircle 4s ease-in-out infinite;
+        }
+        @keyframes animateCircle
+        {
+            0%
+            {
+                transform: translateX(15px);
+            }
+            50%
+            {
+                transform: translateX(-15px);
+            }
+            100%
+            {
+                transform: translateX(15px);
+            }
+        }
+
+        .container::after
+        {
+            content:'';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 400px;
+            width: 800px;
+            height: 800px;
+            background: rgb(230, 217, 35);
+            border-radius: 50%;
+           
+        }
+
+        .container .loader
+        {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation: animate 4s ease-in-out infinite;
+            /* background: #f00; */
+        }
+        @keyframes animate 
+        {
+            0%
+            {
+                transform: rotate(50deg);
+            }
+            50%
+            {
+                transform: rotate(-50deg);
+            }
+            100%
+            {
+                transform: rotate(50deg);
+            }
+        }
+        .container .loader::before
+        {
+            content: '';
+            position: absolute;
+            width:200px;
+            bottom: 0;
+            height: 100px;
+            background:#52f0e3;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+        .container .loader .ball
+        {
+            position: absolute;
+            top:50%;
+            width: 40px;
+            height: 40px;
+            background: rgb(236, 222, 21);
+            border-radius: 50%;
+            transform: translateY(-100%);
+            animation: animationBall 4s ease-in-out infinite;
+        }
+        @keyframes animationBall
+        {
+            0%
+            {
+                transform: translateY(-100%) translateX(-30px);
+            }
+            50%
+            {
+                transform: translateY(-100%) translateX(200px);
+            }
+            100%
+            {
+                transform: translateY(-100%) translateX(-30px);
+            }
+        }
