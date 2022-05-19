@@ -1,4 +1,4 @@
-﻿<h1>Lo-fi Player </h1>
+<h1>Lo-fi Player </h1>
 
 <p>This is a simple lo-fi player. </p>
 
