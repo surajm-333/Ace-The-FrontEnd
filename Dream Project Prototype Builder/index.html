@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Project</title>
+    <!--    CSS CDN      -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/photo-sphere-viewer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/plugins/markers.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/plugins/compass.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/plugins/virtual-tour.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JS CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/three/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/photo-sphere-viewer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/plugins/markers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/plugins/compass.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4.5.3/dist/plugins/virtual-tour.js"></script> -->
+
+
+
+    <style>
+        html,
+        body,
+        #viewer {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="sideBar">
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Dream Project Blueprint Builder</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="https://github.com/RAHULBAWA777">made with ❤ by RAHULBAWA</a></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&& PANO &&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+    <div id="viewer"></div>
+
+    <script>
+        const viewer = new PhotoSphereViewer.Viewer({
+            container: document.querySelector('#viewer'),
+            panorama: 'pics/2.jpg',
+
+            plugins: [
+                [PhotoSphereViewer.MarkersPlugin, {
+                    markers: [
+                        {
+                            "id": "marker-main",
+                            "polylineRad": [[0.823, 0.083], [0.991, 0.123], [1.116, 0.107], [1.087, -0.524], [0.973, -0.584], [0.915, -0.56], [0.903, -0.54], [0.876, -0.517], [0.829, -0.483], [0.802, -0.462], [0.824, 0.082]],
+                            "tooltip": {
+                                "content": "Main View",
+                                "position": "bottom right"
+                            },
+                            "svgStyle": {
+                                "fill": "transparent",
+                                "stroke": "transparent",
+                                "strokeWidth": 2,
+                            },
+                        "style": {
+                            "opacity": .6,
+                            
+                        }
+                        }
+                    ]
+                }],
+            ]
+
+        });
+
+
+        const markersPlugin = viewer.getPlugin(PhotoSphereViewer.MarkersPlugin);
+
+        markersPlugin.on('select-marker', (e, marker) => {
+            window.open('frontView.html', '_self')
+        });
+        markersPlugin.on('over-marker', (e, marker) => {
+            markersPlugin.updateMarker({
+                id: 'marker-main',
+                svgStyle: {
+                    fill: "orange",
+                    stroke: "white",
+                    strokeWidth: 2
+                }
+            })
+        });
+
+
+        markersPlugin.on('leave-marker', (e, marker) => {
+            markersPlugin.updateMarker({
+                id: 'marker-main',
+                svgStyle: {
+                    fill: "transparent",
+                    stroke: "transparent"
+                }
+            })
+        })
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
