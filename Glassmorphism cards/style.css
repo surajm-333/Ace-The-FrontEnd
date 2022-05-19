@@ -1,0 +1,53 @@
+body {
+
+    background: linear-gradient(300deg, #deff00, #ff1600, #3dff00, #00f7ff, #000aff, #f700ff);
+    background-size: 360% 360%;
+    animation: gradient-animation 36s ease infinite;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px 100px;
+    margin-left:120px;
+    margin-top: 50px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.emojiContainer {
+    width: 200px;
+    height: 200px;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.emojiContainer1{
+    font-size: 40px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
