@@ -1,4 +1,4 @@
-﻿<h1>Gradient Code Generator </h1>
+<h1>Gradient Code Generator </h1>
 
 <p> This helps you generate gradient codes for CSS projects. </p>
 
