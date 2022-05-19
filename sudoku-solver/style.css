@@ -1,0 +1,103 @@
+body {
+ 
+  background-color: #f1ef99;
+}
+
+.topic
+{
+	text-align: center;
+	font-size: 35px;
+	color: blue;
+     font-style: italic;
+}
+
+table {
+  border-collapse: collapse;
+ 
+}
+
+input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.type1
+{border-style: solid ;
+ border-color: black;
+ border-width: 1px 1px 1px 3px;
+
+}
+.type2
+{border-style: solid ;
+ border-color: black;
+ border-width: 1px 1px 3px 1px;
+
+}
+.type12
+{border-style: solid ;
+ border-color: black;
+ border-width: 1px 1px 3px 3px;
+
+}
+
+.type3
+{
+	border-style: solid ;
+ border-color: black;
+ border-width: 3px 1px 1px 1px;
+}
+
+.type13
+{
+	border-style: solid ;
+ border-color: black;
+ border-width: 3px 1px 1px 3px;
+}
+
+
+
+.type34
+{
+	border-style: solid ;
+ border-color: black;
+ border-width: 3px 3px 1px 1px;
+}
+.type4
+{
+	border-style: solid ;
+ border-color: black;
+ border-width: 1px 3px 1px 1px;
+}
+.type24
+{
+	border-style: solid ;
+ border-color: black;
+ border-width: 1px 3px 3px 1px;
+}
+
+
+#generate-sudoku{
+    margin:auto;
+    display:block;
+    
+}
+
+
+#solve{
+    margin:auto;
+    display:block;;
+}
+
+#chk
+{
+	 margin:auto;
+    display:block;;
+}
+
+.name
+{
+	font-size: 15px;
+	text-align: right;
+}

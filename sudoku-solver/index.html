@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> SUDOKU</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+
+
+<body>
+
+<div class="topic"> 
+	SUDOKU-SOLVER </div>
+
+  <br> 
+
+  
+
+
+  <div id="buttons">
+        <button type="button" id="generate-sudoku">Get New
+            Puzzle</button>  <br>
+        <button type="button" id="solve">See Solution</button> <br>
+          <button type="button" id="chk">Check</button> <br>
+    </div>
+
+  <table align="center">
+  <tr>
+
+  <td> <input type=text id="0" class="type13" >  </input> </td>	
+  <td> <input type=text id="1" class="type3" >  </input> </td>
+  <td > <input type=text class="type34" id="2">  </input> </td>
+  <td> <input type=text id="3" class="type13">  </input> </td>
+  <td> <input type=text id="4" class="type3">  </input> </td>
+  <td> <input type=text id="5" class="type34">  </input> </td>
+  <td> <input type=text id="6" class="type13">  </input> </td>
+  <td> <input type=text id="7" class="type3">  </input> </td>
+  <td> <input type=text id="8" class="type34">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="9" class="type1">  </input> </td>	
+  <td> <input type=text id="10">  </input> </td>
+  <td> <input type=text id="11" class="type4" >  </input> </td>
+  <td> <input type=text id="12" class="type1">  </input> </td>
+  <td> <input type=text id="13">  </input> </td>
+  <td> <input type=text id="14" class="type4">  </input> </td>
+  <td> <input type=text id="15" class="type1">  </input> </td>
+  <td> <input type=text id="16">  </input> </td>
+  <td> <input type=text id="17" class="type4">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="18" class="type12" >  </input> </td>	
+  <td> <input type=text id="19" class="type2">  </input> </td>
+  <td> <input type=text id="20" class="type24">  </input> </td>
+  <td> <input type=text id="21" class="type12">  </input> </td>
+  <td> <input type=text id="22" class="type2">  </input> </td>
+  <td> <input type=text id="23" class="type24">  </input> </td>
+  <td> <input type=text id="24" class="type12">  </input> </td>
+  <td> <input type=text id="25" class="type2">  </input> </td>
+  <td> <input type=text id="26" class="type24">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="27" class="type13">  </input> </td>	
+  <td> <input type=text id="28" class="type3">  </input> </td>
+  <td> <input type=text id="29" class="type34">  </input> </td>
+  <td> <input type=text id="30" class="type13">  </input> </td>
+  <td> <input type=text id="31" class="type3">  </input> </td>
+  <td> <input type=text id="32" class="type34">  </input> </td>
+  <td> <input type=text id="33" class="type13">  </input> </td>
+  <td> <input type=text id="34" class="type3">  </input> </td>
+  <td> <input type=text id="35" class="type34">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="36" class="type1">  </input> </td>	
+  <td> <input type=text id="37">  </input> </td>
+  <td> <input type=text id="38" class="type4">  </input> </td>
+  <td> <input type=text id="39" class="type1">  </input> </td>
+  <td> <input type=text id="40">  </input> </td>
+  <td> <input type=text id="41" class="type4">  </input> </td>
+  <td> <input type=text id="42" class="type1">  </input> </td>
+  <td> <input type=text id="43">  </input> </td>
+  <td> <input type=text id="44" class="type4">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="45" class="type12">  </input> </td>	
+  <td> <input type=text id="46" class="type2">  </input> </td>
+  <td> <input type=text id="47" class="type24">  </input> </td>
+  <td> <input type=text id="48" class="type12">  </input> </td>
+  <td> <input type=text id="49" class="type2">  </input> </td>
+  <td> <input type=text id="50" class="type24">  </input> </td>
+  <td> <input type=text id="51" class="type12">  </input> </td>
+  <td> <input type=text id="52" class="type2">  </input> </td>
+  <td> <input type=text id="53" class="type24">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="54" class="type13">  </input> </td>	
+  <td> <input type=text id="55"  class="type3">  </input> </td>
+  <td> <input type=text id="56" class="type34">  </input> </td>
+  <td> <input type=text id="57" class="type13">  </input> </td>
+  <td> <input type=text id="58" class="type3">  </input> </td>
+  <td> <input type=text id="59" class="type34">  </input> </td>
+  <td> <input type=text id="60" class="type13">  </input> </td>
+  <td> <input type=text id="61" class="type3">  </input> </td>
+  <td> <input type=text id="62" class="type34">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="63" class="type1">  </input> </td>	
+  <td> <input type=text id="64">  </input> </td>
+  <td> <input type=text id="65" class="type4">  </input> </td>
+  <td> <input type=text id="66" class="type1"> </input> </td>
+  <td> <input type=text id="67">  </input> </td>
+  <td> <input type=text id="68" class="type4">  </input> </td>
+  <td> <input type=text id="69" class="type1">  </input> </td>
+  <td> <input type=text id="70">  </input> </td>
+  <td> <input type=text id="71"class="type4">  </input> </td>
+
+  </tr>
+  <tr>
+
+  <td> <input type=text id="72" class="type12">  </input> </td>	
+  <td> <input type=text id="73" class="type2" >  </input> </td>
+  <td> <input type=text id="74" class="type24">  </input> </td>
+  <td> <input type=text id="75" class="type12" >  </input> </td>
+  <td> <input type=text id="76" class="type2" >  </input> </td>
+  <td> <input type=text id="77" class="type24" >  </input> </td>
+  <td> <input type=text id="78" class="type12">  </input> </td>
+  <td> <input type=text id="79" class="type2">  </input> </td>
+  <td> <input type=text id="80" class="type24">  </input> </td>
+
+  </tr>
+
+  </table>
+
+  <br><br><br>
+
+	</body>
+
+
+
+ <script defer src="script.js"></script>
+
+</html>
