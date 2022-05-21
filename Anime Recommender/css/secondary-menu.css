@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#secondary-menu{
+    padding-top: 30px; /*space between nav buttom border  and slider title*/
+    background-color: #212121; /* background brightness filter*/
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.navigation2 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .navigation2 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .navigation2 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.4em 0.8em;
+    padding: 0;
+  }
+  .navigation2 a {
+    padding: 0 0.7em;
+    color: #EEEEEE;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .navigation2 a:before {
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    left: 15%;
+    right: 15%;
+    top: 0;
+    bottom: 0;
+    border-left: 3px solid #FF2E63;
+    border-right: 3px solid #08D9D6;
+  }
+  .navigation2 a:hover,
+  .navigation2 .current a {
+    color: #EAEAEA;
+  }
+  .navigation2 a:hover:before,
+  .navigation2 .current a:before {
+    opacity: 1;
+    left: 0;
+    right: 0;
+  }
+.navigation2 li a:hover{
+    color: #EAEAEA;
+}

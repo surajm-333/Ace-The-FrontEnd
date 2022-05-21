@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--// js bs scripts mobile menu-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!--bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bio - Copy.css">
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/secondary-menu.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon2.png">
+    <!--using font awesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeAddicts</title>
+</head>
+<body>
+    
+<!--Header-->
+
+<header>
+
+  <a href="#" class="logo"><img src="images/logo2.png"></a>
+  <ul class="navigation">
+      <li><a href="index.html" data-hover="Home">Home</a></li>
+      <li><a href="#" data-hover="Anime">Top Anime</a></li>
+      <li><a href="#" data-hover="Manga">Top Manga</a></li>
+      <li><a href="#" data-hover="Novels">Top Novels</a></li>
+      <li><a href="#" data-hover="Updates">Anime Updates</a></li>
+  </ul>
+  <div class="search">
+      <input type="text" placeholder="Search">
+      <i class="fas fa-search"></i>
+  </div>
+
+</header>
+
+
+<div id="main">
+
+    <div class="name-container">
+        <h5 class="name-title">
+          Detail of :  Tensei shitara Slime Datta Ken 2nd Season Part 2 "Anime Serie"
+        </h5>
+      </div>
+<tbody>
+
+  <div class="table-container">
+
+    <table id="table">
+        <tr class="tb-img">
+          <td id="fitimg">
+            <img src="images/tbimg/tensei_shitara_slime_datta_ken_2nd_season_part_2_9421.jpg">
+          </td>
+        </tr>
+    </table>
+
+    <table id="inf-table">
+      <tr>
+        <th>Original title</th>
+        <td>Tensei shitara Slime Datta Ken 2nd Season Part 2</td>
+      </tr>
+      <tr>
+        <th>English title</th>
+        <td>That Time I Got Reincarnated as a Slime II – Part 2</td>
+      </tr>
+      <tr>
+        <th>synonym</th>
+        <td>Tensura 2 part 2</td>
+      </tr>
+      <tr>
+        <th>Adaptation</th>
+        <td>Tensei shitara Slime Datta Ken (Light Novel)</td>
+      </tr>
+    </table>
+
+  </div>
+
+</tbody>
+
+</div>
+
+
+
+
+<!--footer-->
+<footer class="footer">
+
+<div class="container">
+  <div class="row">
+        <div class="footer-col">
+          <h4>Anime Addicts</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">terms</a></li>
+            <li><a href="#">support</a></li>
+            <li><a href="#">advertising</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sitemap</h4>
+          <ul>
+            <li><a href="#">Animes</a></li>
+            <li><a href="#">Anime movies</a></li>
+            <li><a href="#">Manga & Manhwa</a></li>
+            <li><a href="#">Novels</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+
+  </div>
+</div>
+    
+</footer>
+
+
+<!--slider script-->
+<script>
+        $(document).ready(function(){
+        $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onsliderLoad: function(){
+          $('#autoWidth,#autoWidth2').removeClass('cs-hidden');
+        }
+        });
+      });
+</script>
+<!--smooth scroll js
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+</script>
+-->
+
+</body>
+</html>

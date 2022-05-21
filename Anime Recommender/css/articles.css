@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+.article-container{
+    margin-top: 15%;
+    max-width: 1170px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    background-size: cover;
+    background-color: #EEEEEE;
+    border: 3px solid #32E0C4;
+    border-radius: 25px;
+    align-content: center;
+}
+.cover-inf{
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+.article-img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-small;
+    font-weight: 300;
+}
+
+.article{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'poppins';
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.description{
+    display: flex;
+    width: 80%; 
+    border: 2px dotted #08D9D6;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Raleway';
+}
+#section{
+    color: #FF2E63;
+    margin-left: 30px;
+    text-decoration: underline 2px #08D9D6;
+    text-transform: uppercase;
+}
+
+.links{
+    margin: 30px;
+    padding-top: 50px;
+    display: block;
+    cursor: pointer;
+}
+.links a{
+    color: #FF2E63;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-decoration: underline 1px #08D9D6;
+}
+.links a:hover{
+    margin: 35px;
+    cursor: pointer;
+    color: #08D9D6;
+    text-decoration: underline 1px #FF2E63;
+}
+
+.banner-img{
+    width: 100%;
+    /* center a flex */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* center a flex end*/
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.banner-img img{ 
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 15px #32e0c336;
+}
+@media screen and (max-width: 768px){
+
+    .article-container{
+        margin-top: 55%;
+    }
+
+    .banner-img img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+      }
+
+}

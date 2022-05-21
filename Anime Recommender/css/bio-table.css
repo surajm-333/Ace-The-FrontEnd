@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.bio-container{
+    margin-top: 15%;
+    max-width: 1170px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    background-size: cover;
+    background-color: #EEEEEE;
+    border: 3px solid #32E0C4;
+    border-radius: 25px;
+    align-content: center;
+}
+
+/* page tytle  styling
+.anime-title{
+    color: #0D7377;
+      align-items: center;
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: Impact, 'Raleway', 'Arial Narrow Bold', sans-serif;
+      font-weight: 500;
+      margin-left: auto;
+      margin-right: auto;
+      text-transform: uppercase;
+      margin: 10px;
+      padding: 20px;
+      margin-bottom: 40px;
+      word-spacing: 2px;
+} */
+
+.anime-title{
+    /*border-top: 3px solid #fca311 ;*/
+    background-color: #212121;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    /*box-shadow: 2px 5px 9px #fca311;*/
+    font-size: 1.4rem;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    padding-left: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.table-container{
+    display:flex;
+}
+
+.table-image{
+    width: 60%;
+    height: fit-content;
+    margin-left: 5vh ;
+    align-items: center;
+    align-items: center;
+    display: flex;
+}
+.table-image img{
+    border-radius: 25px;
+    border-right: 5px solid #FF2E63;
+    border-left: 5px solid #32E0C4;
+}
+
+.table-bio{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2vh;
+}
+.table-bio th{
+    color: #08D9D6;
+}
+.table-bio td{
+    color: #000000;
+}
+
+.synopsis{
+    margin-top: 20px;
+}
+
+.synopsis b{
+    color: #FF2E63;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+.synopsis p{
+    color: #000000;
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.table-bio td,
+.table-bio th{
+    padding: 12px 15px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-size: 16px;
+}
+
+.table-image img{
+    position: relative;
+    width: 80%;
+    height: auto;
+    position: cover;
+    margin: 10px;
+}
+
+table{
+      border-style: hidden; /*hide standard table (collapsed) border */
+}
+th{
+    width: 25%;
+}
+
+td b,p{
+    color: rgb(45, 45, 48);
+    margin: 30px;
+}
+
+/*responsive*/
+
+@media(max-width:980px) {
+    .bio-container{
+        margin-top: 22%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 2;
+
+    }
+}
+
+@media(max-width:900px) {
+    .bio-container{
+        margin-top: 21%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 2;
+
+    }
+}
+
+@media(max-width:800px) {
+    .bio-container{
+        margin-top: 35%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 2;
+
+    }
+}
+
+@media(max-width:764px) {
+    .bio-container{
+        margin-top: 43%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 2;
+
+    }
+}
+
+@media(max-width:664px) {
+    .bio-container{
+        margin-top: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 2;
+
+    }
+}
+
+@media(max-width:600px) {
+    .bio-container{
+        margin-top: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: 2;
+
+    }
+}
+
+/* responsive bio end */
+
+@media(max-width: 500px) {
+                 
+    .table-bio th,td{
+        /*display: none;*/
+        float: left;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .table-bio, .table-bio tr, table td{
+        display: block;
+        width: 100%;
+    }
+
+    #main{
+        margin-top: 210px;
+    }
+
+    .table-image td{
+        border-top: none;
+        display: none;
+    }
+
+    .table-image{
+        display: none;
+    }
+    
+
+    .table-bio td{
+        text-align: left;
+        padding-right:50%;
+        text-align: left;
+        position: relative;
+
+    }
+    .table-bio th{
+        text-align: center;
+        text-align: center;
+        position: relative;
+        left: 0;
+        width: 100%;
+        padding-left: 15px;
+        text-align: left;
+    }  
+    
+    .bio-container{
+        margin-top: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        z-index: -1;
+
+    }
+    
+
+
+}
