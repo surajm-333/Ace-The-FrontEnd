@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter using HTML CSS & JS</title>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- wrapper class -->
+    <div class="wrapper">
+        <div class="col">
+            <!-- heading -->
+            <div class="text">Currency Converter</div>
+            <div class="s6">
+                <!-- input amount -->
+                <div class="sm">Enter Amount...</div>
+                <input type="number" value="10" id="Amount">
+                <div class="transfer">  
+                    <select class="select-text">
+                        <option selected disabled>From</option>
+                    </select>
+                    <div class="icon">
+                        <span class="bx bx-transfer"></span>
+                    </div>
+                    <select class="select-text">
+                        <option selected disabled>To</option>
+                    </select>
+                </div>
+                <div class="s2">
+                    <div class="conversion"></div>
+                    <div class="messages"></div>
+                </div>
+                <!-- button  -->
+                <div class="button">
+                    <button class="btn">Convert Amount</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Linking -->
+    <script src="index.js"></script>
+</body>
+</html>
+
