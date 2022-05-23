@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210mm" height="297mm" version="1.1" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <image x="-118.42" y="31.478" width="448.73" height="221.99" preserveAspectRatio="none" xlink:href="pics\Screenshot (273).png"/>
+ <g fill="none" stroke="#000" stroke-width=".26458px">
+  <path d="m67.704 50.304 55.472-0.17227-0.51682 30.665h-53.405z"/>
+  <path d="m123.35 96.99-54.783 0.34455 0.68909-16.538h53.405z"/>
+  <path d="m68.393 100.78h54.783l0.51682 21.017-56.334-0.17227 0.17227-20.673z"/>
+  <path d="m67.359 121.63 56.334 0.17227-0.17227 18.089-55.644-0.34455z"/>
+  <path d="m68.048 143.68 55.3-0.17227 0.34454 13.954-56.334 0.17227z"/>
+  <path d="m67.359 161.77 55.3-0.17227 0.34455 16.883-55.644-0.17228z"/>
+  <path d="m67.359 178.3 55.644 0.17228v20.156l-55.644-0.34455z"/>
+  <path d="m67.359 198.29 55.644 0.34455 0.51682 13.954-56.161-0.86137z"/>
+ </g>
+</svg>
+<!-- WARNING: Could not open file '../../../Desktop/viraat%202/pics/Screenshot%20(273).png' for embedding. The raster image will be kept as a reference but might be invalid. (Exception details: <urlopen error [WinError 3] The system cannot find the path specified: '..\\..\\..\\Desktop\\viraat 2\\pics\\Screenshot (273).png'>) -->

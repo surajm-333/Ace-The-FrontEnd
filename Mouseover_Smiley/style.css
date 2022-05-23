@@ -1,0 +1,120 @@
+.wrapper{
+    margin-top: 12%;
+}
+
+a,a:hover,a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.text-center{
+    text-align: center;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container1{
+position:relative;
+/* height: 100vh; */
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;  
+}  
+
+.container1 .face{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #e2f10f ;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+margin: 0 20px;
+cursor: pointer;
+}
+
+.container1 .face:hover{
+background: linear-gradient(180deg, #ff4433,#f44336,#e5ff00);
+}
+
+.container1  .face:before{
+content : "";
+position: absolute;
+width: 150px;
+height: 70px;
+top: 180px;
+border-bottom-left-radius: 70px;
+border-bottom-right-radius: 70px;
+background: #b57700;
+transition: 0.5s;
+border: 3px solid #f44336;   
+}
+
+.container1 .face:hover:before{
+top:210px;
+width: 150px;
+height: 20px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+background: #9d0b00;
+border:none;
+}
+
+.container1 .face .eyes{
+position: relative;
+top: -40px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.container1 .face .eyes .eye{
+width: 80px;
+height: 80px;
+background: #fff;
+border-radius: 50%;
+margin: 0 15px;
+display: block; 
+position: relative;
+}
+
+.container1 .face:hover .eyes .eye{
+animation: animate 10s linear infinite;
+} 
+
+@keyframes animate{
+0%{
+    border:3px dotted #ddd;
+    transform: rotate(0deg);
+}
+50%{
+    border: 2px solid #011;
+    transform: rotate(360deg);
+}
+100%{
+    border: 2px solid #333;
+    transform: rotate(0deg);
+}
+}
+
+.container1 .face .eyes .eye:before{
+content: "";
+position: absolute;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #333;
+top: 50%;
+left: 52px;
+transform: translate(-50%,-50%);
+}
+
+.face.show:hover{
+display:block;
+}
+
+.face.disp:hover{
+display: none;
+}
