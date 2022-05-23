@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #151515;
+    display: grid;
+    height: 100vh;
+    padding: 5px;
+    color: #fff;
+}
+
+.scene {
+    width: 230px;
+    height: 200px;
+    background: url('./background.jpg') 0 90% no-repeat;
+    background-size: cover;
+    background-size: 500% 400%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: background-position 15s linear;
+}
+
+.scene:hover {
+    background-position: 150% 90%;
+}
+
+.mario {
+    width: 65px;
+    height: 100px;
+    background: url('./mario_sprite.png') no-repeat;
+    transform: translate(10px, 85px);
+    animation: run .5s infinite;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input:checked+.mario {
+    animation-timing-function: step-end;
+}
+
+@keyframes run {
+    25% {
+        background-position: -85px 0;
+    }
+
+    50% {
+        width: 45px;
+        background-position: -150px 0;
+    }
+
+    75% {
+        width: 55px;
+        background-position: -197px 0;
+    }
+}
