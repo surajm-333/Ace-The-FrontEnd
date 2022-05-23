@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid loader animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>
+            loading
+        </h2>
+        <div class="l1">
+            <span style="--i:0; background-color: blanchedalmond;"></span>
+            <span style="--i:1; background-color: #F806CC;"></span>
+            <span style="--i:2; background-color: #F73D93;"></span>
+            <span style="--i:3; background-color: aquamarine;"></span>
+            <span style="--i:4; background-color: lightgreen;"></span>
+            <span style="--i:5; background-color: #F9CEEE;"></span>
+            <span style="--i:6; background-color: #F9D923;"></span>
+            <span style="--i:7; background-color: #F8B400;"></span>
+        </div>
+    </div>
+    <svg>
+       <filter id="my" >
+           <feGaussianBlur in="SourceGraphic"
+           stdDeviation="10"/>
+           <feColorMatrix Values="
+           1 0 0 0 0
+           0 1 0 0 0
+           0 0 1 0 0
+           0 0 0 20 -10"/>
+       </filter>
+    </svg>
+    
+</body>
+</html>

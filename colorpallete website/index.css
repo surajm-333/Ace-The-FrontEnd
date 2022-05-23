@@ -1,0 +1,209 @@
+:root {
+  --primary-bg-color: #000000;
+  --primary-color: #ffffff;
+}
+
+::selection {
+  background: #eeeeee;
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Roboto Mono", "SF Mono", "Lucida Console", Monaco, monospace;
+  animation: fadein 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.circle {
+  display: inline-block;
+  margin: 8px;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 32px;
+}
+
+button {
+  display: inline-flex;
+  margin: 4px;
+  padding: 0 16px;
+  height: 40px;
+  border-radius: 4px;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Poppins", "Roboto", "Noto", sans-serif;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  padding: 2px 2px 2px 8px;
+  width: 56px;
+  border-radius: 4px;
+  background: #000000;
+  color: #ffffff;
+}
+
+input {
+  font-size: 18px;
+  font-family: "Roboto Mono", "SF Mono", "Lucida Console", Monaco, monospace;
+  line-height: 2;
+}
+
+#content {
+  margin: 32px 0;
+  padding: 32px;
+  border-radius: 4px;
+  background-color: var(--primary-bg-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Poppins", "Roboto", "Noto", sans-serif;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.flex {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.logo,
+.title {
+  font-weight: 700;
+  font-family: "Poppins", "Roboto", "Noto", sans-serif;
+}
+
+#colors {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.title .circle {
+  margin-right: 16px;
+}
+
+#combocircle {
+  background: linear-gradient(
+    to right,
+    var(--primary-bg-color) 50%,
+    var(--primary-color) 50%
+  );
+}
+
+#gradcircle {
+  background: linear-gradient(
+    to right,
+    var(--primary-bg-color),
+    var(--primary-color)
+  );
+}
+
+.family {
+  display: flex;
+  padding: 0 0 32px 0;
+  flex-wrap: wrap;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  flex-grow: 1;
+}
+
+.btn {
+  display: flex;
+  padding: 32px;
+  border-radius: 4px;
+  cursor: url("https://s1.iconbird.com/ico/0612/GooglePlusInterfaceIcons/w18h181338911221dropper.png"),
+    pointer;
+  transition: 0.2s;
+}
+
+.hex {
+  max-width: 80px;
+  color: #555555;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#snackbar {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1;
+  visibility: hidden;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #555555;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.2s, fadeout 0.2s 1.8s;
+}
+
+.picker_wrapper {
+  border-radius: 4px;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    cursor: none;
+  }
+  /* Title Styling */
+  h1{
+    font-family: cursive;
+    color:whitesmoke;
+    font-size:42px;
+    margin-top:20px;
+    box-shadow: 8px 8px 8px 0  gray;
+  }
+  /* Whole body */
+  body {
+      /* Background wall image */
+    background-image: url("https://drive.google.com/uc?export=download&id=1M42mkJo_ILpyt1penWJLFAGwyycD9oKq");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  /* Start Button Styling */
+  button {
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 15px 45px;
+    font-size: 1.1rem;
+    margin-top: 3em;
+    outline: none;
+    cursor: none;
+    font-family:cursive;
+      font-weight:bold;
+    border-radius:10px
+  }
+  /* Addig hover,focus effect on button */
+  button:hover,
+  button:focus{
+    background-color:black;
+    font-size:22px;
+    border: 3px solid yellow;
+  }
+  
+  .bloodSpot {
+    position: absolute;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .terrorist {
+    height: 100px;
+  }
+  
+  img::selection {
+    background: transparent;
+  }
+  /* Crosshair styling */
+  .cursor {
+    position: absolute;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+    transition: 0.3s transform ease;
+    transform-origin: 100% 100%;
+  }
+  
+  

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Generator</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="card_no" readonly value=" ">
+        <label for="card_no">Card Number :</label>
+
+        <input type="text" id="exp" readonly value=" ">
+        <label for="exp">Expiry Date :</label>
+
+        <input type="text" id="cvv" readonly value=" ">
+        <label for="cvv">CVV :</label>
+
+        <input type="text" id="name" readonly value=" ">
+        <label for="name">Card Holder :</label>
+
+            <button onclick="getInputValue(this)">Generate</button>
+            <button id="reset" onclick="reset(this)">Reset</button>
+    </div>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

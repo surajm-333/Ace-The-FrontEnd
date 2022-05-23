@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding:0%;
+}
+
+body{
+    display:flex;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: darkmagenta;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    /* border: 2px solid red; */
+    width:100%;
+    padding:15px;
+    background-color: lightgrey;
+    color:olive;
+    /* position: fixed; */
+}
+
+.upper button{
+    padding:5px;
+    color:rgb(133, 23, 127);
+    background-color: mediumspringgreen;
+    border: none;
+}
+button:hover{
+    background-color: darkorange;
+    cursor: pointer;
+}
+
+.upper .gall{
+    background-color: cornflowerblue;
+    color: rgb(200, 18, 176);
+}
+
+.upper .gall:hover{
+    background-color: darkred;
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    /* border: 2px solid green; */
+    min-height: 80vh;
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.image img{
+    width:50vw;
+    height:80vh;
+    border: honeydew 2px solid;
+}
+
+a{
+    padding:10px;
+    background-color:cadetblue;
+    font-size: x-large;
+    color:darkgreen;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+a:hover{
+    background-color: deeppink;
+}
+
+#dog-sub-breeds {
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    width: 15%;
+    min-width: 150px;
+}
+
+#dog-sub-breeds option {
+    font-size: 1rem;
+}
+
+.flex-breed{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex-breed img{
+    display: flex;
+    margin:1rem;
+    width: 25vw;
+    height:25vh;
+    border:darkred 3px solid; 
+    filter: grayscale(0.3);
+}
+
+.flex-breed img:hover{
+    filter: grayscale(0);
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+
+

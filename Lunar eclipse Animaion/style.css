@@ -1,0 +1,124 @@
+  body {
+    background-color: rgb(2, 2, 29);
+    margin: 0;  
+    height: 100vh;
+  }
+  
+  .moonLight {
+    border-radius: 50%;
+    border: none;
+    box-shadow: -2px 0 100px rgb(236, 236, 230);
+    height: 200px;
+    width: 200px;
+    margin: 100px auto;
+    position: relative;
+    animation:
+      light 40s linear both;
+  }
+  
+  .moon {
+    background-color: rgb(246, 246, 232);
+    border-radius: 50%;
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: rotate(20deg);
+    animation:
+    redMoonActive 20s ease-in-out,
+    redMoonInactive 18s ease-in-out 20s;
+  }
+    
+  .stars {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image:
+      radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.205) 3px, transparent 12px),
+      radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.192) 4px, transparent 6px),
+      radial-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.168) 3px, transparent 12px),
+      radial-gradient(rgba(255,255,255,.4), rgba(255, 255, 255, 0.14) 4px, transparent 6px);
+    background-size: cover;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    animation: starShow 20s linear, starHide 20s linear 20s;
+  }
+
+  .edge {
+    background-color: rgb(246, 246, 232);
+    border-radius: 50%;
+    box-shadow: -2px 0 100px rgb(246, 246, 232);
+    height:65%;
+    width:65%;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    animation: edgeShow 3s linear 18s, edgeHide 3s linear 20s ;
+  }
+  
+  @keyframes redMoonActive {
+    0% {
+      box-shadow: inset 0px 2px 20px -10px   rgba(#2d0000, 1);
+    }
+  
+   50% {
+      box-shadow: inset 155px 1px 20px -10px rgba(#2d0000, 1);
+    }
+    
+    100% {
+     box-shadow: inset 276px 1px 20px -10px #2d0000;
+      background-color: rgb(82, 8, 13);
+    }
+  }
+  
+  @keyframes redMoonInactive {
+    0% {
+      box-shadow: inset 0px 1px 20px -10px rgb(249, 249, 234), 1;
+      background-color: rgb(82, 8, 13);
+    }
+  
+  75% {
+      box-shadow: inset 155px 1px 20px -10px rgb(246, 246, 232), 1;
+    }
+    
+    100% {
+     box-shadow: inset 276px 1px 20px -10px rgb(252, 252, 241);
+      background-color: rgb(246, 246, 232);
+    }
+  }
+  
+  @keyframes light {
+    0%{
+       box-shadow: -5px 0 100px rgb(245, 245, 235);
+    }
+    
+    50%{
+       box-shadow: -5px 0 100px rgb(69, 5, 10);
+    }
+    
+    100%{
+       box-shadow: -5px 0 100px rgb(244, 244, 230);
+    }
+  }
+  
+  @keyframes edgeShow {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes edgeHide {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  
+  @keyframes starShow {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes starHide {
+    from { opacity: 1; }
+    to   { opacity: 0.1; }
+    
+  }
+  

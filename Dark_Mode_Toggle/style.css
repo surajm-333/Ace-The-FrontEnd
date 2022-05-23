@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --accent-color: orangered;
+    --background-color: white;
+    --text-color: black;
+    --button-text-color: var(--background-color);
+    --transition-delay: 0.7s;
+
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: var(--transition-delay);
+}
+
+header {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+body.dark {
+    --accent-color: #d0d066;
+    --background-color: #333;
+    --text-color: white;
+    --transition-delay: 0.7s;
+}
+
+.theme-toggle-button {
+    color: var(--button-text-color);
+    background-color: var(--accent-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.5em;
+    margin: 0;
+    margin-bottom: 1rem;
+    transition: var(--transition-delay);
+    transform: scale(1);
+}
+
+.theme-toggle-button:hover,
+.theme-toggle-button:focus {
+    transform: scale(1.2);
+}
+
+.icon {
+    margin-right: 0.5em;
+}
+
+.container {
+    --rotation: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 200vmin;
+    pointer-events: none;
+    transform: rotate(var(--rotation));
+}
+
+.sun,
+.moon {
+    position: absolute;
+    transition: opacity, fill var(--transition-delay);
+    fill: var(--accent-color);
+}
+
+.sun {
+    top: 5%;
+    opacity: 1;
+}
+
+.dark .sun {
+    opacity: 0;
+}
+
+.moon {
+    bottom: 5%;
+    opacity: 0;
+}
+
+.dark .moon {
+    opacity: 1;
+    top: 5%;
+}

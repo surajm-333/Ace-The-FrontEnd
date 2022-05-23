@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking CSS and logo -->
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico" style="border-radius: 25px;">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>Google</title>
+</head>
+<body>
+    <!-- container for entire body -->
+    <div class="container">
+        <header>
+            <!-- gmail, image and sign in links -->
+            <nav class="links">
+                <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+                <a href="https://www.google.co.in/imghp?hl=en&ogbl">Images</a>
+                <button type="button" onclick="signin()">Sign in</button>
+            </nav>
+        </header>
+        <!-- search bar and language settings -->
+        <div class="searchcontainer">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            <form id="form_submit">
+                <input type="text" name="search" id="search" autocomplete="off" autocapitalize="on" placeholder="Search Something...">
+                <div class="search-btn">
+                    <button type="submit">Google Search</button>
+                    <button type="button" onclick="doodle()">I'm Feeling Lucky</button>
+                </div>
+            </form>
+            <!-- Languages offered -->
+            <div class="lang">
+                <p>Google offered in:
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCA0">हिन्दी</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCA4">বাংলা</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCA8">తెలుగు</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCBA">मराठी</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCBE">தமிழ்</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCBI">ગુજરાતી</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCBM">ಕನ್ನಡ</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCBQ">മലയാളം</a>
+                    <a
+                        href="https://www.google.com/setprefs?sig=0_0qHcwCTHILM2Hg10us4y-k7AvKU%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwiH8rjR7MD3AhWHDd4KHfigBioQ2ZgBCBU">ਪੰਜਾਬੀ</a>
+                </p>
+            </div>
+        </div>
+        <!-- Footer with links to about and other utility pages -->
+        <footer>
+            <a href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+            <a href="https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+            <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+            <a href="https://policies.google.com/privacy?hl=en-IN&fg=1">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en-IN&fg=1">Terms</a>
+            <a href="#">Settings</a>
+        </footer>
+    </div>
+    <!-- linking JS file -->
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram Clone</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <img src="./assets/images/search.png" height="18">
+                </div>
+                <div class="nav-links">
+                    <ul class="nav-group">
+                        <li class="nav-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li class="nav-item"><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li class="nav-item"><a href=""><i class="far fa-compass"></i></a></li>
+                        <li class="nav-item"><a href=""><i class="far fa-heart"></i></a></li>
+                        <li class="nav-item">
+                            <div class="action">
+                                <div class="profile" onclick="menuToggle()">
+                                    <img src="./assets/images/crop.png" alt="user Avatar">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="col-9">
+                <div class="statuses">
+                    <div class="status">
+                        <div class="image">
+                            <img src="./assets/images/story.png" alt="">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src="./assets/images/user-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src="./assets/images/user-2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src="./assets/images/user-3.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src="./assets/images/user-4.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="status">
+                        <div class="image">
+                            <img src="./assets/images/user-5.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Aditya Verma<br><span>Mumbai, India</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="./assets/images/post-1.jpg" alt="post-1" class="cover">
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">203 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>Aditya Verma</b> 
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 32 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">2 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comment...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-2.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Jethalal Gada<br><span>Delhi, India</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="./assets/images/post-2.jpg" alt="post-1" class="cover">
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">119 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>Jethalal Gada</b>
+        
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 20 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">4 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comment...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-3.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Mayank<br><span>Dehradun, India</span></h3>
+            </div>
+            <div>
+              <span class="dot"><i class="fas fa-ellipsis-h"></i></span>
+            </div>
+          </div>
+          <div class="imgBx">
+            <img src="./assets/images/post-3.jpg" alt="post-1" class="cover">
+          </div>
+          <div class="bottom">
+            <div class="actionBtns">
+              <div class="left">
+                <span class="heart" onclick="addlike()">
+                  <span>
+                    <svg aria-label="Like" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 48 48"
+                      width="24">
+                      <path
+                        d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+                <svg aria-label="Comment" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path clip-rule="evenodd"
+                    d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z"
+                    fill-rule="evenodd"></path>
+                </svg>
+                <svg aria-label="Share Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
+                  </path>
+                </svg>
+              </div>
+              <div class="right">
+                <svg aria-label="Save" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img"
+                  viewBox="0 0 48 48" width="24">
+                  <path
+                    d="M43.5 48c-.4 0-.8-.2-1.1-.4L24 29 5.6 47.6c-.4.4-1.1.6-1.6.3-.6-.2-1-.8-1-1.4v-45C3 .7 3.7 0 4.5 0h39c.8 0 1.5.7 1.5 1.5v45c0 .6-.4 1.2-.9 1.4-.2.1-.4.1-.6.1zM24 26c.8 0 1.6.3 2.2.9l15.8 16V3H6v39.9l15.8-16c.6-.6 1.4-.9 2.2-.9z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <a href="#">
+              <p class="likes">184 likes</p>
+            </a>
+            <a href="#">
+              <p class="message"><b>Mayank</b> Nature <span>#love</span>
+                <span>#2021</span> 
+              </p>
+            </a>
+            <a href="#">
+              <h4 class="comments">View all 25 comments</h4>
+            </a>
+            <a href="#">
+              <h5 class="postTime">9 hours ago</h5>
+            </a>
+            <div class="addComments">
+              <div class="reaction">
+                <h3><i class="far fa-smile"></i></h3>
+              </div>
+              <input type="text" class="text" placeholder="Add a comment...">
+              <a href="#">Post</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="card">
+          <h4>Suggestions For You</h4>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Aditya Verma<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-2.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Jethalal Gada<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-3.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Mayank<br><span>Followed by Aditya Verma</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-4.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+              <h3>Sunita Sharma<br><span>Follows You</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+          </div>
+          <div class="top">
+            <div class="userDetails">
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="./assets/images/user-5.jpeg" alt="" class="cover">
+                  </div>
+                </div>
+              </div>
+              <h3>Raj Kumar<br><span>Followed by Jethalal Gada</span></h3>
+            </div>
+            <div>
+              <a href="#" class="follow">follow</a>
+            </div>
+            </div>
+        </div>
+            <div class="footer">
+                <a class="footer-section" href="#">About</a>
+                <a class="footer-section" href="#">Help</a>
+                <a class="footer-section" href="#">API</a>
+                <a class="footer-section" href="#">Jobs</a>
+                <a class="footer-section" href="#">Privacy</a>
+                <a class="footer-section" href="#">Terms</a>
+                <a class="footer-section" href="#">Locations</a><br>
+                <a class="footer-section" href="#">Top Accounts</a>
+                <a class="footer-section" href="#">Hashtag</a>
+                <a class="footer-section" href="#">Language</a><br><br>
+                <span class="footer-section">&copy; 2022 INSTAGRAM FROM FACEBOOK</span>
+            </div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>

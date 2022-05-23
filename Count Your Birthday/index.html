@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- heading -->
+    <h2>Countdown Your Birthday🎂🎈🎉</h2>
+    <div class="container">
+   
+    <!-- 3 inputs
+     1. month
+     2. date
+     3. Year
+    -->
+        <div class="dateDisplay">
+            <input type="text" placeholder="month" class="month" />
+            <input type="text" placeholder="date" class="date" />
+            <input type="text" placeholder="year" class="year" />
+            
+        </div>
+        <!-- Button for calculation -->
+        <button onclick="sa()">Start Counting..</button>
+        <!-- display remaining:
+        year-month-day-hour-min-sec
+        -->
+        <h1 id="time_left"></h1>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
