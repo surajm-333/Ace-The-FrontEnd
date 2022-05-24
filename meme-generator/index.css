@@ -1,0 +1,103 @@
+:root {
+  --main-color: #282c34;
+  --white: #fff;
+  --mistyrose: #ffe4e1;
+  --btn-color: #db3927;
+  --coral: #ff7f50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--mistyrose);
+  display: grid;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 15vmin;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: var(--main-color);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.remove-txt-btn {
+  background-color: var(--btn-color);
+}
+
+.meme-library {
+  padding: 1rem;
+  /* background-color: #f3f3f3; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.current-image {
+  min-width: 300px;
+  padding: 0.5rem;
+}
+.text-form {
+  padding: 1rem;
+}
+.text-form input {
+  width: 400px;
+}
+
+.footer {
+  background-color: var(--main-color);
+  color: var(--white);
+  height: 5rem;
+  display: grid;
+  align-items: center;
+}
+
+.footer a,
+.remove-txt-btn {
+  margin: 20px;
+  text-decoration: none;
+  background-color: var(--btn-color);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border-radius: 10px;
+  right: 100px;
+  border: 0;
+}
+
+.footer a:hover,
+.remove-txt-btn:hover {
+  background-color: var(--coral);
+  color: var(--mistyrose);
+}
+
+/* @media (min-width: 1200px) {
+} */
