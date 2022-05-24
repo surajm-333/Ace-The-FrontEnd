@@ -94,7 +94,7 @@ video.addEventListener('loadedmetadata', function () {
 function adjustPlayPause() {
   if (ispaused === 0) {
     pausedbutton.classList.remove('hidden');
-    playpause.src = '/content/play.png';
+    playpause.src = 'play.png';
     pausedbutton.classList.add('animate');
     let timer = setInterval(() => {
       pausedbutton.classList.remove('animate');
@@ -105,7 +105,7 @@ function adjustPlayPause() {
     ispaused = 1;
   } else {
     playbutton.classList.remove('hidden');
-    playpause.src = '/content/largerPause.png';
+    playpause.src = 'largerPause.png';
     playbutton.classList.add('animate');
     let timer1 = setInterval(() => {
       playbutton.classList.remove('animate');
@@ -126,11 +126,11 @@ playpause.addEventListener('click', () => {
 
 volumecontrole.addEventListener('click', function () {
   if (ismute === 0) {
-    volumecontrole.src = '/content/mute.png';
+    volumecontrole.src = 'mute.png';
     video.muted = true;
     ismute = 1;
   } else {
-    volumecontrole.src = '/content/volume.png';
+    volumecontrole.src = 'volume.png';
     video.muted = false;
     ismute = 0;
   }
