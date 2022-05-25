@@ -1,6 +1,6 @@
-﻿<h1>Disney Hotstar Clone </h1>
+﻿<h1>Web Audio<h1>
 
-<p>Landing page clone of Disney Hotstar</p>
+<p> It’s a voice player with animation according to voice frequency </p>
 
 <h3>Used Technologies</h3>
 
