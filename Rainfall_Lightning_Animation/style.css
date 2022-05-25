@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .container{
     height: 100vh;
     background-image: url('rain.png') ;
