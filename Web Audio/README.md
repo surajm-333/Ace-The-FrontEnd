@@ -1,4 +1,4 @@
-﻿<h1>Web Audio<h1>
+<h1>Web Audio<h1>
 
 <p> It’s a voice player with animation according to voice frequency </p>
 
