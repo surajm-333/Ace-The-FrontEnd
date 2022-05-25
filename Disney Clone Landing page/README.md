@@ -1,4 +1,4 @@
-﻿<h1>Disney Hotstar Clone </h1>
+<h1>Disney Hotstar Clone </h1>
 
 <p>Landing page clone of Disney Hotstar</p>
 
