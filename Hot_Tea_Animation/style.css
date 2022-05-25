@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #607d8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.cup{
+    position: relative;
+    background:linear-gradient( to right, white,rgb(208, 202, 202));
+    width: 300px;
+    height: 270px;
+    border-radius: 0px 0px 45% 45%;
+}
+.top{
+    position: absolute;
+    top: -24px;
+    left: 0px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(white,#eaeaea);
+    box-sizing: border-box;
+    border: 2px solid #e2d9d9;
+}
+.tea{
+    position: absolute;
+    top: -8px;
+    left: 14px;
+    width: 274px;
+    height: 32px;
+    border-radius: 50%;
+   background: linear-gradient(#c57e65,#e28462);
+}
+.handle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 25px solid rgb(208, 202, 202);
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-radius: 50%;
+    transform: rotate(48deg);
+    left: 215px;
+    top: 48px;
+}
+.vapour{
+    display: flex;
+    position: absolute;
+    left: 45px;
+    top: -60px;
+}
+.vapour span{
+    background-color: white;
+    width: 10px;
+    height: 120px;
+    border-radius: 50%;
+    animation: animate 4s infinite linear;
+    animation-delay: calc(var(--i)*-0.5s);
+    filter: blur(8px);
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0px) scaleX(1);
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-150px) scaleX(5);
+    }
+    95%{
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-300px) scaleX(10);
+       
+    }
+}
+.plate{
+    position: absolute;
+    bottom: 178px;
+    width: 450px;
+    height: 120px;
+    background:linear-gradient( rgb(247, 237, 237),rgb(215, 214, 214));
+    border-radius: 50%;
+    left: 34.3%;
+    z-index: -1;
+    border: 20px solid rgba(208, 206, 206, 0.845);
+    box-shadow: 10px 10px 22px #363535;
+    transform: rotate(0.3deg);
+}
