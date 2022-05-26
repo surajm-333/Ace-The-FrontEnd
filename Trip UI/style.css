@@ -1,0 +1,212 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(45deg, #F4EBE5, #E3D4CA);
+  color: #C0C3C9;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.875rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: #FFF;
+  width: 64rem;
+  height: 42.5rem;
+  border-radius: 0.4375rem;
+  box-shadow: 1.375rem 2rem 2.125rem rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+.dashboard-sidebar {
+  flex-basis: 14.0625rem;
+  width: 14.0625rem;
+  min-width: 14.0625rem;
+  border-right: 0.0625rem solid #F2F2F2;
+}
+.dashboard-sidebar__brand {
+  margin: 0 0 1.4375rem;
+  padding: 1.4375rem 1.625rem;
+}
+.dashboard-nav__item {
+  background: 0;
+}
+.dashboard-nav__item a {
+  display: block;
+  padding: 1.3125rem 2.25rem;
+  color: inherit;
+  text-decoration: none;
+}
+.dashboard-nav__item a img {
+  margin: 0 1.5rem 0 0;
+}
+.dashboard-nav__item--selected {
+  background: #F5F7F7;
+  color: #5F6876;
+}
+.dashboard-content {
+  width: 100%;
+  border-right: 0.0625rem solid #F2F2F2;
+}
+.dashboard-content__panel {
+  display: none;
+}
+.dashboard-content__panel--active {
+  display: block;
+}
+.dashboard-list__item {
+  padding: 2.0625rem 2.5625rem;
+  border-bottom: 0.0625rem solid #F2F2F2;
+  cursor: pointer;
+}
+.dashboard-list__item h2 {
+  margin: 0 0 1.6875rem;
+  color: #5F6876;
+  letter-spacing: 0.15rem;
+}
+.dashboard-list__item span {
+  display: block;
+  margin: 0 0 1.5rem;
+  font-size: 0.625rem;
+  letter-spacing: 0.13625rem;
+}
+.dashboard-list__item--active {
+  background: #F5F7F7;
+}
+.dashboard-list__avatar {
+  display: inline-block;
+  max-width: 1.9375rem;
+  max-height: 1.9375rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 0.6875rem 0 0;
+}
+.dashboard-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 3.6875rem;
+  border-bottom: 0.0625rem solid #F2F2F2;
+}
+.dashboard-header__search {
+  width: 100%;
+  height: 100%;
+  border-right: 0.0625rem solid #F2F2F2;
+}
+.dashboard-header__search input {
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 23px;
+  border: 0;
+  letter-spacing: 0.125rem;
+}
+.dashboard-header__new {
+  min-width: 3.75rem;
+  padding: 23px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.dashboard-preview {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/planner_dashboard_background.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.dashboard-preview__panel {
+  display: none;
+}
+.dashboard-preview__panel--active {
+  display: block;
+}
+.dashboard-preview__header {
+  margin: 0 0 9.5rem;
+  padding: 1.6875rem 1.8125rem;
+  color: #FFF;
+}
+.dashboard-preview__header h2 {
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+}
+.dashboard-preview__header h3 {
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+}
+.dashboard-preview__header h3 span {
+  font-size: 1rem;
+  line-height: 2.25rem;
+  vertical-align: top;
+}
+.dashboard-preview__content {
+  padding: 0 2.75rem;
+}
+.dashboard-preview__content section {
+  padding: 2.0625rem 0;
+  border-bottom: 1px solid #F2F2F2;
+}
+.dashboard-preview__content section:last-child {
+  border: 0;
+}
+.dashboard-preview__content h2 {
+  color: #5F6876;
+  letter-spacing: 0.1375rem;
+}
+.dashboard-preview__content h2 span {
+  color: #C0C3C9;
+  font-size: 0.625rem;
+}
+.dashboard-preview__content label {
+  display: block;
+  margin: 1.0625rem 0 0 0;
+  color: #5F6876;
+}
+.dashboard-preview__content label:first-child {
+  margin: 2.5rem 0 0 0;
+}
+.dashboard-preview__content label input {
+  margin: 0 1.4375rem 0 0;
+}
+.dashboard-preview__content label input:checked ~ span {
+  color: #C0C3C9;
+  text-decoration: line-through;
+}
+
+.progress-bar {
+  position: relative;
+  background: #EDEBEA;
+  height: 0.3125rem;
+  border-radius: 6.25rem;
+  margin: 2.875rem 0 0 0;
+}
+.progress-bar__bar {
+  background: #8FC6C3;
+  height: 100%;
+  border-radius: 6.25rem;
+}
+.progress-bar__badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #A7DEDB;
+  border-radius: 6.25rem;
+  box-shadow: 0.125rem 0.25rem 0.75rem rgba(167, 222, 219, 0.56);
+  padding: 0.375rem 0.5rem;
+  color: #FFF;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  transform: translate(-50%, -50%);
+}
+
+.dashboard {
+  position: absolute;
+  left: 50%;
+  margin: 100px;
+  transform: translate(-50%, 0%);
+}
