@@ -13,12 +13,15 @@ btn.addEventListener('click', (e) => {
     }
     else{
         let alert=document.getElementById('alert');
-        alert.innerHTML=`<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        alert.innerHTML=`<div>
         <strong>Error !</strong> Please enter a value in °C to convert.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>`;
       setTimeout(() => {
           alert.innerHTML="";
-      }, 4000);
+      }, 1000);
     }
 })
+function reset() {
+    document.getElementById("formSubmit").reset();
+}   
