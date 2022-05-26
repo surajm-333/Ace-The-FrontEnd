@@ -1,0 +1,14 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    overflow: hidden;
+}
+canvas
+{
+    background: rgb(255, 255, 255);
+}
