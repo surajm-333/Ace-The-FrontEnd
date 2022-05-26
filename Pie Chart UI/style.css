@@ -1,0 +1,151 @@
+* {
+	color: #333;
+}
+
+body {
+	background: #fefefe;
+	overflow-x: hidden;
+	background-size:  8px 8px, 8px 8px;
+	background-position: center, center;
+	background-image: linear-gradient(#ebf4f9 1px, transparent 1px),linear-gradient(90deg, #ebf4f9 1px, transparent 1px);
+}
+
+.container {
+	max-width: 720px;
+}
+
+h3  {
+	font-family: 'Monoton';
+ word-spacing: 10px;
+ color: #666;
+	font-weight: 300;
+	font-size: 27px;
+	margin: 30px auto 50px auto;
+	line-height: 1.3;
+	border-bottom: solid 1px #999;
+}
+
+span {
+	font-weight: 500;
+}
+
+p , span{
+	color: #666;
+	font-family: 'Source Sans Pro';
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.4;
+}
+
+.filter {
+	width: 0;
+	height: 0;
+}
+
+#chart {
+}
+
+.colorBox {
+	width: 30px;
+	height: 20px;
+	vertical-align: bottom;
+	border: none;
+	border-radius: 3px;
+	display: inline-block;
+	margin-right: 10px;
+	background: #eee;
+	border: solid 1px #fff;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+}
+
+.asia {
+	background: #87c2ea;
+}
+
+.na {
+	background: #fe809c;
+}
+
+.sa {
+	background: #b4dca2; 
+}
+
+.africa {
+	background: #9393c7;
+}
+
+.europe {
+	background: #57bc9e;
+}
+
+.australia {
+	background: #e4e894;
+}
+
+.antartica {
+	background: #e7e9ed;
+}
+
+path {
+	stroke: #fefefe;
+	stroke-width: 2px;
+}
+
+.col-xs-5, .col-xs-12, .col-xs-7{
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.myTooltip {
+	-webkit-transition: 100ms all ease;
+	-moz-transition: 100ms all ease;
+	-o-transition: 100ms all ease;
+	-ms-transition: 100ms all ease;
+	transition: 100ms  all ease;
+	visibility: hidden;
+	z-index: 9999;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	width: 100px;
+}
+
+.tooltipContent {
+	text-align: center;
+	display: block;
+	width: 60px;
+	background: #555;
+	color: #fff;
+	padding: 5px 0;
+	line-height: 1;
+	font-size: 14px;
+	border-radius: 3px;
+	position: relative;
+}
+.tooltipContent::after {
+	content: '';
+	border-right: solid 0px transparent; 
+	border-left: solid 10px transparent;
+	border-top: solid 10px #555;
+	position: absolute;
+	bottom: -6px;
+	right: 0;
+}
+
+@media screen and (max-width: 500px) {
+	p , span{
+		font-size: 13px;
+	}
+	.colorIcon {
+		vertical-align: bottom;
+	}
+	.col-xs-5, .col-xs-12, .col-xs-7{
+		padding: 0;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 20px;
+		margin-top: 50px;
+		margin-bottom: 70px;
+	}
+}

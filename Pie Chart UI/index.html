@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pie chart</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Source+Sans+Pro:200,300,400,600" rel="stylesheet"> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<h3 class="text-center">Land Area Percentage of Continents</h3>
+	
+	<div class="myTooltip"><span class="tooltipContent"></span></div>
+	<div class="info col-xs-5">
+		<div class="col-xs-12"><p><span class="colorBox asia"></span><span class="name">Asia</span></p></div>
+		<div class="col-xs-12"><p><span class="colorBox na"></span><span class="name">North America</span></p></div>
+		<div class="col-xs-12"><p><span class="colorBox sa"></span><span class="name">South America</span></p></div>
+		<div class="col-xs-12"><p><span class="colorBox africa"></span><span class="name">Africa</span></p></div>
+		<div class="col-xs-12"><p><span class="colorBox europe"></span><span class="name">Europe</span></p></div>
+		<div class="col-xs-12"><p><span class="colorBox australia"></span><span class="name">Australia</span></p></div>
+		<div class="col-xs-12"><p><span class="colorBox antartica"></span><span class="name">Anatartica</span></p></div>
+	</div>
+	
+	<div class="wrapper col-xs-7 text-center">
+		<div id="chart">
+			<svg class="filter">
+					<defs xmlns="http://www.w3.org/2000/svg">
+							<filter id="filter" height="140%">
+									<feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
+									<feOffset dx="0" dy="0" result="offsetblur"/>
+									<feComponentTransfer>
+											<feFuncA type="linear" slope="0.5"/>
+									</feComponentTransfer>
+									<feMerge> 
+											<feMergeNode/>
+											<feMergeNode in="SourceGraphic"/> 
+									</feMerge>
+							</filter>
+					</defs>
+				</svg> 
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
