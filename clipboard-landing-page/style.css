@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    font-size: 1.125rem;
+    --var-Strong-Cyan: hsl(171, 66%, 44%);
+    --var-Light-Blue: hsl(233, 100%, 69%);
+    --var-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --var-Grayish-Blue: hsl(201, 11%, 66%);
+    --var-button-white: hsl(180, 100%, 94%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 100%;
+
+}
+#comp{
+    display: none;
+}
+
+#desktop{
+    position: absolute;
+    top:0;
+    width:100vw;
+}
+#mobile{
+    display: none;
+}
+/*button styling*/
+.custom-btn{
+    width: 11rem;
+    height: 2.5rem;
+    border-radius: 3rem;
+    padding: 0.4rem 1rem;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border:none;
+    font-size:0.83rem;
+
+}
+.btn_green{
+    color:var(--var-button-white);
+    box-shadow: 0 3px 5px 1px hsl(171, 66%,20%);
+    background: var(--var-Strong-Cyan);
+    border: none;
+}
+.btn_green:active {
+    top: 2px;
+}
+.btn_purple{
+    color:var(--var-button-white);
+    box-shadow: 0 3px 5px 1px hsl(233, 50%,30%);
+    background: var(--var-Light-Blue);border: none;
+    z-index: 1;
+}
+.btn_purple:active {
+    top: 2px;
+}
+/*paragraph styling*/
+.para{
+    font-size:0.75rem;
+    color: var(--var-Grayish-Blue);
+}
+.head_1 {
+    color: var(--var-Dark-Grayish-Blue);
+    font-weight: 900;
+    font-size:1.4rem;
+
+}
+h1{
+    font-size:2rem;
+}
+ul li{
+    color:var(--var-Dark-Grayish-Blue)
+}
+.head_2{
+    font-size:1rem;
+    font-weight: 800;
+    color:var(--var-Dark-Grayish-Blue);
+}
+
+.social_logo #twitter:hover{
+    filter: invert(41%) sepia(99%) saturate(720%) hue-rotate(156deg) brightness(97%) contrast(110%);
+}
+#fb:hover{
+    filter: invert(39%) sepia(94%) saturate(5181%) hue-rotate(198deg) brightness(99%) contrast(94%);
+}
+/*footer styling*/
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    background-color: #f5f6f8;
+    width:100vw;
+    height:20%;
+}
+footer ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:1rem;
+    gap:1rem;
+    column-gap:3rem;
+}
+footer ul li{
+    list-style: none;
+}
+.social_logo{
+    align-self: center;
+}
+.logo_bottom{
+    transform:scale(0.4) ;
+}
+/*bottom download section*/
+.bottom_download_section{
+    width:100vw;
+    text-align: center;
+    margin:6rem 0;
+
+}
+.bottom_download_section > .para{
+    margin:1rem 3rem 2.5rem;
+    padding:1rem;
+
+}
+.btn_green{
+    margin:0 1rem ;
+
+}
+/*logo section*/
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin:8rem 4rem;
+    gap:1rem;
+}
+/*featutes section*/
+.features{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.sub_features{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    width:25vw;
+    justify-items: center;
+    align-items: center;
+}
+.sub_features > .para{
+    text-align: center;
+    line-height: 1.2rem;
+    /*width: 17rem;*/
+}
+.center{
+    text-align: center;
+}
+.feature_heading{
+    margin:3.5rem;
+    padding:2rem;
+
+}
+.feature_heading > .head_1{
+    margin-bottom: 1rem;
+}
+.device_img{
+    width:100vw;
+}
+.mid_2 >.head_1{
+    margin: 7rem 0 0.7rem;
+}
+.mid_2 > .para{
+    margin:0 6rem 5rem;
+    text-align: center;
+}
+.comp_img img{
+    transform: translateX(-5rem);
+    overflow: hidden;
+}
+.mid_1{
+
+    width:100vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.sub_text{
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+/*top section styling*/
+
+.top{
+    margin: 1rem 2rem 5rem;
+    padding: 0 11rem;
+}
+#top_heading{
+    margin-top:5rem;
+}
+
+.header{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr ;
+    width:100vw;
+    min-height: 30vh;
+}
+.header > .para{
+    margin-top:1rem;
+}
+.header > .buttons{
+    align-self: end;
+}
+
+.head_logo{
+    margin:5rem 0 2rem;
+}
+
+@media screen and (max-width:56.25rem ) {
+    .mid_1{
+        display: flex;
+        flex-direction: column;
+    }
+    .comp_img{
+            text-align: center;
+            transform: translateX(13rem);
+            width: fit-content;
+         }
+    .comp_img img{
+        width:25rem;
+
+    }
+    .top{
+        padding: 0 6rem;
+    }
+    .text{
+        justify-content: center;
+        align-content: space-evenly;
+        height: 40vh;
+        gap: 1rem;
+    }
+
+.sub_text{
+    text-align: center;
+    margin: 0 6rem;
+}
+.sub_text > .head_2{
+    margin-bottom: 0.5rem;
+}
+
+.device_img img{
+    width:25rem;
+}
+}
+
+@media screen and (max-width:37.5rem){
+    #desktop{
+       display: none;
+    }
+    #mobile{
+        display:block;
+        position: absolute;
+        top:0;
+        width:100vw;
+    }
+    .head_1{
+        font-size: 1rem;
+    }
+    .header > .para {
+        width: fit-content;
+        padding: 0 2rem 0;
+        line-height: 1.2rem;
+    }
+     .buttons{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+
+    }
+    .top{
+        padding: 0 1rem;
+        line-height: 1.2rem;
+    }
+
+    .comp_img {
+    display: none;
+    }
+    #comp{
+        display: block;
+        width: 15rem;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    .comp_img img {
+        width: 20rem;
+    }
+    .device_img img{
+        width:15rem;
+    }
+    .sub_text{
+        margin: 0 1rem;
+    }
+    .mid_2 > .para{
+        margin: 0 2rem 5rem;
+    }
+    .feature_heading{
+        margin: 2rem 0.5rem;
+        padding: 2rem;
+    }
+    .logos{
+        gap:4rem;
+    }
+    .bottom_download_section > .para{
+        padding: 0;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .logo_bottom{
+     width:7rem;
+     align-self: center;
+    }
+    #twitter,#insta,#fb{
+        margin: 2rem 1rem;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    footer ul li{
+        align-self: center;
+    }
+    .features{
+        flex-direction: column;
+
+    }
+    .sub_features{
+        width:80vw;
+    }
+
+
+}
+
+
+
+
