@@ -139,7 +139,6 @@ const startGame = async () => {
   choosenLetters=[]
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   wordObj = await getWord();
-  console.log(wordObj);
 
   document.querySelectorAll(".key").forEach((key)=>{key.classList.remove('clicked')})
 
@@ -165,7 +164,6 @@ const keysNodeList = document.querySelectorAll(".key");
 keysNodeList.forEach((node) => {
     node.addEventListener("click", (e) => {
       foundLetters = handleKeyPress(e, wordObj.word, foundLetters);
-      console.log("clicked");
     });
 });
 
