@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: url('./sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clouds{
+    position: relative;
+}
+.cloud1{
+    position: absolute;
+    top: 50px;
+    width: 70vw;
+    animation: cloud1 12s   infinite  linear;
+}
+.cloud2{
+    position: absolute;
+    top: 20px;
+    width: 70vw;
+    animation: cloud2 20s   infinite  linear;
+}
+.cloud3{
+    position: absolute;
+    top: 30px;
+    width: 70vw;
+    animation: cloud3 15s   infinite  linear;
+}
+.cloud4{
+    position: absolute;
+    top: 35px;
+    width: 70vw;
+    animation: cloud4 25s   infinite  linear;
+}
+.cloud5{
+    position: absolute;
+    top: 25px;
+    width: 70vw;
+    animation: cloud5 33s   infinite  linear;
+}
+@keyframes cloud1 {
+    0%{
+        transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
+@keyframes cloud2 {
+    0%{
+        transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
+@keyframes cloud3 {
+    0%{
+        transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
+@keyframes cloud4 {
+    0%{
+        transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
+@keyframes cloud5 {
+    0%{
+        transform: translate(-100vw);
+    }
+    100%{
+        transform: translate(100vw);
+    }
+}
