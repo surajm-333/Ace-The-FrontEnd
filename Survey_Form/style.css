@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --primary: hsla(246, 52%, 9%, 60%);
+    --text-color: hsla(246, 52%, 9%, 100%);
+    --secondary: hsla(244, 38%, 27%, 60%);
+    --tertiary: hsla(240, 24%, 18%, 60%);
+    --background: hsla(0, 0%, 100%, 55%)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background:
+        linear-gradient(135deg, var(--primary), var(--secondary), var(--tertiary)), url('https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    background: var(--background);
+    max-width: 70%;
+    color: var(--text-color);
+    margin: 8rem auto;
+    border-radius: 10px;
+}
+
+header {
+    font-family: 'Lobster', cursive;
+    padding: 1rem 0;
+    font-size: 2.4rem;
+}
+
+#description {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.customer-information {
+    max-width: 100%;
+    padding: 1rem 0;
+}
+
+#name-label {
+    text-align: left;
+    margin-right: 15px;
+}
+
+#email-label {
+    text-align: left;
+    margin-right: 15px;
+}
+
+#number-label {
+    text-align: left;
+    margin-right: 15px;
+}
+
+#date-label {
+    text-align: left;
+    margin-right: 15px;
+}
+
+.labels {
+    font-size: 1.8rem;
+}
+
+.response {
+    border: none;
+    width: 65%;
+    outline: none;
+    color: var(--text-color);
+    padding: 1rem;
+    margin-bottom: 15px;
+    background: transparent;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.customer-experience {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+th {
+    font-size: 2rem;
+}
+
+tr {
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.recommendation {
+    font-size: 1.6rem;
+    max-width: 75%;
+    padding: 1rem;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.recommendation>h2 {
+    text-align: center;
+}
+
+.styling {
+    margin-bottom: 10px;
+    padding: 1rem;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    background: none;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.gap {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    background: none;
+    font-family: inherit;
+    padding: 10px;
+    outline: none;
+    height: 150px;
+}
+
+#submit {
+    width: 100%;
+    border: none;
+    background: var(--text-color);
+    color: #eee;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .container{
+        max-width: 90%;
+    }
+    header {
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+    }
+
+    #description {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .labels {
+        font-size: 1.5rem;
+    }
+
+    th {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    tr {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .recommendation {
+        font-size: 1.2rem;
+    }
+
+    .bold-text {
+        font-size: 1.5rem;
+    }
+}
