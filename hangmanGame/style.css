@@ -37,6 +37,10 @@ h1{
     color: #999;
     pointer-events: none;
 }
+p{
+    font-size: 1.4rem;
+    padding: 1rem;
+}
 .display-section{
     display: flex;
     flex-wrap: wrap;
