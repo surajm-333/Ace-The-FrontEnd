@@ -33,9 +33,6 @@ function getInputValue() {
   }
   else {
     alert("Wrong Zodiac Sign!");
-    alert(zodiac);
-    alert(z);
-    alert(inputVal);
     document.getElementById("userinput").value = "";
   }
 }
