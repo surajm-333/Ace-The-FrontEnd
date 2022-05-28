@@ -1,6 +1,10 @@
 .installation{
   display: flex;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30vh;
 }
 
 .installRight{
