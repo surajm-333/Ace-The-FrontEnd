@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248, 215, 221);
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    align-self: center;
+}
+p{
+    margin: 1rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+table{
+    margin: auto;
+    align-self: center;
+}
+th, td{
+    height: 1rem;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid #333;
+}
+input{
+    width: 4rem;
+    text-align: center;
+}
+input.year{
+    height: 100%;
+}
+
+button{
+    font-size: 1.3rem;
+    color: aliceblue;
+    width: 70%;
+    padding: 0.4rem 0.8rem;
+    margin: 1rem;
+    align-self: center;
+    background-color: rgb(65, 143, 65);
+}
+button:hover{
+    background-color: green;
+}
+
+.procedure{
+    margin: 0 0.5rem;
+}
+ul{
+    margin: 0.2rem 1rem;
+}
+li{
+    margin: 1rem 0;
+}
+
+@media only screen and (max-width:1000px) {
+    h1{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    table{
+        margin: 0.5rem;
+        table-layout: fixed;
+        width: fit-content;
+        font-size: 0.8rem;
+    }
+    th, td{
+        padding: 0.5rem ;
+    }
+    input{
+        width: 2rem;
+    }
+    .container{
+        width: 100%;
+    }
+}
