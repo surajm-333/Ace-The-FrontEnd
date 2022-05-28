@@ -1,0 +1,296 @@
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background-color: #313131;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.introduction::after{
+content:"";
+display: block;
+width:100%;
+height:100%;
+background-image: linear-gradient(to right,#403A3E,#BE5869);
+position: absolute;
+top:0;
+left:0;
+mix-blend-mode: hard-light;
+z-index: 0;
+}
+.introduction > *{
+z-index: 10;
+position: relative;
+color:#eee;
+font-family: 'Roboto', sans-serif;
+}
+.introduction{
+position: relative;
+background: url("https://entrepreneur.indiegogo.com/education/wp-content/uploads/sites/4/2020/04/2020_March_BlogBanners_v2_CoronavirusCrowdfunding.jpg");
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: none;
+font-size: 1.7rem;
+padding: 25vh 0;
+text-transform: uppercase;
+text-align: center;
+display: block;
+animation: sub 3s 1;
+}
+@keyframes sub{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.introduction h1{
+  padding-top: 5%;
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-size: 4rem;
+  animation: text 3s 1;
+}
+@keyframes text {
+  0%{
+    color:#eee;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+.grid-container{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,1fr);
+grid-gap: 25px;
+background-color: #313131;
+padding: 25px;
+}
+.box{
+display: flex;
+align-items: center;
+justify-content: space-around;
+color:#171717;
+}
+.box:nth-child(1){
+grid-column: 1/2;
+background-color: #00CA85;
+}
+.box:nth-child(2){
+grid-column: 1/2;
+background-color: #F3F3F3;
+}
+.box:nth-child(3){
+grid-column: 3/4;
+grid-row: 1/2;
+background-color: #FFCE00;
+}
+.box:nth-child(4){
+grid-row: 2/2;
+grid-column: 3/4;
+background-color: #0085CA;
+}
+.box:nth-child(5){
+grid-column:2/3;
+grid-row: 1/4;
+color:#eee;
+background-color: #000080;
+
+}
+.box-content{
+padding: 5%;
+margin: 2%;
+font-size: 1rem;
+font-family: 'Open Sans', sans-serif;
+}
+.box-content h2{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 2rem;
+}
+.content hr{
+  color:#eee;
+}
+.icons{
+padding: 5%;
+width: 100%;
+}
+.flexbox{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+figcaption{
+margin-top: 4px;
+font-size: 10px;
+}
+.flexcontainer{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.contents{
+width: 70%;
+font-size: 13px;
+text-align: left;
+}
+.content{
+width: 80%;
+float:right;
+font-size: 13px;
+text-align: left;
+}
+.content h3{
+  text-align: justify;
+  font-size: 15px;
+}
+.content hr{
+  color:#eee;
+}
+.how{
+  font-size: 0.9rem;
+  width: 90%;
+  text-align: left;
+}
+.timeline-area{
+  margin: 40px auto;
+  width: 315px;
+  border-left: 2px solid #232b2b;
+  padding: 0 15px;
+}
+.buttons{
+  font-size: 1.3rem;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  margin: 40px 15px;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+th {
+ padding-top: 12px;
+ padding-bottom: 12px;
+ text-align: left;
+ background-color: #4CAF50;
+ color: white;
+}
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+ tr:hover
+ {
+   background-color: #ddd;}
+a{
+  color:#eee;
+  text-decoration: none;
+}
+a:hover{
+  color:#DDDDDD;
+}
+.icon {
+  float:right;
+  padding: 1%;
+}
+.icons{
+  padding:1%;
+}
+.timeline-box{
+  background-color: #232b2b;
+  color: #eee;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.timeline-box:before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #232b2b;
+  position: absolute;
+  top:15px;
+  left: -22px;
+}
+#home{
+  margin-bottom:10px;
+}
+#footer-button{
+  margin: 30px 10px;
+}
+@media screen and (max-width: 768px) {
+  html{
+    overflow-x: hidden;
+  }
+  .introduction{
+  position: relative;
+  background: url("https://entrepreneur.indiegogo.com/education/wp-content/uploads/sites/4/2020/04/2020_March_BlogBanners_v2_CoronavirusCrowdfunding.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: none;
+  padding:25vh 0;
+  font-size: 1.2rem;
+  text-align: center;
+  }
+  .introduction h1{
+      letter-spacing: 4px;
+      font-size: 2em;
+      animation: text 3s 1;
+  }
+  @keyframes text {
+    0%{
+      color:#eee;
+      margin-bottom: -40px;
+    }
+    30%{
+      letter-spacing: 15px;
+      margin-bottom: -40px;
+    }
+    85%{
+      letter-spacing: 4px;
+      margin-bottom: -40px;
+    }
+  }
+.buttons{
+  font-size: 0.8rem;
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  margin: 20px 15px;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+.grid-container{
+    width:100%;
+    display:block;
+    grid-gap: 25px;
+    padding:25px;
+  }
+  #home{
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  #footer-button{
+    margin: 20px 10px;
+  }
+}
