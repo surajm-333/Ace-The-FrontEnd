@@ -1,0 +1,83 @@
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+body{
+    background-image: url(./images/bigScreen.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: rgb(0, 26, 49);
+    font-size: 3.5rem;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 60rem;
+    margin-left: 9.22rem;
+    background:#FFD9C0;
+}
+
+.coming{
+    width: 20rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+.res{
+    display: none;
+}
+h1 span{
+    font-weight: 50;
+    color: coral;
+}
+p{
+    margin-left: 10rem;
+
+}
+img {
+    height: 35rem;
+    padding-right: 0;
+    padding-left: 8rem;
+}
+.rocket{
+    height: 2.5rem;
+    width: auto;
+    margin-left: 9.5rem;
+    margin-top: 2rem;
+    transition: height 1s;
+}
+.rocket:hover{
+    height: 3rem;
+}
+input{
+    margin-left: 10rem;
+    height: 3rem;
+    width: 18rem;
+    border: 2px dotted grey;
+}
+
+@media screen and (max-width:1400px) {
+    .mainDiv{
+        margin-top: 5rem;
+        width: 60rem;
+        margin-left: 7.3rem;
+    }
+
+}
+
+@media screen and (max-width:1024spx) {
+    .mainDiv{
+        margin-top: 5rem;
+        width: 60rem;
+        margin-left: 7.3rem;
+    }
+    
+.coming{
+    width: 20rem;
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+    
+
+}

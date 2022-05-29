@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
+
+
+
+    <title>Teaser Website</title>
+</head>
+<body>
+    
+
+        <h1 class="text-center" >Company's Name</h1>
+        
+        <div class="mainDiv">
+            
+            <div class="container">
+                <h1 class="coming"><span> WE ' RE</span> <br> COMING <br> SOON </h1>
+                <p>Hello Oniomaniacs , We are building a place to satisfy all your hunger for clothes.</p>
+                <p>Stay tuned for regular updates by registering your Email .</p>
+                <br>
+                
+                <input type="email" name="email" id="mail" placeholder="                            Email" >
+                <img type="submit" class="rocket" src="./images/rocket.png" alt="" required>
+            </div>
+            
+            <div class="girlDiv">
+                <img src="./images/girl.jpeg" class="girl"alt="">
+            </div>
+
+
+</div>
+
+    <script>
+    document.querySelector(".rocket").addEventListener('click', function(){
+  Swal.fire("You Have Been Registered", "Sit Back and wait for the miracle to happen!", "success");
+});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
