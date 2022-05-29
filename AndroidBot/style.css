@@ -1,0 +1,231 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    font-size: 16px;
+    background-color: rgb(14, 14, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot {
+    height: 28em;
+    width: 28em;
+    position: relative;
+    /* background-color: antiquewhite; */
+    /* border: solid 2px rgb(255, 255, 255); */
+}
+
+.head {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 6.25em;
+    width: 12.5em;
+    border-radius: 9.375em 9.375em 0 0;
+    background-color: #24e47b;
+}
+
+.eye1 {
+    height: 1.1em;
+    width: 1.1em;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-25%);
+    border-radius: 50%;
+}
+
+
+.eye2 {
+    height: 1.1em;
+    width: 1.1em;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateX(-75%);
+    border-radius: 50%;
+
+}
+
+.left {
+    height: 3em;
+    width: .3em;
+    transform: rotate(-30deg);
+    background-color: #24e47b;
+    border-radius: 5px;
+    position: absolute;
+    left: 20%;
+    top: -25%;
+}
+
+
+
+.right {
+    height: 3em;
+    width: .3em;
+    transform: rotate(30deg);
+    background-color: #24e47b;
+    border-radius: 5px;
+    position: absolute;
+    top: -25%;
+    left: 80%;
+}
+
+.stom {
+    height: 8em;
+    width: 12.5em;
+    background-color: #24e47b;
+    position: absolute;
+    top: 46%;
+    left: 28%;
+    transform: translateX(-28%);
+    transform: translateY(-46%);
+}
+
+.lefthand {
+    background-color: #24e47b;
+    height: 6em;
+    width: 2em;
+    position: absolute;
+    top: 41.3%;
+    transform: translate(-20%, -41.3%);
+    border-radius: 20px;
+    left: 20%;
+}
+
+.animation {
+    animation-name: leftmovehand;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: top center;
+}
+
+@keyframes leftmovehand {
+    from {}
+
+    to {
+        transform: rotate(125deg);
+    }
+}
+
+.animation1 {
+    animation-name: rightmovehand;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: 10% 10%;
+}
+
+@keyframes rightmovehand {
+    from {}
+
+    to {
+        transform: rotate(-125deg);
+    }
+}
+
+.righthand {
+    background-color: #24e47b;
+    height: 6em;
+    width: 2em;
+    position: absolute;
+    top: 41.3%;
+    transform: translate(-80%, -41.3%);
+    border-radius: 20px;
+    left: 80%;
+}
+
+.leftleg {
+    background-color: #24e47b;
+    height: 6em;
+    width: 2em;
+    position: absolute;
+    top: 74.3%;
+    transform: translate(-40%, -74.3%);
+    border-radius: 20px;
+    left: 40%;
+}
+
+.rot {
+    animation-name: angry;
+    animation-duration: .1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+}
+
+@keyframes angry {
+    from {
+        transform: rotate(-35deg);
+    }
+
+    to {
+        transform: rotate(-25deg);
+    }
+}
+
+.rot1 {
+    animation-name: angryone;
+    animation-duration: .1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+}
+
+@keyframes angryone {
+    from {
+        transform: rotate(25deg);
+    }
+
+    to {
+        transform: rotate(35deg);
+    }
+}
+
+.rightleg {
+    background-color: #24e47b;
+    height: 6em;
+    width: 2em;
+    position: absolute;
+    top: 74.3%;
+    transform: translate(-60%, -74.3%);
+    border-radius: 20px;
+    left: 60%;
+
+}
+
+@media (max-width:539px) {
+    body {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:429px) {
+    body {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:357px) {
+    body {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:282px) {
+    body {
+        font-size: 8px;
+    }
+
+}
