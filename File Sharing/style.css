@@ -1,0 +1,354 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+*:hover::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  outline: 1px solid slategray;
+  background-color: darkgray;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #f0f0f0;
+  overflow-y: hidden;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header .row .col-xs-1, header .row .col-md-1 {
+  padding-top: 7px;
+}
+
+.search-form {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.search-form .search-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.search-form .search-icon i {
+  font-size: 22px;
+  color: #7e7e7e;
+}
+.search-form .search-input {
+  background: #f0f0f0;
+  width: 100%;
+  max-width: 700px;
+  padding: 10px 10px 10px 50px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: background 0.5s ease;
+}
+.search-form .search-input:focus {
+  outline: none;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-color: #f0f0f0;
+}
+.search-form .search-input::placeholder {
+  font-size: 18px;
+  font-weight: 100;
+  color: #7e7e7e;
+}
+
+.se-btn, .white-btn, .blue-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.5s ease;
+}
+
+.blue-btn {
+  background: #0191ff;
+  color: #fff;
+}
+.blue-btn:hover {
+  text-decoration: none;
+  background: #0174d7;
+  color: #fff;
+}
+.blue-btn i {
+  margin-right: 5px;
+}
+
+.white-btn {
+  border: 2px solid #e1e1e1;
+  color: #7e7e7e;
+  background: #fff;
+  transition: color 0.5s ease, border-color 0.5s ease;
+}
+.white-btn:hover {
+  border: 2px solid #0191ff;
+  color: #0191ff;
+  text-decoration: none;
+}
+.white-btn i {
+  margin-right: 5px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+.logo:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main {
+  padding-top: 80px;
+  position: relative;
+  display: block;
+  overflow-y: hidden;
+  height: 100%;
+}
+.main .row {
+  height: 100%;
+}
+
+.main-content, .sidebar, .menu {
+  height: 100%;
+  padding-top: 25px;
+}
+
+.menu {
+  padding-left: 0;
+}
+.menu nav ul {
+  padding: 0;
+}
+.menu nav ul li {
+  list-style: none;
+}
+.menu nav ul li a {
+  width: 100%;
+  padding: 12px 20px;
+  display: block;
+  color: #454545;
+  font-size: 14px;
+  font-weight: bold;
+}
+.menu nav ul li a:hover {
+  background: #e7e7e7;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.menu nav ul li a:hover {
+  text-decoration: none;
+  color: #454545;
+}
+.menu nav ul li a i {
+  margin-right: 15px;
+}
+.menu nav ul li .active {
+  background: #e1e1e1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.menu nav ul li .active i {
+  color: #0191ff;
+}
+.menu nav ul .trenner {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.sidebar {
+  background: #fff;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 0;
+}
+.sidebar h2 {
+  color: #7e7e7e;
+  padding-left: 25px;
+  font-size: 20px;
+}
+.sidebar p {
+  padding: 0 25px;
+  margin-bottom: 15px;
+}
+.sidebar p:last-of-type {
+  margin-bottom: 35px;
+}
+
+.info {
+  border-bottom: 1px solid #f0f0f0;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+.info h3 {
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.info .row {
+  height: auto;
+  min-height: 0;
+}
+
+.info-link {
+  border-bottom: 3px solid transparent;
+  display: inline-block;
+  color: #454545;
+  padding: 0 20px;
+}
+.info-link:hover {
+  border-color: #454545;
+  text-decoration: none;
+  color: #454545;
+}
+.info-link:first-of-type {
+  margin-right: 25px;
+}
+
+.info-active-link {
+  border-bottom: 3px solid #0191ff !important;
+  color: #0191ff !important;
+}
+.info-active-link:hover {
+  cursor: default;
+  color: #0191ff !important;
+}
+
+.main-content {
+  padding-right: 35px;
+  overflow-y: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 3px;
+  width: 100%;
+  min-height: 150px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card:hover {
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card .card-header, .card .dropbox, .card .onedrive, .card .icloud, .card .google {
+  height: 75px;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.card .card-content {
+  padding: 15px;
+  color: #7e7e7e;
+}
+.card .card-content h2 {
+  margin: 0;
+  font-size: 16px;
+}
+.card .card-content p {
+  margin: 10px 0 0 0;
+  font-size: 12px;
+}
+
+.google {
+  background: #e7a200;
+}
+
+.icloud {
+  background: #10b0ff;
+}
+
+.onedrive {
+  background: #0174d7;
+}
+
+.dropbox {
+  background: #0191ff;
+}
+
+.server-name {
+  font-size: 22px;
+  color: #454545;
+  margin-top: 30px;
+}
+
+.file-legend {
+  color: #7e7e7e;
+  margin-top: 10px;
+  padding-left: 15px;
+}
+
+.files {
+  margin-top: 5px;
+  background: #fff;
+  width: 100%;
+  min-height: 250px;
+  border: 1px solid #e1e1e1;
+}
+
+.file-row {
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  height: 50px;
+}
+.file-row:last-of-type {
+  border-bottom: 0;
+}
+.file-row .row {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.file-icon {
+  margin-right: 10px;
+}
+
+.col-md-2 {
+  transition: all 0.5s ease;
+}
+
+.container-fluid {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+}

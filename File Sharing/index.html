@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>File Sharing</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="container-fluid">
+    <div class="row top-row">
+        <div class="col-xs-1">
+            <a class="logo">
+                <!-- <i class="fa fa-file" aria-hidden="true"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 512 512"><path d="M339 314.9L175.4 32h161.2l163.6 282.9H339zm-137.5 23.6L120.9 480h310.5L512 338.5H201.5zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z"/></svg>
+            </a>
+        </div>
+        <div class="col-xs-10">
+            <form class="search-form">
+                <label class="search-icon" for="search"><i class="fa fa-lg fa-search"></i></label>
+                <input type="text" class="search-input" placeholder="search File.." id="search" />
+            </form>
+        </div>
+        <div class="col-xs-1 text-right">
+            <a href="javascript:void(0)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABC1BMVEX////7vAQ0qFPqQzUzfu8ufO4oeewtpk4iduo3gPD8wQDvbzXqPzUreu1pu337ugBuvIFqnPIzqUlilu3pOysgo0bxjIX++fjpMiD+9N7qPC1zofX946vyPRv+6sD//vk7qGY0q0KVzaKKyJn4ycb0qaX85OPwfnfyl5HpLBfualXtaF7uazr+8MPygArznJf935r5sADpNDb80W78xj71nCvyhDf8zWDud2/+89nTiZyxmcb82Yu7Y4tpo/37wi5PgemZdLS0apdsgNvcWF/8yU7GY4Ggcq14e8/gU1X93qLzbSjiTEzQhXb80GluupArgd05kr48n5Egc/ILa+8zmpfI5M7f8OOn1bHZLlMNAAADk0lEQVR4nO3aa1PTUBDG8aQBQlEIhQbSShu5g1cUtFa5FBRFUFCr0O//SUxSekmyp6gNntnl+b3AmfbN/id7TsuIYQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAkOZXVufm5lZX5nUPckvW1j2vGPK89TXdw9yGjc2y1VHe3NA9Tub8R57Vz3use6KMlZ6UrbiirMSnz15aSd5z3VNlaOtFOtCyNuVcN9vmvftEYXld92AZ8Xcch3qEwZ7K+FwsmY75SlG4onu4LFQd05x4TS1pcJ1KuGu2gkBz4owulHAQa2GgOUFeNEHhG93zDcs/iALVhdyfYd28piosvtU94nCqzk2F3jvdMw5ltxuofoYPdA85jFovUFVY3NvXPeW/69wxAwu9Bt9nWDdj6MLK4SjbwgXnDwore/kRroW7iUCysHKUZ1tYSwYSheXK4QjXwvgdoygsWu+DQJ6F9VQeUeh9aOTzTAuTdwxZGNwxbQzv0tQdQxVGR5Bp4TEdGCssWiedQHaF1B2TKgyOYDeQXeGOKrCvsPIx3wvkVqg4g7HCyqe+Pm6FJXVgp7BcPIkFMivcvrHQ+9yIBzIrVPddF4ZHMGGyoHvqv1Af8AijwuAIprAqpL/MdAuDIzjKvPB0YOHZlwYRKKjQ/DpCBfIqHLSlzu7+JBXIq3DATeNUjYKAQl9V6JglQ1nI6vPwnE50dnwjLBylsHqGijV1tqM3RRSSX9uc0/Z7Es6hQX1vC+6YNiGFvhl/itEd01YYI7d0jFlh4pd859jvviOlMPxfe6cdGfyz0Pe6nELDXzg/CPNq1djLggpDvu8nXyqMk4XjTAsJKOTvLhROUgQVzqKQvbuwpWMUFDKCQv5QyB8K+ZsdpwkqbNKFs7oHy8zFNzpRTuHU4ncyUVChvfhDemFu5iGxqaIKc/ZMelNlFeZy6U2VVpjeVHGFqU2VV5jcVImF8U0VWRjbVJmFwab+ajZlF/Y2VWxhd1PlFkabKrww2tSm6MJwU3/KLgw3VXphbuZC92CZURTa07oHywwK+UMhfyjkD4X8yS+cRiF7S4rCJd2DZebSJQvdS92DZcann6Gb+nNpvpapREHHMHiI1Jq6V7rHyhJxEl0590yklUx0p3SPlLWWa8sONIyrXK/Rlrai11o513VtO/gxLeqS6XfVWlpebl0K+hwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+J9+A8PKcApmAdFsAAAAAElFTkSuQmCC" 
+            class="img-circle" width="40" height="40" /></a>
+        </div>
+    </div>
+</header>
+<div class="main container-fluid">
+    <div class="row">
+        <div class="col-xs-4 col-md-2 menu">
+            <nav>
+                <ul>
+                    <li><a href="javascript:void()" class="active">
+                        <i class="fa fa-file" aria-hidden="true"></i>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M339 314.9L175.4 32h161.2l163.6 282.9H339zm-137.5 23.6L120.9 480h310.5L512 338.5H201.5zM154.1 67.4L0 338.5 80.6 480 237 208.8 154.1 67.4z"/></svg> -->
+                         My Files</a></li>
+                    <li><a href="javascript:void()"><i class="fa fa-clock-o" aria-hidden="true"></i> Recent </a></li>
+                    <li><a href="javascript:void()"><i class="fa fa-star" aria-hidden="true"></i> Starred</a></li>
+                    <li><a href="javascript:void()"><i class="fa fa-picture-o" aria-hidden="true"></i> Photos</a></li>
+                    <li><a href="javascript:void()"><i class="fa fa-users" aria-hidden="true"></i> Shared</a></li>
+                    <li class="trenner"><a href="javascript:void()"><i class="fa fa-hdd-o" aria-hidden="true"></i> Backup</a></li>
+                    <li class="trenner"><a href="javascript:void()"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-xs-8 col-md-8 main-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <a class="card">
+                        <div class="card-header google">
+                            <i class="fa fa-google card-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-content">
+                            <h2>Google Drive</h2>
+                            <p>View your Google Drive files here.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="card">
+                        <div class="card-header icloud">
+                            <i class="fa fa-cloud card-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-content">
+                            <h2>iCloud Drive</h2>
+                            <p>View your iCloud Drive files here.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="card">
+                        <div class="card-header onedrive">
+                            <i class="fa fa-windows card-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-content">
+                            <h2>OneDrive</h2>
+                            <p>View your OneDrive files here.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="card">
+                        <div class="card-header dropbox">
+                            <i class="fa fa-dropbox card-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-content">
+                            <h2>Dropbox</h2>
+                            <p>View your Dropbox files here.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12">
+                    <h2 class="server-name">Current Folder</h2>
+                    <div class="row file-legend">
+                        <div class="col-xs-7">
+                            Name
+                        </div>
+                        <div class="col-xs-3 text-center">
+                            Changed
+                        </div>
+                        <div class="col-xs-2 text-center">
+                            File Size
+                        </div>
+                    </div>
+                    <div class="files">
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-folder file-icon" aria-hidden="true"></i> Test Folder 1
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-folder file-icon" aria-hidden="true"></i> Test Folder 2
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-folder file-icon" aria-hidden="true"></i> Test Folder 3
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-folder file-icon" aria-hidden="true"></i> Test Folder 4
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i> Test Document 1.pdf
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    1.5mb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i> Test Document 2.pdf
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    2.1mb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i> Test Document 3.pdf
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    1.9mb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i> Test Document 4.pdf
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    5.7mb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-image-o file-icon" aria-hidden="true"></i> Test Image 1.jpg
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    15.7mb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-image-o file-icon" aria-hidden="true"></i> Test Image 2.jpg
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    7.8mb
+                                </div>
+                            </div>
+                        </div>
+                        <div class="file-row">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <i class="fa fa-file-image-o file-icon" aria-hidden="true"></i> Test Image 3.jpg
+                                </div>
+                                <div class="col-xs-3 text-center">
+                                    29.05.22
+                                </div>
+                                <div class="col-xs-2 text-center">
+                                    8.1mb
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 sidebar">
+            <h2>File/Folder</h2>
+            <p><a href="javascript:void(0)" class="blue-btn"><i class="fa fa-upload" aria-hidden="true"></i> Upload</a></p>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-file-o" aria-hidden="true"></i> New File</a></p>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-folder-open-o" aria-hidden="true"></i> New Folder</a></p>
+            <br>
+            <h2>Information</h2>
+            <div class="info">
+                <a href="javascript:void(0)" class="info-link info-active-link"><h3>Services</h3></a>
+                <a href="javascript:void(0)" class="info-link"><h3>Activity</h3></a>
+            </div>
+            <br>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-google" aria-hidden="true"></i> Google Drive</a></p>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-cloud" aria-hidden="true"></i> iCloud Drive</a></p>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-windows" aria-hidden="true"></i> OneDrive</a></p>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-dropbox" aria-hidden="true"></i> Dropbox</a></p>
+            <p><a href="javascript:void(0)" class="white-btn"><i class="fa fa-files-o" aria-hidden="true"></i> FTP-Server</a></p>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
