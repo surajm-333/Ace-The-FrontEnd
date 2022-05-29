@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::selection{
+    background: #5352ed;
+    color: #fff;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5352ed;
+    font-family: cursive;
+}
+.wrapper{
+    width: 100%;
+    max-width: 40rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: .8rem;
+    box-shadow: 0 .4rem .4rem rgba(0,0,0,0.2);
+    position: relative;
+}
+.wrapper::before{
+    content: '';
+    position: absolute;
+    top: .7rem;
+    left: 0;
+    width: 100%;
+    height: .2rem;
+    background: #bfbfbf;
+}
+.wrapper .col .text{
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 500;
+
+}
+.wrapper .col .s6{
+    margin-top: 3rem;
+}
+.wrapper .col .s6 .sm{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding-left: 2px;
+}
+.wrapper .col .s6 input{
+    width: 100%;
+    height: 4.5rem;
+    border: .2rem solid #bfbfbf;
+    outline: none;
+    border-radius: .4rem;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+    transition: all 0.4s ease;
+}
+.wrapper .col .s6 input:focus{
+    border-color: #4834d4;
+}
+.wrapper .col .s6 .transfer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper .col .s6 .transfer .icon span{
+    font-size: 2.8rem;
+    color: #2f3542;
+}
+.wrapper .col .s6 .transfer .select-text{
+    width: 9rem;
+    height: 3.5rem;
+    padding-left: .6rem;
+    outline: none;
+    border: .2rem solid #bfbfbf;
+    border-radius: .5rem;
+}
+.wrapper .col .s6 .transfer .select-text:focus{
+    border-color: #4834d4;
+}
+.wrapper .col .s6 .button{
+    margin-top: 2rem;
+}
+.wrapper .col .s6 .button .btn{
+    width: 100%;
+    height: 4.5rem;
+    background: #5352ed;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.wrapper .col .s6 .s2{
+    margin-top: 2rem;
+}
+.wrapper .col .s6 .s2 .conversion{
+    font-size: 2rem;
+}
+ 
+.text{
+    font-family: cursive;
+    font-weight: bold;
+    background-image: linear-gradient(to right, skyblue,whitesmoke);
+}
+
+.btn{
+    border-radius:20%;
+
+}
+.btn:hover{
+   color: #0a0a5c;
+}
+
+.wrapper{
+    box-shadow: 6rem 6rem 6rem rgb(158, 215, 246);
+}
+.html{
+    background-image: linear-gradient(to right, black,whitesmoke);
+}
+
+html{
+   font-size: 62.5%; 
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
