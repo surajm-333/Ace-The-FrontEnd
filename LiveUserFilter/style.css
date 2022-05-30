@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(cover.png);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 60vw;
+    background-color: aliceblue;
+}
+
+.title{
+    margin: 0;
+}
+
+.subtitle{
+    display: inline-block;
+    margin : 5px 0 20px;
+    opacity :0.8;
+}
+
+.header {
+    background-color:rgb(31, 190, 190) ;
+    color: white;
+    padding: 20px 30px;
+}
+
+.header input{
+    background-color: rgb(0, 0, 0,0.15);
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px;
+    width:100%;
+}
+
+.header input:focus{
+    outline: none;
+}
+
+.user-list{
+    background-color:aliceblue;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto ;
+}
+.user-list li{
+    display: flex;
+    padding: 10px;
+} 
+
+.user-list img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+}
+
+.user-list .user-info h4{
+    margin: 0 0 10px;
+}
+
+.user-list .user-info p{
+    font-size: 10px;
+}
+
+.user-list li:not(:last-of-type){
+    border-radius: 1px solid aliceblue;
+}
+
+.user-list li.hide{
+    display: none;
+}
+
+h5{
+    text-align: center;
+}
