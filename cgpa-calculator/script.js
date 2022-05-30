@@ -36,24 +36,26 @@ const handleCalculate = () => {
   for (let i = 0; i < 8; i++) {
     sgpaElemArray[i].value =
       (
-        ((acheivedElemArray[i].value * 10) /
-        totalCreditElemArray[i].value)|| 0
+        ((parseFloat(acheivedElemArray[i].value) * 10) /
+        parseFloat(totalCreditElemArray[i].value))|| 0
       ).toFixed(2);
   }
   for (let i = 0; i < 8; i += 2) {
     ygpaElemArray[Math.floor(i / 2)].value =
       (
-        (((acheivedElemArray[i].value + acheivedElemArray[i + 1].value) * 10) /
-        (totalCreditElemArray[i].value + totalCreditElemArray[i + 1].value))||0
+        (((parseFloat(acheivedElemArray[i].value) + parseFloat(acheivedElemArray[i + 1].value)) * 10) /
+        (parseFloat(totalCreditElemArray[i].value) + parseFloat(totalCreditElemArray[i + 1].value)))||0
       ).toFixed(2);
+      console.log((
+        (((acheivedElemArray[i].value + acheivedElemArray[i + 1].value) * 10) )||0
+      ).toFixed(2))
   }
-  cgpa.value = (ygpaElemArray[0].value*1+ygpaElemArray[1].value*1+ygpaElemArray[2].value*1.5+ygpaElemArray[3].value*1.5).toFixed(2);
-  
+  cgpa.value = (parseFloat(ygpaElemArray[0].value)*1+parseFloat(ygpaElemArray[1].value)*1+parseFloat(ygpaElemArray[2].value)*1.5+parseFloat(ygpaElemArray[3].value)*1.5).toFixed(2);
 };
 
 const handleCreditValueChange = (e) => {
   for (let i = 0; i < 8; i++) {
-    totalCreditElemArray[i].value = creditElemArray[i].value * 10;
+    totalCreditElemArray[i].value = parseFloat(creditElemArray[i].value) * 10;
   }
 };
 
