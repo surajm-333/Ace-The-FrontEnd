@@ -1,3 +1,4 @@
+// JS File
 const currencies = [{
     id: 'USD', name: 'US Dollars'
   },
