@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+	background-color: #111111;
+	height: 100vh;
+	overflow: hidden;
+	width: 100%;
+}
+
+.container .box:before {
+	background-color: #1d1d1d;
+	bottom: 6px;
+	box-shadow: 0 1px 4px #000000;
+	content: '';
+	left: 6px;
+	right: 6px;
+	position: absolute;
+	top: 6px;
+	transition: background-color 2s ease-in-out,
+							box-shadow 2s ease-in-out;
+}
+
+.container .box:hover:before {
+	transition: background-color 0s ease-in-out,
+							box-shadow 0s ease-in-out;
+}
+
+.container .box:nth-child(9n+1):hover:before {
+	background-color: #ff0000;
+	box-shadow: 0 0 3px #ff0000,
+						  0 0 10px #ff0000;
+}
+
+.container .box:nth-child(9n+2):hover:before {
+	background-color: #00ff00;
+	box-shadow: 0 0 3px #00ff00,
+						  0 0 10px #00ff00;
+}
+
+.container .box:nth-child(9n+3):hover:before {
+	background-color: #0000ff;
+	box-shadow: 0 0 3px #0000ff,
+						  0 0 10px #0000ff;
+}
+
+.container .box:nth-child(9n+4):hover:before {
+	background-color: #ffff00;
+	box-shadow: 0 0 3px #ffff00,
+						  0 0 10px #ffff00;
+}
+
+.container .box:nth-child(9n+5):hover:before {
+	background-color: #00ffff;
+	box-shadow: 0 0 3px #00ffff,
+						  0 0 10px #00ffff;
+}
+
+.container .box:nth-child(9n+6):hover:before {
+	background-color: #ff00ff;
+	box-shadow: 0 0 3px #ff00ff,
+						  0 0 10px #ff00ff;
+}
+
+.container .box:nth-child(9n+7):hover:before {
+	background-color: #e91e63;
+	box-shadow: 0 0 3px #e91e63,
+						  0 0 10px #e91e63;
+}
+
+.container .box:nth-child(9n+8):hover:before {
+	background-color: #00ffad;
+	box-shadow: 0 0 3px #00ffad,
+						  0 0 10px #00ffad;
+}
+
+.container .box:nth-child(9n+9):hover:before {
+	background-color: #f45103;
+	box-shadow: 0 0 3px #f45103,
+						  0 0 10px #f45103;
+}
+
+.container .box {
+	background-color: #111111;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	float: left;
+	height: 24px;
+	overflow: hidden;
+	position: relative;
+	width: 24px;
+}
