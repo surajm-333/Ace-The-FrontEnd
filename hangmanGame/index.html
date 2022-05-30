@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <div class="container">
+        <p>Use the given alphabets to guess the word: </p>
+        <div class="keyboard" id="keyboard">
+            <span class="key" data-key="A">A</span>
+            <span class="key" data-key="B">B</span>
+            <span class="key" data-key="C">C</span>
+            <span class="key" data-key="D">D</span>
+            <span class="key" data-key="E">E</span>
+            <span class="key" data-key="F">F</span>
+            <span class="key" data-key="G">G</span>
+            <span class="key" data-key="H">H</span>
+            <span class="key" data-key="I">I</span>
+            <span class="key" data-key="J">J</span>
+            <span class="key" data-key="K">K</span>
+            <span class="key" data-key="L">L</span>
+            <span class="key" data-key="M">M</span>
+            <span class="key" data-key="N">N</span>
+            <span class="key" data-key="O">O</span>
+            <span class="key" data-key="P">P</span>
+            <span class="key" data-key="Q">Q</span>
+            <span class="key" data-key="R">R</span>
+            <span class="key" data-key="S">S</span>
+            <span class="key" data-key="T">T</span>
+            <span class="key" data-key="U">U</span>
+            <span class="key" data-key="V">V</span>
+            <span class="key" data-key="W">W</span>
+            <span class="key" data-key="X">X</span>
+            <span class="key" data-key="Y">Y</span>
+            <span class="key" data-key="Z">Z</span>
+        </div>
+        <div class="display-section">
+            <div class="life-section">
+                <div id="lifeElem"></div>
+                <canvas id="canvas" height="300" width="300"></canvas>
+            </div>
+            <div class="input" id="input">
+            </div>
+        </div>
+        <div class="hint">
+            <div class="hint-button">
+                <button id="hintBtnElem">Show Hint</button>
+            </div>
+            <div class="hint-text" id="hintElem">
+                
+            </div>
+        </div>
+    </div>
+    <dialog class="modal" id="modal">
+        <h2 class="modalTitle"></h2>
+        <p class="modalDesc"></p>
+        <button class="modalBtn">Play Again</button>
+    </dialog>
+</body>
+<script src="index.js" type="module"></script>
+</html>
