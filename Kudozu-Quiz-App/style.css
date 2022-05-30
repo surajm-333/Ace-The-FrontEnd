@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Varela Round', sans-serif;
+    font-weight: 400;
+}
+
+.common{
+    /* font-family:'Varela Round', sans-serif; */
+}
+
+html{
+    font-size:62.5%;
+}
+
+.main-div{
+    background-color: hsl(206,92%,94%) ;
+    width: 100vw;
+    min-height: 100vh;
+    /* center from both side karva mate */
+    display:grid;
+    place-items: center;
+}
+
+.inner-div{
+    width: 40vw;
+    background-color: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+
+    /* box shadow css important  */
+    box-shadow: 0 1rem 1rem -0.7rem  rgba(0,0,0,0.4);
+}
+
+.inner-div h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.inner-div li{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    list-style: none;
+    
+}
+
+input{
+    cursor: pointer;
+}
+
+#submit, .btn{
+   padding: 1rem 3 rem;
+   outline: none;
+   font-size: 2rem;
+   font-weight: 400;
+   margin: auto;
+   display:block;
+   border: none;
+   color: #fff;
+   background-color: #74b9ff;
+   text-transform: uppercase;
+   margin-top:  4rem;
+   height: 4rem;
+   width: 10rem;
+   cursor: pointer;
+   border-radius: 0.5rem;
+
+}
+
+#submit:hover{
+    background-color: #0984e3;
+}
+
+#showScore{
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem  rgba(0,0,0,0.4);
+    
+}
+
+.scoreArea{
+    display: none;
+}
+
+#showScore h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#showScore .btn{
+    height: 4rem;
+    width: 15rem;
+    margin-top: 2rem;
+    background-color: #55efc4;
+    color: #2d3436;
+    cursor: pointer;
+    border-radius:  0.5rem;
+}
+
+#showScore .btn:hover{
+    background-color: #00b894;
+    color: #fff;
+}
+
