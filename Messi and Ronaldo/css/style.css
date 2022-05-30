@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1d061a;
+    min-height: 1000px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+    background: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+    z-index: 3;
+}
+
+header.sticky {
+    height: 80px;
+}
+
+header .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+header.sticky .banner {
+    opacity: 0.5;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    color: #fff;
+    font-weight: 700;
+    transition: 1s;
+    text-decoration: none;
+    z-index: 1;
+}
+
+header.sticky .logo {
+    position: absolute;
+    font-size: 2em;
+    left: 100px;
+    transform: translate(0, -50%);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+nav ul {
+    position: relative;
+    display: flex;
+    transition: 0.25s;
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+header.sticky nav ul {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff275f;
+}
+
+section {
+    margin-top: 30vh;
+    padding: 100px;
+}
+
+section h2 {
+    color: #fff;
+    font-size: 3em
+}
+
+section p,
+p {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/*now, maake it responsive*/
+@media (max-width: 991px) {
+    section {
+        padding: 30px;
+    }
+
+    header {
+        padding: 40px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    header.sticky .logo {
+        left: 40px;
+    }
+
+    header.sticky .banner {
+        opacity: 0;
+    }
+
+    nav ul {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav.active ul {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 80px);
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    header.sticky .toggle {
+        position: fixed;
+        top: 15px;
+        right: 40px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: #fff url('img/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .toggle.active {
+        background: #fff url('img/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container .box {
+        width: 400px;
+        height: auto;
+        margin: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container .box {
+        flex-direction: column;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+
+.container .box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    transition: 0.5s;
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+    transition: 0.5s;
+}
+
+.container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+
+.container .box:hover:before,
+.container .box:hover:after {
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+
+.container .box:nth-child(1):before,
+.container .box:nth-child(1):after {
+    background: linear-gradient(315deg, #0400ff, #7700ff);
+}
+
+.container .box:nth-child(2):before,
+.container .box:nth-child(2):after {
+    background: linear-gradient(315deg, #0400ff, #7700ff);
+}
+
+.container .box:nth-child(3):before,
+.container .box:nth-child(3):after {
+    background: linear-gradient(315deg, #0400ff, #7700ff);
+}
+
+.container .box span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.container .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rbga(0, 0, 0, 0.5);
+}
+
+.container .box:hover span::before {
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.container .box span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rbga(0, 0, 0, 0.5);
+    animation-delay: -1s;
+}
+
+.container .box:hover span::after {
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.container .box .content {
+    position: relative;
+    left: 0;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    /*box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);*/
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    transition: 0.5s;
+    color: #fff;
+    s
+}
+
+.container .box:hover .content {
+    left: -25px;
+    padding: 50px 40px;
+}
+
+.container .box .content h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container .box .content p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container .box .content a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    height: 80px;
+    text-align: center;
+    padding: 28px;
+}
+
+.container1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    transition: 0.5s;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(45deg, #1a2f3f, #7094ce);
+
+}
+
+.container1 .card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    transition: 0.5s;
+}
+
+.container1 .card:hover img {
+    left: 78%;
+    height: 400px;
+}
+
+.container1 .card .content1 {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .content1 {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container1 .card .content1 h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.container1 .card .content1 p {
+    color: #fff;
+}
+
+.container1 .card .content1 a {
+    position: relative;
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .container1 .card {
+        width: auto;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+
+    .container1 .card:hover {
+        height: 625px;
+    }
+
+    .container1 .card:hover img {
+        left: 50%;
+        height: 350px;
+    }
+
+    .container1 .card .content1 {
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container1 {
+        flex-direction: column;
+    }
+
+    .container1 .card {
+        width: auto;
+        max-width: 600px;
+        margin: 40px 20px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container1 .card .content1 {
+        padding: 30px;
+    }
+
+    .container1 .card:hover img {
+        height: 300px;
+    }
+}

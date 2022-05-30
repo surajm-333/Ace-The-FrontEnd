@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./pic.png" type="image/x-icon">
+    
+
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div class="flex-container">
+                        <img src="pic.png" alt="">
+                        Temperature Converter
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="alert">
+
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <form id="formSubmit">
+                <div class = "label">
+                    <label for="temp">Enter Temperature in °C</label>
+                </div>
+                        <input type="number" id="temp" placeholder="Temperature">
+                <button type="submit" id="btn" class = "btn">Calculate</button>
+                <button type="submit" id="reset" class = "btn" onclick="reset()">Reset</button>
+            </form>
+        </div>
+        <div id="ans">
+
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>

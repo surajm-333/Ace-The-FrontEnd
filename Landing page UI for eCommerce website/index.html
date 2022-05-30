@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Landing page UI for eCommerce website</title>
+    <script src = "https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+        
+        * {
+            font-family: 'Itim', cursive;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        *::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+    </style>
+</head>
+<body class = "flex flex-row gap-12 h-screen overflow-hidden px-8 pt-8">
+    <aside class = "flex flex-col gap-12 w-1/6">
+        <h2 class = "text-3xl tracking-tighter">
+            <span class = "text-blue-400">X</span>
+            <span class = "line-through">ent</span>
+            <span>al</span>
+        </h2>
+        
+        <h1 class = "text-4xl font-bold">Discover</h1>
+        
+        <ul class = "flex flex-col gap-4">
+            <li class = "flex flex-row items-center text-lg rounded-lg hover:cursor-pointer hover:bg-gray-100 px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 text-yellow-400 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule = "evenodd" />
+                </svg>
+                New in
+            </li>
+            <li class = "flex flex-row items-center text-lg rounded-lg hover:cursor-pointer hover:bg-gray-100 px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 text-red-400 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule = "evenodd" />
+                </svg>
+                Clothing
+            </li>
+            <li class = "flex flex-row items-center text-lg rounded-lg hover:cursor-pointer hover:bg-gray-100 px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 text-orange-400 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule = "evenodd" />
+                </svg>
+                Shoes
+            </li>
+            <li class = "flex flex-row items-center text-lg rounded-lg hover:cursor-pointer hover:bg-gray-100 px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 text-amber-400 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" clip-rule = "evenodd" />
+                </svg>
+                Accessories
+            </li>
+            <li class = "flex flex-row items-center text-lg rounded-lg hover:cursor-pointer hover:bg-gray-100 px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 text-gray-600 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule = "evenodd" />
+                </svg>
+                Exercise wear
+            </li>
+            <li class = "flex flex-row items-center text-lg rounded-lg hover:cursor-pointer hover:bg-gray-100 px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 text-red-600 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule = "evenodd" />
+                    <path d = "M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z" />
+                </svg>
+                Gift and living
+            </li>
+        </ul>
+
+        <div class = "flex flex-row items-center w-fit bg-gray-200 rounded-full hover:cursor-pointer px-6 py-2">
+            <svg xmlns = "http://www.w3.org/2000/svg" class = "h-8 w-8 text-violet-500 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                <path d = "M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+                <path d = "M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+            </svg>
+            Help Center
+        </div>
+    </aside>
+
+    <main class = "flex flex-col gap-8 w-5/6">
+        <nav class = "flex flex-row items-center justify-between">
+            <div class = "flex flex-row items-center border border-gray-200 rounded-full px-4 py-2">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-4 w-4" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                    <path stroke-linecap = "round" stroke-linejoin = "round" d = "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <input type = "text" class = "outline-none w-[30rem] pl-4" placeholder = "Search for clothes, brands, inspirations and more.">
+            </div>
+            <div class = "flex flex-row items-center text-violet-500">
+                <img src = "assets/user.png" class = "h-12 w-12 rounded-full object-cover hover:cursor-pointer" alt = "user_avatar">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-8 w-8 hover:cursor-pointer ml-4" fill = "none" viewBox = "0 0 24 24" stroke = "currentColor" stroke-width = "2">
+                    <path stroke-linecap = "round" stroke-linejoin = "round" d = "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+            </div>
+        </nav>
+
+        <section class = "flex flex-row items-center justify-between">
+            <h1 class = "flex flex-row items-center text-4xl font-bold">
+                <svg xmlns = "http://www.w3.org/2000/svg" class = "h-7 w-7 text-red-400 mr-4" viewBox = "0 0 20 20" fill = "currentColor">
+                    <path fill-rule = "evenodd" d = "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule = "evenodd" />
+                </svg>
+                Clothing
+            </h1> 
+            
+            <div class = "flex flex-row items-center gap-4">
+                <div class = "flex flex-row items-center justify-between border border-gray-200 rounded-full">
+                    <span class = "bg-blue-200 rounded-full hover:cursor-pointer px-6 py-2">Men</span>
+                    <span class = "hover:bg-blue-200 hover:cursor-pointer rounded-full px-6 py-2">Women</span>
+                    <span class = "hover:bg-blue-200 hover:cursor-pointer rounded-full px-6 py-2">Children</span>
+                </div>
+                <div class = "flex flex-row items-center border border-gray-200 rounded-full hover:cursor-pointer px-6 py-2">
+                    <svg xmlns = "http://www.w3.org/2000/svg" class = "h-5 w-5 mr-2" viewBox = "0 0 20 20" fill = "currentColor">
+                        <path d = "M3 3a1 1 0 000 2h11a1 1 0 100-2H3zM3 7a1 1 0 000 2h7a1 1 0 100-2H3zM3 11a1 1 0 100 2h4a1 1 0 100-2H3zM15 8a1 1 0 10-2 0v5.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L15 13.586V8z" />
+                    </svg>
+                    Sort
+                </div>
+                <div class = "flex flex-row items-center border border-gray-200 rounded-full hover:cursor-pointer px-6 py-2">
+                    <span class = "bg-gray-200 rounded-full px-2 mr-2">4</span>
+                    Filter
+                </div>
+            </div>
+        </section>
+
+        <section class = "grid grid-cols-3 gap-6 font-bold overflow-y-auto pb-8">
+            <div class = "flex flex-row items-center justify-center bg-[#a8e9d3] rounded-[2.5rem] px-6 py-12">GET UPTO 55% OFF</div>
+            <div class = "flex flex-row items-center justify-center gap-12 bg-[#8fe8f6] rounded-[2.5rem] p-2">
+                <span>
+                    WINTER WEEKENDS
+                    <p class = "font-light">Keep it casual</p>
+                </span>
+                <img src = "assets/winter.png" class = "h-36 object-cover" alt = "winter_casuals"> 
+            </div>
+            <div class = "flex flex-row items-center justify-center gap-12 bg-[#8fc6f8] rounded-[2.5rem] p-2">
+                <span>
+                    TRENDY COLLECTION
+                    <p class = "font-light">Casual and funky</p>
+                </span>
+                <img src = "assets/trendy.png" class = "h-36 object-cover" alt = "trendy_casuals"> 
+            </div>
+
+            <div class = "flex flex-col h-fit bg-[#f98787] rounded-[1.5rem]">
+                <div class = "flex flex-col items-center relative bg-[#ffd3e4] rounded-tl-[1.5rem] rounded-tr-[1.5rem] py-4">
+                    <img src = "assets/mast.png" class = "h-72 object-cover" alt = "mast_harbour">
+                    <div class = "absolute right-4 bg-gray-200 rounded-full p-2">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 text-gray-400 hover:text-red-500 hover:cursor-pointer" viewBox = "0 0 20 20" fill = "currentColor">
+                            <path d = "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class = "flex flex-col text-lg text-white font-bold px-8 py-4">
+                    <h2>Mast and harbour</h2>
+                    <p class = "font-light">Solid top</p>
+                    <b>Rs. 629</b>
+                </div>
+            </div>
+            <div class = "flex flex-col h-fit bg-[#5880f2] rounded-[1.5rem]">
+                <div class = "flex flex-col items-center relative bg-[#d8e1fe] rounded-tl-[1.5rem] rounded-tr-[1.5rem] py-4">
+                    <img src = "assets/proffessional.png" class = "h-44 object-cover" alt = "proffesional_short">
+                    <div class = "absolute right-4 bg-gray-200 rounded-full p-2">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 text-gray-400 hover:text-red-500 hover:cursor-pointer" viewBox = "0 0 20 20" fill = "currentColor">
+                            <path d = "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class = "flex flex-col text-lg text-white font-bold px-8 py-4">
+                    <h2>Proffessional</h2>
+                    <p class = "font-light">Short dress</p>
+                    <b>Rs. 700</b>
+                </div>
+            </div>
+            <div class = "flex flex-col h-fit bg-[#e2477f] rounded-[1.5rem]">
+                <div class = "flex flex-col items-center relative bg-[#ffd3e4] rounded-tl-[1.5rem] rounded-tr-[1.5rem] py-4">
+                    <img src = "assets/crop.png" class = "h-64 object-cover" alt = "crop_top">
+                    <div class = "absolute right-4 bg-gray-200 rounded-full p-2">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 text-gray-400 hover:text-red-500 hover:cursor-pointer" viewBox = "0 0 20 20" fill = "currentColor">
+                            <path d = "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class = "flex flex-col text-lg text-white font-bold px-8 py-4">
+                    <h2>Crop top</h2>
+                    <p class = "font-light">Geeky striped</p>
+                    <b>Rs. 500</b>
+                </div>
+            </div>
+            <div class = "flex flex-col h-fit bg-[#7b8f9b] rounded-[1.5rem]">
+                <div class = "flex flex-col items-center relative bg-[#afcdcc] rounded-tl-[1.5rem] rounded-tr-[1.5rem] py-4">
+                    <img src = "assets/jeans.png" class = "h-64 object-cover" alt = "ripped_jeans">
+                    <div class = "absolute right-4 bg-gray-200 rounded-full p-2">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 text-gray-400 hover:text-red-500 hover:cursor-pointer" viewBox = "0 0 20 20" fill = "currentColor">
+                            <path d = "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class = "flex flex-col text-lg text-white font-bold px-8 py-4">
+                    <h2>Ripped jeans</h2>
+                    <p class = "font-light">Hand dyed for finer tone</p>
+                    <b>Rs. 939</b>
+                </div>
+            </div>
+            <div class = "flex flex-col h-fit bg-[#663399] rounded-[1.5rem]">
+                <div class = "flex flex-col items-center relative bg-[#bca7e8] rounded-tl-[1.5rem] rounded-tr-[1.5rem] py-4">
+                    <img src = "assets/party.png" class = "h-72 object-cover" alt = "party_jacket">
+                    <div class = "absolute right-4 bg-gray-200 rounded-full p-2">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 text-gray-400 hover:text-red-500 hover:cursor-pointer" viewBox = "0 0 20 20" fill = "currentColor">
+                            <path d = "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class = "flex flex-col text-lg text-white font-bold px-8 py-4">
+                    <h2>Linen jacket</h2>
+                    <p class = "font-light">Sofest for a rock</p>
+                    <b>Rs. 899</b>
+                </div>
+            </div>
+            <div class = "flex flex-col h-fit bg-[#ff9b06] rounded-[1.5rem]">
+                <div class = "flex flex-col items-center relative bg-[#fcf1cc] rounded-tl-[1.5rem] rounded-tr-[1.5rem] py-4">
+                    <img src = "assets/designer.png" class = "h-44 object-cover" alt = "designer_shirt">
+                    <div class = "absolute right-4 bg-gray-200 rounded-full p-2">
+                        <svg xmlns = "http://www.w3.org/2000/svg" class = "h-6 w-6 text-gray-400 hover:text-red-500 hover:cursor-pointer" viewBox = "0 0 20 20" fill = "currentColor">
+                            <path d = "M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class = "flex flex-col text-lg text-white font-bold px-8 py-4">
+                    <h2>Designer tshirt</h2>
+                    <p class = "font-light">Handprinted shapes</p>
+                    <b>Rs. 349</b>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

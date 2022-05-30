@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Maven+Pro:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li img{
+    width: 4rem;
+    height:4rem;
+}
+body{
+    background: #323232;
+}
+.content{
+    display:grid;
+    grid-template-columns: 60% 40%;
+    color: white;
+    height:fit-content;
+    width:100vw;
+}
+.text{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width:60vw;
+    grid-template-rows: 40% 30% 30%;
+}
+.img{
+
+    height:90vh;
+    width:39vw;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    align-items: center ;
+    justify-content: space-between;
+    color:white;
+    background-color: black;
+    font-family: 'Maven Pro', sans-serif;
+    width:100vw;
+    height: 10vh;
+
+}
+.nav{
+    display: flex;
+    align-items:center;
+}
+.nav li{
+    list-style: none;
+    padding: 0.5rem 0.8rem;
+    margin: 0.2rem;
+}
+.nav li a{
+    text-decoration: none;
+    color: white
+}
+.right li a{
+    padding:0.5rem 1rem;
+    background: #216947;
+    border-radius:3rem;
+}
+.error{
+    position: relative;
+    top:8.4rem;
+    font-family: 'Quantico', sans-serif;
+    font-size:3rem;
+    width: fit-content;
+
+}
+
+.error_text{
+    grid-row-start:2;
+    font-family: 'McLaren', cursive;
+    font-size: 1rem;
+    width:max-content;
+    justify-self: center;
+    align-self: end;
+
+
+}
+.error_text p{
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0.9rem 0;
+    font-size: 0.8rem ;
+}
+
+
+.img img{
+    position: relative;
+    right:13rem;
+    overflow: hidden;
+    /*transform: scale(1.5);*/
+
+}
+.button{
+    position: relative;
+    align-self: start;
+    left:7rem;
+}
+
+.btn_1 {
+    border:none;
+    padding:0.5rem 1rem;
+    background: #216947;
+    border-radius:3rem;
+    color:white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size:1.5rem;
+   overflow: hidden;
+
+}
+@media screen and (max-width: 1000px) {
+.content{
+    grid-template-columns:1fr;
+    grid-template-rows: 0.5fr 1fr;
+
+}
+    .error{
+        position: relative;
+        top:2rem;
+        font-family: 'Quantico', sans-serif;
+        font-size:3rem;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .error_text{
+        grid-row-start:2;
+        font-family: 'McLaren', cursive;
+        font-size: 1rem;
+        width:max-content;
+        justify-self: center;
+        align-self: end;
+
+
+    }
+    .error_text p{
+        font-family: 'Maven Pro', sans-serif;
+        margin: 0.9rem 0;
+        font-size: 0.8rem ;
+    }
+    .img{
+        width:54vw;
+    }
+    .img img{
+        position: relative;
+        bottom: 5rem;
+    }
+    .text{
+        width:100vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .img {
+        width: 98vw;
+    }
+    .img img{
+       width: 100vw;
+        position: relative;
+        bottom: 5rem;
+        left:2rem;
+    }
+
+    .error_text p{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 0.68rem ;
+        width: 17rem;
+
+    }
+    .error_text h2{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 1.7rem ;
+    }
+    .error{
+        font-size:2.3rem;
+
+    }
+    .button{
+        position:relative;
+        justify-self: start;
+       left:7rem;
+
+    }
+
+    .btn_1 {
+        border:none;
+        padding:0.3rem 1rem;
+        color:white;
+        font-family: 'Maven Pro', sans-serif;
+        font-size:1rem;
+        overflow: hidden;
+    }
+
+
+}

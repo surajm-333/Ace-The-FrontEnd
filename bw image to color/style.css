@@ -1,0 +1,46 @@
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgb(0, 0, 0);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.box img {
+	width: 600px;
+	height: 600px;
+	object-fit: fill;
+	border-radius: 50%;
+	transition: filter 0.5s ease-in-out;
+	filter: grayscale();
+}
+
+.box:hover img {
+	filter: none;
+}
+
+.name a{
+	font-family: cursive;
+	font-size: 3rem;
+	color: rgb(0, 0, 0);
+	position: relative;
+	margin-top: 1rem;
+	text-decoration: none;
+}
+
+
+.box:hover .name a{
+	color: aliceblue;
+	transition: all 0.5s ease-in-out;
+}

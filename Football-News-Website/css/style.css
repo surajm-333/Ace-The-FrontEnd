@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Re-usable Classes */
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ul > li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* Header Section */
+.header{
+    background-color: #2D25A0;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    }
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.header .container ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+.header .container ul {
+    display: flex;
+}
+.header .container ul li{
+    margin-right: 40px;
+}
+.header .container ul li:hover a{
+    color: #E02C6D;
+}
+.header .nav-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    transform: rotate(0deg) skew(0deg) scale(1);
+    transition: transform 0.4s ease;
+}
+.header .fas{
+    margin-right: 5px;
+}
+.header .nav-btn:hover{
+    transform: rotate(-5deg) skew(-5deg) scale(1.1);
+}
+/* Top Banner Section */
+.top-banner{
+    background-color: #2D25A0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.top-banner .container .inner-half h1{
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 80px;
+    color: white;
+}
+.top-banner .container .inner-half img{
+    max-height: 100%;
+    max-width: 100%;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+.top-banner .container .img:hover img{
+    transform: scale(1.05);
+}
+.top-banner .container .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: flex-start;
+    text-align: left;
+}
+.top-banenr .container .header-text, .img{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-banner .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-banner .banner-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 14px;
+    transform: rotate(0deg) skew(0deg) scale(1);
+    transition: transform 0.4s ease;
+}
+.top-banner .fas{
+    margin-left: 10px;
+}
+.top-banner .banner-btn:hover{
+    transform: rotate(-5deg) skew(-5deg) scale(1.1);
+}
+ /* Cards Section */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.players .player .card-header-text{
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.players .player p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.players .player{
+    width: 100%;
+    max-height: auto;
+    padding: 16px 16px 40px 16px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+.players .player .player-image{
+    max-width: 100%;
+    max-height: 100%;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease;
+}
+.players .player:hover .player-image{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* Highlight Section */
+.highlight-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 0;
+}
+.highlight-section .inner-half .hl-img{
+    width: 100%;
+}
+.details{
+    width: 80%;
+    padding-bottom: 5%;
+}
+.highlight-section .inner-half .watch-btn{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: #E02C6D;
+    padding: 8px 26px;
+    margin-top: 18px;
+}
+.highlight-section .hl-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.highlight-section .fas{
+    margin-left: 10px;
+}
+.highlight-text h1{
+    font-size: 48px;
+    color: #0A0826;
+}
+.highlight-text p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.highlight-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.watch-btn{
+    transform: rotate(0deg) skew(0deg) scale(1);
+    transition: transform 0.4s ease;
+}
+.watch-btn:hover{
+    transform: scale(1.1);
+}
+.section{
+    padding:20px 20px 20px 20px;
+    margin-top: 40px;
+    width: 1010px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.section-title{
+    color: #000000;
+    padding-top: 3%;
+    padding-bottom: 3%;    
+}
+.section-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 26px;  
+}
+.item{
+    display: flex;
+    align-items: center;   
+    column-gap: 16px; 
+}
+
+.item .thumbnail img{
+    width: 177px;
+    height: 117px;
+    border-radius: 5%;
+}
+.item-name{
+    font-size: 24px;
+    color: #18191F;
+}
+.ranking{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+.ranking span{
+    font-weight: 700;
+    color: tomato;
+}
+/* Blogs Section */
+article{
+    padding: 60px 0 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.article{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 28px;
+}
+article .blog-item{
+    padding: 14px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+.blog-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    padding: 0 0 40px 0;
+    text-align: center;
+}
+article .blog-item h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding-top: 10px;
+}
+article .blog-item img{
+    width: 100%;
+}
+/* Match clips section */
+.clip-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    padding: 0 0 40px 0;
+    text-align: center;
+}
+.clips{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+}
+iframe{
+    width: 100%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+/* Contact Section */
+.contact-section{
+    background: url(images/bg.svg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+    background-size: cover;
+}
+.contact-section .contact-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin: 0 0 30px 0;
+}
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact-section .contact-btn{
+    background: white;
+    color: black;
+    padding: 12px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-btn{
+    transform: rotate(0deg) skew(0deg) scale(1);
+    transition: transform 0.4s ease;
+}
+.contact-btn:hover{
+    transform: scale(1.1);
+}
+/* Footer Section */
+footer{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+footer .footer-img{
+    width: 30%;
+    margin-bottom: 48px;
+}
+footer i{
+    padding: 10px;
+    color: #969BAB;
+    font-size: 16px;
+    background: rgba(150, 155, 171, 0.5);
+    border-radius: 50%;
+    margin: 0 7px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+footer i:nth-child(1){
+    padding: 11px 12px;
+}
+footer i:hover{
+    background: #E02C6D;
+    color: white;
+}
+footer .footer-text{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 18px;
+    margin-top: 28px;
+}
+            /* Media Query */
+ /* For 480px or down screen size device */
+@media only screen and (max-width: 480px){
+/* header section */
+    .header{
+    background-color: #2D25A0;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100%;
+    display: none;
+    }
+    .container{
+    width: 90%;
+    margin: 0 auto;
+    }
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0;
+    }
+    .header .container ul {
+        display: none;
+    }
+    /* banner section */
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+    /* card section */
+    .players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    /* highlight section  */
+    .highlight-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px 0 30px 0;
+    }
+    .highlight-text h1{
+        font-size: 30px;
+    }
+    .highlight-text{
+        margin-bottom: 30px;
+    }
+    /* blog section  */
+    .article{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 28px;
+    }
+    .blog-title{
+        font-size: 30px;
+    }
+    /* match clip section  */
+    .clip-title{
+    font-size: 30px;
+    }
+    .clips{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 14px;
+    }
+    .match-clip-section{
+        padding: 0 0 100px 0;
+    }
+    /* contact section  */
+    .contact-section{
+        margin-top: 20px;
+    }
+    .contact-section .contact-title{
+    font-size: 30px;
+    }
+    .contact-section .contact-btn{
+        padding: 6px 30px;
+    }
+    /* footer section  */
+    footer{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    }
+    footer .footer-img{
+    width: 70%;
+    margin-bottom: 30px;
+    }
+}
+    /* For 768px or down devides  */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* header section  */
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 0;
+    }
+    .header .container ul {
+        display: none;
+    }
+    /* banner section */
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 25px;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+     /* card section  */
+    .players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    }
+    /* highlight section  */
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 60px 0;
+    }
+    /* blog section  */
+    .article{
+        display: grid;
+        grid-row-gap: 28px;
+        grid-column-gap: 28px;;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-title{
+        font-size: 40px;
+    }
+    /* contact section  */
+    .contact-section{
+        margin-top: 30px;
+    }
+    .contact-section .contact-title{
+        font-size: 38px;
+    }
+    .contact-section .contact-btn{
+        padding: 8px 35px;
+    }
+            /* footer section  */
+    footer{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    footer .footer-img{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+}
+
+
+             /* 
+                For 996px or down devides 
+            */
+
+@media only screen and (min-width: 769px) and (max-width: 996px) {
+    
+    /* header section  */
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .header .container ul {
+        display: flex;
+    }
+    .header .container ul li{
+        margin-right: 15px;
+    }
+    .header .container ul li a{
+        font-size: 16px;
+    }
+
+    /* banner section */
+
+    .top-banner{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+    .top-banner .container .inner-half h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .top-banner .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+
+            /* card section  */
+
+    .players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 28px;
+    grid-row-gap: 28px;
+    padding-top: 70px;
+    margin-bottom: 100px;
+    }
+
+        /* hightlight section  */
+
+    .highlight-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 60px 0;
+    }
+
+            /* blog section  */
+
+    .article{
+        display: grid;
+        grid-row-gap: 28px;
+        grid-column-gap: 28px;;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog-title{
+        font-size: 48px;
+    }
+
+            /* contact section  */
+    .contact-section{
+        margin-top: 35px;
+    }
+    .contact-section .contact-title{
+        font-size: 48px;
+    }
+    .contact-section .contact-btn{
+        padding: 10px 40px;
+    }
+            /* footer section  */
+    footer{
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    footer .footer-img{
+        width: 70%;
+        margin-bottom: 30px;
+    }
+}
+       
+.gradient-text {
+    font-family: 'Lobster Two', cursive;
+    background-image: linear-gradient(45deg, #f08e4c, #af4261);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }

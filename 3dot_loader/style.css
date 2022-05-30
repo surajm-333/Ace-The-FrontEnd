@@ -1,0 +1,28 @@
+.loader,
+.loader:before,
+.loader:after{
+    content: "";
+    width: 40px;
+    aspect-ratio: .5;
+    display: grid;
+    grid-area: 1/1;
+    background: radial-gradient(#000 68%,#0000 72%) 0% 50%/100% 50% no-repeat;
+    animation: l 1.2s infinite linear calc(var(--s,0)*.4s);
+    transform: translate(calc(var(--s,0)*150%));
+}
+
+.loader:before{--s:-1}
+.loader:after{--s:1}
+
+@keyframes l {
+    20% {background-position:0% 0%}
+    40% {background-position: 0% 100%}
+    60% {background-position: 0% 50%}
+}
+
+body{
+    margin:0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}

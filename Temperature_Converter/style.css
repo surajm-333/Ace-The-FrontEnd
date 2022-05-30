@@ -1,0 +1,118 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+   background-color: white;
+   margin-top: 70px;
+   box-shadow: 10px 10px 20px  black;
+}
+
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+.container{
+     display: flex;
+     flex-direction: column;
+     width: 100vw;
+     height: 90vh;
+     align-items: center;
+     justify-content: center;
+ }
+ nav {
+     background-color: #390a39;
+     padding: 1.5rem 0;
+ }
+ ul {
+     list-style-type: none;
+ }
+ .flex-container{
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+ }
+ img{
+     width: 40px;
+     height: auto;
+     margin-right: 1rem;
+ }
+
+ li {
+     color: white;
+     padding: 0 1rem;
+     text-transform: uppercase;
+     font-weight: 700;
+     letter-spacing: 2px;
+     font-size: 1.5rem;
+ }
+ .wrapper{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem 3rem;
+     color: white;
+     background-color: #390a39;
+     border-radius: 20px;
+ }
+ .btn {
+     border: none;
+     border-radius: 5px;
+     padding: 1rem 1.5rem;
+     color: black;
+     margin-top: 1.5rem;
+     margin-right: 1rem;
+     color: white;
+     font-weight: 300;
+ }
+ #reset{
+     background-color: #596267;
+ }
+ #btn{
+     background-color: #017BFE;
+ }
+
+ .btn:hover {
+     transition: all 0.4s ease-in-out;
+     transform: scale(1.1);
+ }
+ #ans {
+     background-color: #390a39;
+     margin-top: 1.5rem;
+     padding: 2rem 3rem;
+     border: none;
+     border-radius: 20px;
+     font-size: 18px;
+     font-weight: 500;
+     color: white;
+     transition: display 0.7s ease-in-out;
+     display: none;
+ }
+ .label{
+     font-size: 1.5rem;
+     letter-spacing: 1px;
+     margin: 1rem 0;
+ }
+ input::placeholder {
+     color: white;
+ }
+ input{
+     padding: 0.7rem 1rem;
+     width: 100%;
+     border: 2px solid white;
+     background-color: #390a39;
+     color: white;
+     
+ }
+ #alert{
+     text-align: center;
+     padding: 1rem;
+     color: red;
+ }
+

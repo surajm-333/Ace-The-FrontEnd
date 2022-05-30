@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(252, 218, 224);
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    font-size: 1.3rem;
+}
+.keyboard{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+}
+.key{
+    padding: 0.5rem 1rem;
+    background-color:antiquewhite;
+    border: 1px solid #333;
+}
+.key:hover{
+    cursor: pointer;
+    background-color:rgb(243, 223, 193);
+}
+.clicked{
+    color: #999;
+    pointer-events: none;
+}
+p{
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+.display-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.life-section{
+    width: fit-content;
+    margin: 0;
+}
+.input{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+}
+.inputField{
+    max-width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: auto;
+    text-align: center;
+}
+
+
+canvas{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+button{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+dialog{
+    padding: auto;
+    margin: auto;
+}
+dialog h2, dialog p{
+    margin: 1rem;
+}
+dialog button{
+    margin: 0 1rem 1rem 1rem;
+}

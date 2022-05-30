@@ -1,0 +1,8 @@
+The idea behind this project
+This is just like we have many merged folders in a single tab preview.
+
+How does it work
+There is 3 tab folder enclosed behind each other and by-default first tab will be previewed and when you will click the second will be previewed similarly Third will also preview after switching.
+
+TECH stack used in this project:
+I have used HTML,CSS, and Javascript only.

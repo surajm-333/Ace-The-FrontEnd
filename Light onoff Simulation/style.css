@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+}
+
+.container {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filament{
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    width: 230px;
+    height: 250px;
+    border: 1px solid rgb(105, 97, 97);
+    background: #bdc54585;
+}
+
+.Electric-Line {
+    height: 50%;
+    border-left: 4px  rgb(255, 255, 255);
+    align-self: flex-start;
+    transition: border 0.5s;
+    transform: translate(-50px, 0);
+    z-index: -1;
+}
+
+.light {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulb-holder {
+    z-index: 0;
+    border: 2px solid;
+    background: #686d72;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.light {
+    cursor: pointer;
+}
+.light:hover ~ .Electric-Line {
+    border-left: 3px solid rgb(0, 68, 255);
+}
+.light:hover .bulb-holder {
+    background: #ffffff;
+}
+.light:hover .filament{
+    background: gold;
+    box-shadow: 0 150px 250px 150px gold;
+}
+
+footer a{
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}

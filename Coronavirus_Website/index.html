@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <title>Coronavirus website</title>
+  <link href="./resources/style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- <link href="Adhetya.github.io/Coronavirus/style.css" type="text/css" rel="stylesheet"> -->
+  <script src="https://kit.fontawesome.com/1de329a514.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #313131;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .introduction::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right, #403A3E, #BE5869);
+      position: absolute;
+      top: 0;
+      left: 0;
+      mix-blend-mode: hard-light;
+      z-index: 0;
+    }
+
+    .introduction>* {
+      z-index: 10;
+      position: relative;
+      color: #eee;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .introduction {
+      position: relative;
+      background: url("https://entrepreneur.indiegogo.com/education/wp-content/uploads/sites/4/2020/04/2020_March_BlogBanners_v2_CoronavirusCrowdfunding.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: none;
+      font-size: 1.7rem;
+      padding: 25vh 0;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      animation: sub 3s 1;
+    }
+
+    @keyframes sub {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .introduction h1 {
+      padding-top: 5%;
+      font-weight: 700;
+      letter-spacing: 8px;
+      font-size: 4rem;
+      animation: text 3s 1;
+    }
+
+    @keyframes text {
+      0% {
+        color: #eee;
+        margin-bottom: -40px;
+      }
+
+      30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+      }
+
+      85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+      }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 25px;
+      background-color: #313131;
+      padding: 25px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: #171717;
+    }
+
+    .box:nth-child(1) {
+      grid-column: 1/2;
+      background-color: #00CA85;
+    }
+
+    .box:nth-child(2) {
+      grid-column: 1/2;
+      background-color: #F3F3F3;
+    }
+
+    .box:nth-child(3) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      background-color: #FFCE00;
+    }
+
+    .box:nth-child(4) {
+      grid-row: 2/2;
+      grid-column: 3/4;
+      background-color: #0085CA;
+    }
+
+    .box:nth-child(5) {
+      grid-column: 2/3;
+      grid-row: 1/4;
+      color: #eee;
+      background-color: #000080;
+
+    }
+
+    .box-content {
+      padding: 5%;
+      margin: 2%;
+      font-size: 1rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .box-content h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2rem;
+    }
+
+    .content hr {
+      color: #eee;
+    }
+
+    .icons {
+      padding: 5%;
+      width: 100%;
+    }
+
+    .flexbox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    figcaption {
+      margin-top: 4px;
+      font-size: 10px;
+    }
+
+    .flexcontainer {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contents {
+      width: 70%;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .content {
+      width: 80%;
+      float: right;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .content h3 {
+      text-align: justify;
+      font-size: 15px;
+    }
+
+    .content hr {
+      color: #eee;
+    }
+
+    .how {
+      font-size: 0.9rem;
+      width: 90%;
+      text-align: left;
+    }
+
+    .timeline-area {
+      margin: 40px auto;
+      width: 315px;
+      border-left: 2px solid #232b2b;
+      padding: 0 15px;
+    }
+
+    .buttons {
+      font-size: 1.3rem;
+      padding: 10px;
+      font-family: 'Roboto', sans-serif;
+      border-radius: 12px;
+      border: 2px solid #eee;
+      margin: 40px 15px;
+      background-color: transparent;
+      transition: all 0.2s;
+    }
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    a {
+      color: #eee;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #DDDDDD;
+      border-color: #DDDDDD;
+    }
+
+    .icon {
+      float: right;
+      padding: 1%;
+    }
+
+    .icons {
+      padding: 1%;
+    }
+
+    .timeline-box {
+      background-color: #232b2b;
+      color: #eee;
+      padding: 20px;
+      position: relative;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+
+    .timeline-box:before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #232b2b;
+      position: absolute;
+      top: 15px;
+      left: -22px;
+    }
+
+    #home {
+      margin-bottom: 10px;
+    }
+
+    #footer-button {
+      margin: 30px 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      html {
+        overflow-x: hidden;
+      }
+
+      .introduction {
+        position: relative;
+        background: url("https://entrepreneur.indiegogo.com/education/wp-content/uploads/sites/4/2020/04/2020_March_BlogBanners_v2_CoronavirusCrowdfunding.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: none;
+        padding: 25vh 0;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      .introduction h1 {
+        letter-spacing: 4px;
+        font-size: 2em;
+        animation: text 3s 1;
+      }
+
+      @keyframes text {
+        0% {
+          color: #eee;
+          margin-bottom: -40px;
+        }
+
+        30% {
+          letter-spacing: 15px;
+          margin-bottom: -40px;
+        }
+
+        85% {
+          letter-spacing: 4px;
+          margin-bottom: -40px;
+        }
+      }
+
+      .buttons {
+        font-size: 0.8rem;
+        padding: 8px;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 12px;
+        border: 2px solid #eee;
+        margin: 20px 15px;
+        background-color: transparent;
+        transition: all 0.2s;
+      }
+
+      .grid-container {
+        width: 100%;
+        display: block;
+        grid-gap: 25px;
+        padding: 25px;
+      }
+
+      #home {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+
+      #footer-button {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="introduction" id="introduction">
+    <h1>Coronavirus</h1>
+    <p>The biggest pandemic of the 21st century</p>
+    <button class="buttons"><a href="#container">Go Down</a></button>
+    <button class="buttons"><a href="#stats">Statistics</a></button>
+  </div>
+  <div class="grid-container" id="container">
+    <div class="box">
+      <div class="box-content how">
+        <h1>Introduction</h1>
+        <br>
+        <i class="fas fa-users fa-3x icon"></i>
+        <p>COVID-19 has impacted our lives in ways we have never experienced before. Sometimes, we wonder if things will
+          ever go back to the way
+          it was before. These are difficult days, but with today's medical advancements, we can hope to find to cure
+          sooner or later.</p>
+        <br>
+        <p>In the meantime, stay home and stay safe.</p>
+        <h1> How it Spreads?</h1>
+        <i class="fas fa-head-side-virus fa-3x icon"></i>
+        <br>
+        <i class="fas fa-head-side-cough fa-3x icon"></i>
+        <p>COVID-19 spreads mainly by droplets produced as a result of coughing or sneezing of a COVID-19 infected
+          person.</p>
+        <br>
+        <p>This can happen in two ways:
+        <ul>
+          <li><b>Direct close contact:</b> one can get the infection by being in close contact with COVID-19 patients
+          </li>
+          <li><b>Indirect contact:</b> the droplets survive on surfaces and clothes for many days. </li>
+        </ul>
+        <br>
+        Therefore,touching any such infected surface and then touching one’s mouth, nose or eyes can transmit the
+        disease.</p>
+        <br>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <h1>COVID-19 Symptoms</h1>
+        <br>
+        <table style="width:100%" class="table-responsive">
+          <tr>
+            <th>Symptoms</th>
+            <th>COVID-19</th>
+            <th>Flu</th>
+            <th>Allergies</th>
+          </tr>
+          <td>Fever</td>
+          <td>Common</td>
+          <td>Common</td>
+          <td>Sometimes</td>
+          <tr>
+            <td>Dry cough</td>
+            <td>Common</td>
+            <td>Common</td>
+            <td>Sometimes</td>
+          </tr>
+          <tr>
+            <td>Shortness of breath</td>
+            <td>Common</td>
+            <td>No</td>
+            <td>Sometimes</td>
+          </tr>
+        </table>
+        <br>
+        <div class="flexcontainer">
+          <h1>Precautions and Measures</h1>
+          <div class="icons">
+            <i class="fas fa-hands-wash fa-2x"></i>
+            <div class="content">
+              <h3>WASH.YOUR.HANDS</h3>
+              <hr>
+              <p>Wash your hands with soap and water regularly.</p>
+            </div>
+          </div>
+          <br>
+          <div class="icons">
+            <i class="fas fa-head-side-mask fa-2x"></i>
+            <div class="content">
+              <h3>WEAR.A.FACE.MASK</h3>
+              <hr>
+              <p>Wear a face mask whenever you go out.</p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-home fa-2x"></i>
+            <div class="content">
+              <h3>STAY.HOME</h3>
+              <hr>
+              <p>Stay home to lower chances of contracting the virus.</p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-hospital fa-2x"></i>
+            <div class="content">
+              <h3>GET.HELP</h3>
+              <hr>
+              <p>If you experience any symptoms of COVID-19,get medical help immediately.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-content">
+        <h1>
+          <center>Summary of the Events in brief</center>
+        </h1>
+        <section class="timeline-area">
+          <div class="timeline-box">
+            <i class="fas fa-viruses fa-3x icon"></i>
+            <div class="contents">
+              <p>Virus originates from Wuhan,China. It slowly starts to affect spread to other South-East Asian
+                countries like Malaysia, Taiwan,Singapore etc.</p>
+            </div>
+          </div>
+          <br>
+          <div class="timeline-box">
+            <i class="fas fa-procedures fa-3x icon"></i>
+            <div class="contents">
+              <p>Europe slowly becomes one of the biggest hotspots for COVID-19.</p>
+            </div>
+          </div>
+          <br>
+          <div class="timeline-box">
+            <i class="fas fa-medkit fa-3x icon"></i>
+            <div class="contents">
+              <p>Eventually, this disease spreads to all parts of the globe with US becoming the worst affected region
+                in the world</p>
+            </div>
+          </div>
+          <br>
+          <div class="timeline-box">
+            <i class="fas fa-syringe fa-3x icon"></i>
+            <div class="contents">
+              <p>Research is ongoing for a cure as the world fights against COVID-19. Lockdown measures relax in many
+                parts of the world </p>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content how">
+        <h1>Global Impact</h1>
+        <br>
+        <p>The impact of COVID-19 can be felt throughout the world-taking lives, destroying livelihoods, and changing
+          everything about how we interact
+          with each other and the world.</p>
+        <br>
+        <i class="fas fa-chart-area fa-5x icon"></i>
+        <p>On the economic side, the aviation industry has been hit the hardest.
+          Global trade is forcasted to drop by 27%. Poverty is expected to increase due to increase in unemployment.In
+          the social front, the education of students has been heavily compromised.</p>
+        <br>
+        <i class="fas fa-plus-square fa-5x icon"></i>
+        <p>That's not to say everything is bad. For one, this is a big opportunity for the Indian economy by encouraging
+          local businesses to improve the
+          economy. This lockdown has also brought families together. The biggest positive has to be for the environment
+          with
+          wildlife rejuvenating and carbon levels reduce in the atmosphere for the first time in nearly 30 years</p>
+        <br>
+        <p>So,this lockdown can become a bit more bearable when we look at the positive impacts
+          the COVID-19 pandemic has brought to India and the rest of the world!</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-content">
+        <h1>What is Social Distancing?</h1>
+        <br>
+        <p>Basically, social distancing means avoiding close contact with others. This term is being used to refer to a
+          conscious
+          effort in order slow down community transmission of the virus.</p>
+        <br>
+        <p>This is the most important step that we have to take if we want to fight against the virus</p>
+        <br>
+        <h2>
+          <center>AVOID</center>
+        </h2>
+        <div class="flexbox">
+          <div class="icons">
+            <i class="fas fa-users fa-2x"></i>
+            <figcaption>Meeting people</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-music fa-2x"></i>
+            <figcaption>Concerts</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-running fa-2x"></i>
+            <figcaption>Sporting events</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-bus fa-2x"></i>
+            <figcaption>Public transport</figcaption>
+          </div>
+        </div>
+        <br>
+        <h2>
+          <center>TAKE CAUTION </center>
+        </h2>
+        <div class="flexbox">
+          <div class="icons">
+            <i class="fas fa-cocktail fa-2x"></i>
+            <figcaption>Restaurants</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-place-of-worship fa-2x"></i>
+            <figcaption>Religious places</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-suitcase-rolling fa-2x"></i>
+            <figcaption>Travel</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-store fa-2x"></i>
+            <figcaption>Grocery stores</figcaption>
+          </div>
+        </div>
+        <br>
+        <h2>
+          <center>SAFE TO DO</center>
+        </h2>
+        <div class="flexbox">
+          <div class="icons">
+            <i class="fas fa-brain fa-2x"></i>
+            <figcaption>Work at home</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-video fa-2x"></i>
+            <figcaption>Video chat</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-car fa-2x"></i>
+            <figcaption>Go for a drive</figcaption>
+          </div>
+          <div class="icons">
+            <i class="fas fa-tv fa-2x"></i>
+            <figcaption>Watching movies</figcaption>
+          </div>
+        </div>
+        <br>
+        <h2>THINGS YOU CAN DO</h2>
+        <br>
+        <p>During this period, it is understandable if we get bored. After all, we are in our homes 24x7 and for the
+          time being, we cannot go
+          out to meet our friends and family and have a social life in general. So, it is important we keep ourselves
+          busy during this quarantine
+          to avoid negaive thoughts</p>
+        <br>
+        <div class="flexcontainer">
+          <div class="icons">
+            <i class="fas fa-phone-alt fa-2x"></i>
+            <div class="content">
+              <h3>Talk to your loved ones</h3>
+              <hr>
+              <p>Its normal to feel sad,angry,lonely,confused or scared in times like these. Talking to your loved ones
+                can help. Try to keep in touch with them through
+                phone calls or video chat. </p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-dumbbell fa-2x"></i>
+            <div class="content">
+              <h3>Exercise Regularly</h3>
+              <hr>
+              <p>Let's be honest here: Most of us have made plans to exercise regularly at some point in our life.But,
+                our inability to maintain a
+                work-life balance has not allowed us to execute these plans. This time though, things could be
+                different.There are several online sources that can help
+                us create an exercise routine. Also,try to eat healthy.After all, health is wealth.</p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-capsules fa-2x"></i>
+            <div class="content">
+              <h3>Don't use drugs to cope</h3>
+              <hr>
+              <p>If you feel overwhelmed, talk to your loved ones or talk to a professional. Seek mental help if
+                required. Remember: There is nothing wrong
+                in asking for help.</p>
+            </div>
+          </div>
+          <div class="icons">
+            <i class="fas fa-pencil-alt fa-2x"></i>
+            <div class="content">
+              <h3>Revisit old hobbies</h3>
+              <hr>
+              <p>Revisit old hobbies that you had in your childhood to manage your emotions during this crisis.Also,
+                they are a great way to kill time and you
+                also have fun along the way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="stats">
+    <iframe src="https://ourworldindata.org/grapher/total-cases-covid-19?tab=map" width="100%" height="600px"></iframe>
+  </div>
+  <div id="home" class="flexcontainer">
+    <button class="buttons" id="footer-button"><a href="#introduction">Go Home</a></button>
+    <p style="color:#eee">Done with <i class="fas fa-wifi"></i> and <i class="fas fa-coffee"></i> </p>
+    <p style="color:#eee"> Copyright © Adhetya Narayan 2022. All Rights Reserved</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Number Checker</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <p id="title">Magic Number Checker</p>
+        <p id="Circular">A Magic number is a number whose sum of its digits are calculated till a single digit is obtained by recursively adding the sum of its digits. If single digit obtained is 1, then the number is magic number, otherwise not.</p>
+        
+            <input type="text" id="num1">
+            <label for="num1">Enter a Number :</label>
+            
+          
+
+            <input type="text" id="result" readonly value=" ">
+            <label for="result">Result :</label>
+
+            <button onclick="getInputValue(this)">Submit</button>
+            <button id="reset" onclick="reset(this)">Reset</button>
+    </div>
+
+
+</body>
+<script src="script/script.js"></script>
+
+</html>

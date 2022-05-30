@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rampart One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(20, 20, 20);
+}
+
+.container {
+    border: 10px solid rgb(50, 182, 153);
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: silver;
+    font-size: 32px;
+    border-radius: 50%;
+    background: rgb(13, 13, 13);
+    box-shadow: 
+        0 0 5px rgb(50, 182, 153),
+        0 0 10px rgb(50, 182, 153),
+        0 0 15px rgb(50, 182, 153)
+}
+
+.time {
+    font-size: 1.6em;
+    color: rgb(50, 182, 153);
+}
+
+.blink-colon {
+    animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.2;
+    }
+}
+
+.date-container {
+    margin-top: 10px;
+    font-size: 24px;
+    align-items: center;
+    color: rgb(253, 226, 226);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 380px;
+        height: 380px;
+    }
+    .time {
+        font-size: 1.4em;
+    }
+    .date-container {
+        margin-top: 8px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 340px;
+        height: 340px;
+    }
+    .time {
+        font-size: 1.2em;
+    }
+    .date-container {
+        margin-top: 6px;
+        font-size: 16px;
+    }
+}

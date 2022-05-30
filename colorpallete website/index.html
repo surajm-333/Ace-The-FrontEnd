@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
+    />
+    <title>ColorPallete - Color schemes for UI design</title>
+    <meta name="description" content="Color schemes for UI design" />
+    <link rel="icon" href="favicon.ico" />
+    <meta itemprop="description" content="Color schemes for UI design" />
+    <meta itemprop="image" content="icons/icon-192x192.png" />
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Colorbook" />
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="icons/icon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="96x96" href="icons/icon-96x96.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icons/icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="icons/icon-192x192.png"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:700|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/vanilla-picker"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
+            .register("sw.js")
+            .then(function (registration) {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope
+              );
+            })
+            .catch(function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            });
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="flex">
+          <h1 class="logo">ColorPallete</h1>
+          <div class="flex"></div>
+          
+          <button id="convert" onclick="convert()">HEX ↔ RGB</button>
+          
+        <nav id="navcircles"></nav>  
+      </header>
+      <!-- newly added -->
+      <section id="content" contenteditable="true">
+        <h1>Color schemes for UI design</h1>
+      </section>
+      <section id="theming">
+        <nav class="title">
+          <span class="circle" id="combocircle"></span>
+          <h4>Combination</h4>
+          <div class="flex"></div>
+          <div>
+            <button id="random">Random ⭯</button>
+          </div>
+          <div>
+            <button id="swap">Swap ⇌</button>
+          </div>
+        </nav>
+        <div class="family">
+          <div class="color">
+            <div class="btn" id="bg-color"></div>
+            <b>Background</b>
+            <input
+              type="text"
+              readonly
+              id="bg"
+              class="hex"
+              onclick="copy(this.id)"
+              value="#000000"
+            />
+          </div>
+          <div class="color">
+            <div class="btn" id="color"></div>
+            <b>Foreground</b>
+            <input
+              type="text"
+              readonly
+              id="fg"
+              class="hex"
+              onclick="copy(this.id)"
+              value="#ffffff"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="gradient">
+        <nav class="title">
+          <span class="circle" id="gradcircle"></span>
+          <h4>Gradient</h4>
+          <div class="flex"></div>
+          <div>
+            Steps:
+            <input
+              type="number"
+              id="steps"
+              oninput="this.value=this.value.slice(0,this.maxLength)"
+              min="1"
+              max="99"
+              name="steps"
+              value="10"
+              maxlength="2"
+            />
+            <button onclick="updateSpitter()">Generate ↻</button>
+          </div>
+        </nav>
+        <div id="gradcolors"></div>
+      </section>
+      <section id="matcolors"></section>
+      <div id="snackbar">Copied</div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
