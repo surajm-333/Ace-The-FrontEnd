@@ -1,0 +1,82 @@
+body {
+    background: #ecffe6;
+    display: grid;
+    place-items: center;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .drop-container {
+    background: #fff;
+    padding: 1.5rem;
+    width: 450px;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 15px rgba(0, 0, 0, 0.2);
+  }
+  .drop {
+    border-radius: 10px;
+    border: 3px dashed #aaaaaa;
+    display: grid;
+    width: 100%;
+    place-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+  }
+  
+  .active {
+    border: 3px solid #4b4b4b;
+    background: #ecffe6;
+  }
+  
+  .drop .icon {
+    font-size: 60px;
+    color: #76ff4d;
+  }
+  .drop .text {
+    text-align: center;
+    font-weight: 500;
+    color: #443f46;
+    margin-top: 1rem;
+  }
+  
+  .progress {
+    background: #76ff4d;
+    width: 0%;
+    height: 20px;
+    display: none;
+    border-radius: 10px;
+    transition: all 0.2s;
+  }
+  .drop label {
+    background: #76ff4d;
+    padding: 0.7rem 1.8rem;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .line {
+    width: 80px;
+    height: 1px;
+    background: #949494;
+  }
+  
+  .or-con {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  
+  .or {
+    margin: 0 1rem;
+    font-weight: 500;
+    color: #443f46;
+  }
