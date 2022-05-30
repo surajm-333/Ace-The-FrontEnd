@@ -36,7 +36,7 @@ let questions = [
       {
         numb: 4,
         question: "The CSS property used to specify the transparency of an element is?",      
-        answer: "opacity ",
+        answer: "opacity",
         options: [
           "opacity",
           "visibility",
@@ -48,10 +48,10 @@ let questions = [
       {
         numb: 5,
         question: "How can we specify the spacing between each letter in a text in CSS?",
-        answer: " letter-spacing",
+        answer: "letter-spacing",
         options: [
           "alpha-spacing",
-          "letter-spacing ",
+          "letter-spacing",
           "character-spacing",
           "None of the above"
         ]

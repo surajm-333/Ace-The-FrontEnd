@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #262626;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 45px 45px 45px rgb(0, 0, 0,0.8);
+    z-index: 1;
+    padding: 100px;
+    overflow: hidden;
+}
+.container::before{
+    content: '';
+    position: absolute;
+    background-color: rgb(0, 0, 0,0.3);
+    left: -50%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+.heart{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    transform: rotate(45deg) translate(10%, 10%);
+    animation: animate 0.8s   infinite  linear;
+}
+.heart::before{
+    content: '';
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    border-radius: 50%;
+}
+.heart::after{
+    content: '';
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    border-radius: 50%;
+}
+@keyframes animate {
+    0%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1);
+    }
+    25%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1);
+    }
+    30%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1.4);
+    }
+    50%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1.2);
+    }
+    70%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1.4);
+    }
+    90%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1);
+    }
+    100%{
+        transform:rotate(45deg)translate(10%, 10%) scale(1);
+    }
+}

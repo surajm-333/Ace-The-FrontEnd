@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #151515;
+    display: grid;
+    place-content: center;
+}
+
+.cards{
+    perspective: 500px; 
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    background: url('./Eiffel.jpg') 
+    center no-repeat; 
+    background-size: cover; 
+    border: 2px solid 
+    rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative; 
+    transform-style: preserve-3d; 
+    will-change: transform; 
+    transition: transform .5s; 
+}
+
+.card:hover{
+    transform: translateZ(10px)
+    rotateX(20deg) rotateY(30deg);
+}
+
+.card-title{
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px 
+    rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card:hover .card-title{
+    transform: translateZ(50px);
+}
