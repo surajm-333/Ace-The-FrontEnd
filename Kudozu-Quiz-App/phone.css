@@ -1,0 +1,16 @@
+.inner-div{
+    width: 60vw;
+    padding: 2px 5px;
+}
+
+.inner-div h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.inner-div li{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    
+}
