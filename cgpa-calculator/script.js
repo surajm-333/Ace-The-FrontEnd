@@ -50,7 +50,7 @@ const handleCalculate = () => {
         (((acheivedElemArray[i].value + acheivedElemArray[i + 1].value) * 10) )||0
       ).toFixed(2))
   }
-  cgpa.value = (parseFloat(ygpaElemArray[0].value)*1+parseFloat(ygpaElemArray[1].value)*1+parseFloat(ygpaElemArray[2].value)*1.5+parseFloat(ygpaElemArray[3].value)*1.5).toFixed(2);
+  cgpa.value = ((parseFloat(ygpaElemArray[0].value)*1+parseFloat(ygpaElemArray[1].value)*1+parseFloat(ygpaElemArray[2].value)*1.5+parseFloat(ygpaElemArray[3].value)*1.5)/5).toFixed(2);
 };
 
 const handleCreditValueChange = (e) => {
