@@ -1,6 +1,60 @@
-
+// JS File
+const currencies = [{
+    id: 'USD', name: 'US Dollars'
+  },
+  {
+    id: 'GBP', name: 'Great Britain Pound'
+  },
+  {
+    id: 'BRL', name: ' Brazilian Real'
+  },
+  {
+    id: 'UGX', name: 'Ugandan Shillings'
+  },
+  {
+    id: 'AUD', name: 'Australian Dollar'
+  },
+  {
+    id: 'CAD', name: 'Canadian Dollar'
+  },{
+    id: 'EUR', name: 'Euro'
+  },
+  {
+    id: 'KRW', name: 'South Korean Won'
+  },
+  {
+    id: 'KES', name: 'Kenyan Shillings'
+  },
+  {
+    id: 'CHF', name: 'Swiss Franc'
+  },
+  {
+    id: 'GHS', name: 'Ghanian Cedi'
+  },
   
- const apiBase = 'https://free.currencyconverterapi.com/api/v6/';
+  {
+    id: 'INR', name: 'Indian Rupee'
+  },
+  {
+    id: 'ZAR', name: 'South African Rand'
+  },
+  {
+    id: 'ILS', name: 'Israeli Shekel'
+  },
+  {
+    id: 'JPY', name: 'Japanese Yen'
+  },
+  {
+    id: 'NGN', name: 'Nigerian Naira'
+  },
+  {
+    id: 'CNY', name: 'Chinese Yuan'
+  },
+  {
+    id: 'RUB', name: 'Russian Ruble'
+  }];
+  
+  const apiBase = 'https://free.currencyconverterapi.com/api/v6/';
   const api = (currency,currency2) => `
     ${apiBase}convert?q=${currency}_${currency2}&compact=ultra&apiKey=bc3c1ae7e4fe84c4cce0`;
 
@@ -8,7 +62,7 @@
         const toastr = document.querySelector('.messages');
         if(!toastr) return;
         
-        toastr .textContent = msg;
+        toastr.textContent = msg;
         if(!toastr.classList.contains('on')) {
           toastr.classList.add('on');
         }
@@ -28,7 +82,7 @@
           toast(`nothing to display ...`);
           return;
         }
-        const [value] = Object.values(apiResponse) 
+        const [value] = Object.values(apiResponse) // if response is true return value showing the convert rate
 
         const btn = document.querySelector('button');
         btn.removeAttribute('disabled');
@@ -41,8 +95,8 @@
 
     let amount=document.getElementById("Amount").value;
     amount=amount==0?1:amount;
-    display.textContent = formatter.format(value*amount); 
-    doneToasting(); 
+    display.textContent = formatter.format(value*amount); // command to convert currency in user given amount
+    doneToasting(); // note that this doneToasting was declared before now this is going to show the convert rate is set this to be doneToasting
   };
 
   const createNode=(element) =>{
@@ -74,16 +128,18 @@
   }
 
   const getSelectedCurrency = () =>{
-      
+      // here, determine and return the selected value
+      // of the SELECT element
       return document.getElementsByClassName("select-text")[0].value;
   };
   
   const getSelectedCurrency2 = () =>{
-  
+    // here, determine and return the selected value
+    // of the SELECT element
     return document.getElementsByClassName("select-text")[1].value;
   };
 
-  
+  // function to convert currency
   const convert = (event) => {
     toast(`preparing to convert ....`);
 
@@ -120,7 +176,7 @@
       
       populateCurrencies();
       populateCurrencies2();
-      
+      // add a click listener to the button here
       let draw = document.getElementsByClassName("btn")[0];
       draw.addEventListener("click", ()=>{
         document.getElementsByClassName("conversion")[0].style.display="block";
