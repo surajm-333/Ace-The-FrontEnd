@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+:root{
+    --var-bg-color:#121417;
+    --var-orange:hsl(25, 97%, 53%);
+    --var-white:hsl(0, 0%, 100%);
+    --var-gray:hsl(217, 12%, 63%);
+    --var-med-gray: hsl(216, 12%, 54%);
+    --var-dark-blue: hsl(216, 12%, 8%);
+    --var-blue:hsl(213, 19%, 18%);
+    --var-light-gray:hsl(213, 19%, 23%);
+    font-size: 1rem;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    background-color: var(--var-bg-color);
+
+}
+
+ .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .content {
+    width: 24rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--var-blue);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.content img {
+    background-color: var(--var-light-gray);
+    width: 2.5rem;
+    border-radius: 3.1rem;
+    padding: 0.7rem;
+    margin-bottom: 2rem;
+}
+/*text styling*/
+ h1 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+ p {
+    color: var(--var-med-gray);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1.4rem;
+}
+/*number and button styling*/
+ .number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+ .number button{
+    width: 2.6rem;
+    height: 2.6rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--var-light-gray);
+    color: var(--var-med-gray);
+}
+
+ button:hover {
+    background-color: var(--var-orange);
+    cursor: pointer;
+    color: white;
+}
+
+.submit-button {
+    color: white;
+    font-weight: 400;
+    padding: 10px 30px;
+    border: none;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--var-orange);
+}
+
+ .submit-button:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--var-orange);
+}
+
+
+ .thank_you{
+    display: none;
+    width: 390px;
+    background-color: #252d37;
+    border-radius:1.6rem ;
+     padding: 2rem;
+}
+
+.thank_you img {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.thank_you :nth-child(2) {
+    background-color: var(--var-light-gray);
+    color: var(--var-orange);
+    font-weight: 400;
+    padding: 5px 2rem;
+    border: none;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.thank_you :nth-child(4) {
+    color: var(--var-med-gray);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 415px) {
+  .content {
+        margin: 0 1.3rem;
+    }
+}
