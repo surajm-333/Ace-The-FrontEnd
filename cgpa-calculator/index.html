@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>CGPA Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>8 Semester CGPA calculator</h1>
+      <p>Enter the values:</p>
+      <table type="text" class="input-section">
+          <tr>
+              <th>Sem</th>
+              <th>Total Credit</th>
+              <th>Credit Points acheived</th>
+              <th>Total Credit Points</th>
+              <th>SGPA</th>
+              <th>YGPA</th>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 1</span></td>
+              <td><input type="number" id="credit1"  value="0"/></td>
+              <td><input type="number"  id="acheived1" value="0"/></td>
+              <td><input type="number"  id="totalCredit1" disabled value="0"/></td>
+              <td><input type="number"  id="sgpa1" disabled value="0"/></td>
+              <td rowspan="2"><input type="number" id="year1" class="year" disabled value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 2</span></td>
+              <td><input type="number" id="credit2"  value="0"/></td>
+              <td><input type="number"  id="acheived2" value="0"/></td>
+              <td><input type="number"  id="totalCredit2" disabled value="0"/></td>
+              <td><input type="number"  id="sgpa2" disabled value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 3</span></td>
+              <td><input type="number" id="credit3"  value="0"/></td>
+              <td><input type="number"  id="acheived3" value="0"/></td>
+              <td><input type="number" id="totalCredit3"  disabled value="0"/></td>
+              <td><input type="number"  id="sgpa3"  disabled value="0"/></td>
+              <td rowspan="2"><input type="number" id="year2" class="year" disabled  value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 4</span></td>
+              <td><input type="number" id="credit4"  value="0"/></td>
+              <td><input type="number"  id="acheived4" value="0"/></td>
+              <td><input type="number" id="totalCredit4"  disabled value="0"/></td>
+              <td><input type="number" id="sgpa4" disabled value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 5</span></td>
+              <td><input type="number" id="credit5"  value="0"/></td>
+              <td><input type="number"  id="acheived5" value="0"/></td>
+              <td><input type="number"  id="totalCredit5"  disabled value="0"/></td>
+              <td><input type="number"  id="sgpa5"  disabled value="0"/></td>
+              <td rowspan="2"><input type="number" id="year3" class="year" disabled value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 6</span></td>
+              <td><input type="number" id="credit6"  value="0"/></td>
+              <td><input type="number"  id="acheived6" value="0"/></td>
+              <td><input type="number"  id="totalCredit6"  disabled value="0"/></td>
+              <td><input type="number"  id="sgpa6" disabled value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 7</span></td>
+              <td><input type="number" id="credit7"  value="0"/></td>
+              <td><input type="number"  id="acheived7"  value="0"/></td>
+              <td><input type="number"  id="totalCredit7"  disabled value="0"/></td>
+              <td><input type="number"  id="sgpa7"  disabled value="0"/></td>
+              <td rowspan="2"><input type="number" id="year4" class="year" disabled  value="0"/></td>
+          </tr>
+          <tr class="input-group">
+              <td><span class="sem">Sem 8</span></td>
+              <td><input type="number" id="credit8"  value="0"/></td>
+              <td><input type="number"  id="acheived8" value="0"/></td>
+              <td><input type="number"  id="totalCredit8"  disabled value="0"/></td>
+              <td><input type="number"  id="sgpa8"  disabled value="0"/></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                  <span>Total CGPA</span>
+              </td>
+              <td>
+                  <input type="number" id="cgpa" disabled />
+              </td>
+          </tr>
+      </table>
+      <button id="calculate">Calculate</button>
+      <div class="procedure">
+        <span>Formulae: </span>
+        <ul>
+          <li>
+            SGPA: (Credit Index Acheived)/(Total Credit)
+          </li>
+          <li>
+            YGPA: (Credit Index Acheived Both Sem)/(Total Credit Both Sem)
+          </li>
+          <li>
+            CGPA: (YGPA1 + YGPA2 + 1.5*YGPA3 + 1.5*YGPA4)/5
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </body>
+  <script src="script.js"></script>
+</html>
