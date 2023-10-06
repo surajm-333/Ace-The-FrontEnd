@@ -1,0 +1,11 @@
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+}
+tr,td{
+  border: 5px solid black;
+  height: 155px;
+  width : 155px;
+  text-align: center;
+  font-size: 100px
+}
